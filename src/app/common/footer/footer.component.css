@@ -1,0 +1,30 @@
+h3, strong {
+    color: rgb(39, 52, 65);
+}
+ul {
+    color: rgb(39, 52, 65);
+    list-style-type: none;
+}
+
+.top-marging-links{
+    margin-top: 10px;
+}
+div a {
+    color: rgb(39, 52, 65);
+}
+
+@media screen and (max-width: 600px) {
+    .col-sm-6 div:first-child{
+        margin-top: 10px;
+        font-weight: 500;
+    }
+}
+
+footer {
+    background-color: rgb(243, 247, 250);
+}
+
+.footer-desktop {
+    padding: 20px 0px 25px 0px;
+    background-size: 100%;
+}
