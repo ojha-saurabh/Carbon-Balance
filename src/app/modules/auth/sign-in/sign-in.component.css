@@ -1,0 +1,95 @@
+.take-action {
+    background: url("../../../../assets/pictures/tree.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+    padding: 30px;
+   }
+
+.white-bg {
+    background-color: #fff;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.login-form{
+    background-color: #fff;
+    margin-left: 25%;
+    margin-right: 25%;
+    opacity: 0.9;
+}
+
+/* .take-action {position: relative;}
+.take-action > img, .overlay-text {position: absolute;} */
+
+.overlay-text{
+    color: #fff;
+    text-align: right;
+    font-family: cursive;
+}
+
+.btn-sign-in {
+    background-color: hsl(256, 57%, 17%);
+    padding: 7px 0px;
+    width: 15%;    
+    margin-left: 42%;
+    margin-right: 42%;    
+    position: absolute;
+    margin-top: -22px;
+}
+
+.align-middle {
+    margin-top:50%;
+}
+
+.section-text{
+    color: #fff;
+}
+
+.box-text{
+    color: hsl(256, 63%, 28%);
+    font-weight: bolder;
+}
+
+@media screen and (max-width: 600px) {
+    .white-bg {
+        background-color: #fff;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .login-form {
+        background-color: #fff;
+        margin-left: 5%;
+        margin-right: 5%;
+        opacity: 0.9;
+    }
+}
+
+.example-form {
+    width: 100%;  
+    padding: 15px;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  mat-form-field.mat-form-field {
+    font-size: 16px;
+  }
+
+  .svg-text{
+      font-size: 20px;
+      color: #fff;
+      font-weight: bolder;
+  }
+
+  .signup-text {
+      color: #fff;
+  }
+
+  
+
+  

@@ -3,54 +3,34 @@
     border-radius:50px;
     display: inline-block;
     text-align: center;
-    color:rgb(39, 52, 65);
+    color:hsl(256, 57%, 17%);
     padding: 3px 19px 6px;
 }
 
-.nav-desktop {
-    padding: 30px 0px 30px 60px;
-    background-size: 100%;
-}
-
-.nav-desktop a {
-    font-weight: 500;
-}
 
 header {
     background-color: rgb(243, 247, 250);
 }
 
 .site-name{
-    padding: 7px 90px 0px 48px;
+  margin-top: -8px;
+  font-size: 28px;
+  color: hsl(256, 57%, 17%);
 }
 
-.nav-desktop a {
-    /* font-family: "Times New Roman", Times, serif;     */
-    color: rgb(39, 52, 65);
-    font-size: 17px;
-  }
-
   @media screen and (max-width: 600px) {
-    .nav-desktop {
-      visibility: hidden;
-      clear: both;
-      float: left;
-      margin: 10px auto 5px 20px;
-      width: 28%;
-      display: none;
-    }
     .navbar-nav{
         text-align: center;
     }
   }
 
   @media screen and (min-width: 601px) {
-    .nav-mobile {
-      visibility: hidden;
-      clear: both;
-      float: left;
+    .navbar {      
       margin: 10px auto 5px 20px;
-      width: 28%;
-      display: none;
+    }
+
+    ul > li > a {
+      padding: 40px;
+      font-weight: bold;
     }
   }

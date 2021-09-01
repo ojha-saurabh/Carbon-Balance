@@ -1,0 +1,28 @@
+.take-action {
+    background: url("../../../assets/pictures/Collaborate.jpg") no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+   }
+
+.white-bg {
+    background-color: #fff;
+}
+
+/* .take-action {position: relative;}
+.take-action > img, .overlay-text {position: absolute;} */
+
+.overlay-text{
+    color: #fff;
+}
+
+span, .overlay-text {
+    background-color: darkblue;
+    padding: 7px 0px;
+    width: 30%;
+}
+
+.align-middle {
+    margin-top:50%;
+}

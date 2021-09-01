@@ -22,9 +22,22 @@ div a {
 
 footer {
     background-color: rgb(243, 247, 250);
+    margin: 10px auto 5px 20px;
 }
 
 .footer-desktop {
     padding: 20px 0px 25px 0px;
     background-size: 100%;
 }
+
+.footer-text-last-col{
+    font-family: cursive;
+    font-size: 33px;
+    font-weight: bold;
+    color: hsl(256, 57%, 17%);
+}
+
+.site-name{
+    margin-top: -8px;
+    font-size: 28px;
+  }
