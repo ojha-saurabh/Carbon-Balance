@@ -14,7 +14,7 @@
 }
 
 .login-form{
-    background-color: #fff;
+    /* background-color: #fff; */
     margin-left: 25%;
     margin-right: 25%;
     opacity: 0.9;
@@ -60,7 +60,7 @@
     }
 
     .login-form {
-        background-color: #fff;
+        /* background-color: #fff; */
         margin-left: 5%;
         margin-right: 5%;
         opacity: 0.9;
@@ -87,12 +87,28 @@
   }
 
   .signup-text {
+    color: #fff;
+}
+
+.btn-info {
+      background-color: rgb(119, 228, 115);;
+  }
+
+  .ng-star-inserted {
       color: #fff;
   }
 
-  .btn-info {
-      background-color: hsl(256, 57%, 17%);;
+  .text-span{
+      background:rgb(112, 223, 112);
+      border-radius:50px;
+      display: inline-block;
+      text-align: center;
+      color:#fff;
+      padding: 3px 60px 6px;
   }
+  .example-margin {        
+      color: #fff;
+    }
 
   
 

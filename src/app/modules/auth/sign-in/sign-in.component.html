@@ -42,7 +42,7 @@
     <div class="row mt-2 login-form">        
         <div class="col-lg-12 col-sm-12">
             <form class="example-form ">
-                <div class="form-group">
+                <!-- <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -50,12 +50,24 @@
                   <div class="form-group">
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <button type="button" class="btn btn-info float-right border-0 rounded-0">Login</button>          
+                  </div> -->
+                  <form class="example-form">
+                    <mat-form-field class="example-full-width" appearance="fill">
+                      <mat-label>EMAIL</mat-label>
+                      <input matInput placeholder="Enter email" value="">
+                    </mat-form-field>
+                  
+                    <mat-form-field class="example-full-width" appearance="fill">
+                        <mat-label>Password</mat-label>
+                        <input matInput placeholder="Enter password" value="">
+                    </mat-form-field>                                      
+                    <button type="button" class="btn btn-info float-left border-0 text-span mt-4">Login</button>                    
+                  </form>
+                  <a routerLink="/auth/register" class="float-right instruction"><i>Forget Password / Reset</i></a>         
               </form>
         </div>
-        <div class="col-lg-12 col-sm-12 mb-3">
-            <a routerLink="/auth/register" class="float-left"><i>Don't have any account? Click here to Sign up!!!</i></a>
+        <div class="col-lg-12 col-sm-12 mb-3 mt-4">
+            <a routerLink="/auth/register" class="float-left instruction"><i>Don't have any account? Click here to Sign up!!!</i></a>
         </div>
     </div>
 </div>
