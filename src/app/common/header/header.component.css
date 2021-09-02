@@ -25,9 +25,9 @@ header {
   }
 
   @media screen and (min-width: 601px) {
-    .navbar {      
+    /* .navbar {      
       margin: 10px auto 5px 20px;
-    }
+    } */
 
     ul > li > a {
       padding: 40px;
