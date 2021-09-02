@@ -1,4 +1,4 @@
-.take-action {
+/* .take-action {
     background: url("../../../assets/pictures/Collaborate.jpg") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -9,9 +9,6 @@
 .white-bg {
     background-color: #fff;
 }
-
-/* .take-action {position: relative;}
-.take-action > img, .overlay-text {position: absolute;} */
 
 .overlay-text{
     color: #fff;
@@ -25,4 +22,13 @@ span, .overlay-text {
 
 .align-middle {
     margin-top:50%;
+} */
+
+.banner {
+    background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
+}
+.right-head-text{
+    color: #fff;
+    text-align: right;
+    font-family: cursive;
 }
