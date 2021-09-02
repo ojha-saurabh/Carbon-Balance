@@ -24,11 +24,662 @@ span, .overlay-text {
     margin-top:50%;
 } */
 
+
+/* banner starts */
 .banner {
     background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
+    /* background-size: cover; */
+    padding: 5%;
 }
-.right-head-text{
+@media only screen and (min-width : 320px){
+    /* Styles */
+    .left-banner-part {
+        width: 100%;
+        background-color: #fff;
+        padding: 7%;
+    }
+    .issue-wrapper {
+        text-align: center;
+    }
+    .issue-badge {
+        position: absolute;
+        color: #fff;
+        background-color: #1e3f6a;
+        padding: 1% 5%;
+        top: -2%;
+    
+    }
+    .left-text-part {
+        color: #1e3f6a;
+        padding: 8% 5% 0%;
+    }
+    .banner-link {
+        margin-top: 5rem;
+        text-decoration: underline;
+    }
+    .right-head-text{
+        top: 10%;
+        color: #fff;
+        text-align: right;
+        font-family: cursive;
+        position: relative;
+        right: 3%;
+    }
+    .banner-footer {
+        margin-top: 20%;
+        margin-bottom: 10%;
+    }
+}
+@media only screen and (min-width : 768px) {
+    /* Styles */
+    .left-banner-part {
+        background-color: #fff;
+        padding: 5%;
+    }
+    .issue-wrapper {
+        text-align: center;
+    }
+    .issue-badge {
+        position: absolute;
+        color: #fff;
+        background-color: #1e3f6a;
+        padding: 1% 5%;
+        top: -5%;
+    }
+    .left-text-part {
+        color: #1e3f6a;
+        padding: 8% 5% 0%;
+    }
+    .banner-link {
+        margin-top: 5rem;
+        text-decoration: underline;
+    }
+    .right-head-text{
+        color: #fff;
+        text-align: right;
+        font-family: cursive;
+        position: relative;
+        right: 3%;
+    }
+    .banner-footer {
+        margin-top: 40%;
+        margin-bottom: 0%;
+    }
+}
+@media only screen  and (min-width : 1224px) {
+    .left-banner-part {
+        background-color: #fff;
+        padding: 5%;
+    }
+    .issue-wrapper {
+        text-align: center;
+    }
+    .issue-badge {
+        position: absolute;
+        color: #fff;
+        background-color: #1e3f6a;
+        padding: 1% 5%;
+        top: -5%;
+    }
+    .left-text-part {
+        color: #1e3f6a;
+        padding: 8% 5% 0%;
+    }
+    .banner-link {
+        margin-top: 5rem;
+        text-decoration: underline;
+    }
+    .right-head-text{
+        color: #fff;
+        text-align: right;
+        font-family: cursive;
+        position: relative;
+        right: 3%;
+    }
+    .banner-footer {
+        margin-top: 40%;
+        margin-bottom: 0%;
+    }
+}
+/* banner ends */
+
+/* action starts */
+
+@media only screen  and (min-width : 1224px) {
+    .action-section {
+        background-color: #9ae7a7;
+        /* padding: 2%; */
+    }
+    .action-head {
+        margin-top: -2% !important;
+    }
+    .action-wrapper {
+        text-align: center;
+    }
+    .action-badge {
+        color: #fff;
+        background-color: #1e3f6a;
+        border: 1px solid #1e3f6a;
+        padding: 1% 4%;
+    }
+    .actions {
+        padding: 3%;
+    }
+    .action-title {
+        color: #1e3f6a;
+        font-weight: bold;
+        margin-bottom: 2%;
+    }
+    .action-description {
+        color: #1e3f6a;
+    }
+}
+
+@media only screen  and (min-width : 768px) {
+    .action-section {
+        background-color: #9ae7a7;
+        /* padding: 2%; */
+    }
+    .action-head {
+        margin-top: -2% !important;
+    }
+    .action-wrapper {
+        text-align: center;
+    }
+    .action-badge {
+        color: #fff;
+        background-color: #1e3f6a;
+        border: 1px solid #1e3f6a;
+        padding: 1% 4%;
+    }
+    .actions {
+        padding: 3%;
+    }
+    .action-title {
+        color: #1e3f6a;
+        font-weight: bold;
+        margin-bottom: 2%;
+    }
+    .action-description {
+        color: #1e3f6a;
+    }
+}
+
+@media only screen and (min-width : 320px){
+    .action-section {
+        background-color: #9ae7a7;
+        /* padding: 2%; */
+    }
+    .action-head {
+        margin-top: -2% !important;
+    }
+    .action-wrapper {
+        text-align: center;
+    }
+    .action-badge {
+        color: #fff;
+        background-color: #1e3f6a;
+        border: 1px solid #1e3f6a;
+        padding: 1% 4%;
+    }
+    .actions {
+        padding: 3%;
+    }
+    .action-title {
+        color: #1e3f6a;
+        font-weight: bold;
+        margin: 2%;
+        text-align: center;
+    }
+    .action-description {
+        color: #1e3f6a;
+        text-align: center;
+    }
+}
+/* action ends */
+
+/* what we do starts */
+
+@media only screen  and (min-width : 1224px) {
+    .what-we-do {
+        background-color: #1e3f6a;
+        padding: 5%;
+    }
+    .wedo-wrapper {
+        text-align: left;
+    }
+    .wedo-badge {
+        background-color: #fff;
+        border: #fff;
+        color: #1e3f6a;
+        padding: 1% 4%;
+    }
+    .wedo-head-text {
+        color: #fff;
+        margin-top: 2%;
+    }
+    .do-items {
+        background-color: #fff;
+        margin: 5% 2%;
+        padding: 3%;
+    }
+    .item-image {
+        width: 100%;
+        height: 13rem;
+        margin-top: -7%;
+    }
+    .item-title {
+        margin-top: 10px;
+        color: #1e3f6a;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .item-description {
+        color:  #1e3f6a;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+    .btn-wrapper1 {
+        text-align: center;
+        margin: 2%;
+        margin-top: 5%;
+    }
+    .do-read-more {
+        background-color: #9ae7a7;
+        border: 1px solid #9ae7a7;
+        border-radius: 20px;
+        font-weight: bold;
+        color: #1e3f6a;
+        padding: 2% 7%;
+    }
+}
+
+@media only screen  and (min-width : 768px) {
+    .what-we-do {
+        background-color: #1e3f6a;
+        padding: 5%;
+    }
+    .wedo-wrapper {
+        text-align: left;
+    }
+    .wedo-badge {
+        background-color: #fff;
+        border: #fff;
+        color: #1e3f6a;
+        padding: 1% 4%;
+    }
+    .wedo-head-text {
+        color: #fff;
+        margin-top: 3%;
+        font-size: 2.0rem;
+    }
+    .do-items {
+        background-color: #fff;
+        margin: 5% 2%;
+        padding: 3%;
+    }
+    .item-image {
+        width: 100%;
+        height: 13rem;
+        margin-top: -7%;
+    }
+    .item-title {
+        margin-top: 10px;
+        color: #1e3f6a;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .item-description {
+        color:  #1e3f6a;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+    .btn-wrapper1 {
+        text-align: center;
+        margin: 2%;
+        margin-top: 5%;
+    }
+    .do-read-more {
+        background-color: #9ae7a7;
+        border: 1px solid #9ae7a7;
+        border-radius: 20px;
+        font-weight: bold;
+        color: #1e3f6a;
+        padding: 2% 7%;
+    }
+}
+
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .what-we-do {
+        background-color: #1e3f6a;
+        padding: 5%;
+    }
+    .wedo-wrapper {
+        text-align: center;
+    }
+    .wedo-badge {
+        background-color: #fff;
+        border: #fff;
+        color: #1e3f6a;
+        padding: 1% 4%;
+    }
+    .wedo-head-text {
+        color: #fff;
+        margin-top: 2%;
+    }
+    .do-items {
+        background-color: #fff;
+        margin: 5% 2%;
+        padding: 3%;
+    }
+    .item-image {
+        width: 100%;
+        height: 13rem;
+        margin-top: -7%;
+    }
+    .item-title {
+        margin-top: 10px;
+        color: #1e3f6a;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .item-description {
+        color:  #1e3f6a;
+        text-align: center;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 4; /* number of lines to show */
+        -webkit-box-orient: vertical;
+    }
+    .btn-wrapper1 {
+        text-align: center;
+        margin: 2%;
+        margin-top: 5%;
+    }
+    .do-read-more {
+        background-color: #9ae7a7;
+        border: 1px solid #9ae7a7;
+        border-radius: 20px;
+        font-weight: bold;
+        color: #1e3f6a;
+        padding: 2% 7%;
+    }
+}
+/* what we do ends */
+
+/* dou know starts */
+@media only screen  and (min-width : 1224px) {
+    .dou-know {
+        background-image: url("./../../../assets/pictures/Collaborate.jpg");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100%;
+        padding: 10% 15%;
+    }
+    .text-part {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .action-btn-wrapper {
+        margin: 10%;
+        text-align: center;
+    }
+    .take-action-badge {
+        background-color: #9ae7a7;
+        border: 1px solid #9ae7a7;
+        border-radius: 20px;
+        font-weight: bold;
+        color: #1e3f6a;
+        padding: 2% 7%;
+    }
+    .do-you-btn-wrapper {
+        text-align: center;
+    }
+    .do-you-know-badge {
+        background-color: #1e3f6a;
+        border: 1px solid #1e3f6a;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 3% 10%;
+    }
+    .do-u-know-item {
+        background-color: #fff;
+        margin: 3%;
+        margin-bottom: 7%;
+        padding: 5%;
+    }
+    .dou-know-title {
+        color: #1e3f6a;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .dou-know-description {
+        color: #1e3f6a;
+        padding-left: 5%;
+        padding: 3%;
+        font-size: 1.1rem;
+    }
+    .social-icons {
+        background-color: #9ae7a7;
+        color: #1e3f6a;
+        margin: 25% 2%;
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        border-radius: 70px;
+    }
+}
+
+@media only screen  and (min-width : 768px) {
+    .dou-know {
+        background-image: url("./../../../assets/pictures/Collaborate.jpg");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100%;
+        padding: 10% 6%;
+    }
+    .text-part {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .action-btn-wrapper {
+        margin: 10%;
+        text-align: center;
+    }
+    .take-action-badge {
+        background-color: #9ae7a7;
+        border: 1px solid #9ae7a7;
+        border-radius: 20px;
+        font-weight: bold;
+        color: #1e3f6a;
+        padding: 2% 7%;
+    }
+    .do-you-btn-wrapper {
+        text-align: center;
+    }
+    .do-you-know-badge {
+        background-color: #1e3f6a;
+        border: 1px solid #1e3f6a;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 3% 10%;
+    }
+    .do-u-know-item {
+        background-color: #fff;
+        margin: 3%;
+        margin-bottom: 7%;
+        padding: 5%;
+    }
+    .dou-know-title {
+        color: #1e3f6a;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .dou-know-description {
+        color: #1e3f6a;
+        padding-left: 5%;
+        padding: 3%;
+        font-size: 1.1rem;
+    }
+    .social-icons {
+        background-color: #9ae7a7;
+        color: #1e3f6a;
+        margin: 25% 2%;
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        border-radius: 70px;
+    }
+}
+
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .dou-know {
+        background-image: url("./../../../assets/pictures/Collaborate.jpg");
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        width: 100%;
+        padding: 10% 6%;
+    }
+    .text-part {
+        color: #fff;
+        text-transform: uppercase;
+    }
+    .action-btn-wrapper {
+        margin: 10%;
+        text-align: center;
+    }
+    .take-action-badge {
+        background-color: #9ae7a7;
+        border: 1px solid #9ae7a7;
+        border-radius: 20px;
+        font-weight: bold;
+        color: #1e3f6a;
+        padding: 2% 7%;
+    }
+    .do-you-btn-wrapper {
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    .do-you-know-badge {
+        background-color: #1e3f6a;
+        border: 1px solid #1e3f6a;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 3% 10%;
+    }
+    .do-u-know-item {
+        background-color: #fff;
+        
+        margin-bottom: 7%;
+        padding: 5%;
+    }
+    .dou-know-title {
+        color: #1e3f6a;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .dou-know-description {
+        color: #1e3f6a;
+        padding-left: 5%;
+        padding: 3%;
+        font-size: 1.1rem;
+    }
+    .social-icons {
+        background-color: #9ae7a7;
+        color: #1e3f6a;
+        margin: 5% 2%;
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        border-radius: 70px;
+    }
+}
+/* dou know ends */
+
+/* article starts */
+.article-part {
+    padding: 5%;
+}
+.readmore-wrapper {
+    text-align: center;
+    margin: 5%;
+}
+.read-more {
+    background-color: #9ae7a7;
+    border: 1px solid #9ae7a7;
+    padding: 1% 3%;
+    border-radius: 10px;
+    color: #1e3f6a;
+    font-weight: bold;
+}
+.article-wrapper {
+    text-align: center;
+    margin: 2%;
+}
+.article-badge {
+    background-color: #1e3f6a;
+    border: 1px solid #1e3f6a;
+    padding: 2% 7%;
     color: #fff;
-    text-align: right;
-    font-family: cursive;
 }
+.art-img-part {
+    text-align: center;
+}
+.article-image {
+    width: 90%;
+}
+/* article ends */
+
+/* pledge starts */
+.pledge-part {
+    background-color: #9ae7a7;
+    border-top: 1px solid #1e3f6a;;
+    border-bottom: 1px solid #1e3f6a;;
+    padding: 5% 10%;
+}
+.pledge-description {
+    color: #1e3f6a;
+}
+.btn-wrapper {
+    text-align: center;
+    margin: 2%;
+}
+.email-input {
+    background-color: #fff;
+    border: 1px solid gray;
+    /* font-size: 24px; */
+    border-radius: 10px;
+    padding: 2% 10%;
+    margin-top: 3%;
+}
+.pledge-button {
+    background-color: #1e3f6a;
+    border: 1px solid #1e3f6a;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 20px;
+    padding: 1% 5%;
+    margin-top: 3%;
+}
+/* pledge ends */
