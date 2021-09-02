@@ -90,6 +90,8 @@
       color: #fff;
   }
 
-  
+  .btn-info {
+        background-color: hsl(256, 57%, 17%);;
+    }
 
   
