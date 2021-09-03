@@ -7,11 +7,11 @@
    }
 
 .white-bg {
-    background-color: #fff;
+    background-color: #FFFFFF;
 }
 
 .overlay-text{
-    color: #fff;
+    color: #FFFFFF;
 }
 
 span, .overlay-text {
@@ -35,7 +35,7 @@ span, .overlay-text {
     /* Styles */
     .left-banner-part {
         width: 100%;
-        background-color: #fff;
+        background-color: #FFFFFF;
         padding: 7%;
     }
     .issue-wrapper {
@@ -43,14 +43,14 @@ span, .overlay-text {
     }
     .issue-badge {
         position: absolute;
-        color: #fff;
-        background-color: #1e3f6a;
+        color: #FFFFFF;
+        background-color: #05355A;
         padding: 1% 5%;
         top: -2%;
     
     }
     .left-text-part {
-        color: #1e3f6a;
+        color: #05355A;
         padding: 8% 5% 0%;
     }
     .banner-link {
@@ -59,7 +59,7 @@ span, .overlay-text {
     }
     .right-head-text{
         top: 10%;
-        color: #fff;
+        color: #FFFFFF;
         text-align: right;
         font-family: cursive;
         position: relative;
@@ -73,7 +73,7 @@ span, .overlay-text {
 @media only screen and (min-width : 768px) {
     /* Styles */
     .left-banner-part {
-        background-color: #fff;
+        background-color: #FFFFFF;
         padding: 5%;
     }
     .issue-wrapper {
@@ -81,13 +81,13 @@ span, .overlay-text {
     }
     .issue-badge {
         position: absolute;
-        color: #fff;
-        background-color: #1e3f6a;
+        color: #FFFFFF;
+        background-color: #05355A;
         padding: 1% 5%;
         top: -5%;
     }
     .left-text-part {
-        color: #1e3f6a;
+        color: #05355A;
         padding: 8% 5% 0%;
     }
     .banner-link {
@@ -95,7 +95,7 @@ span, .overlay-text {
         text-decoration: underline;
     }
     .right-head-text{
-        color: #fff;
+        color: #FFFFFF;
         text-align: right;
         font-family: cursive;
         position: relative;
@@ -108,7 +108,7 @@ span, .overlay-text {
 }
 @media only screen  and (min-width : 1224px) {
     .left-banner-part {
-        background-color: #fff;
+        background-color: #FFFFFF;
         padding: 5%;
     }
     .issue-wrapper {
@@ -116,13 +116,13 @@ span, .overlay-text {
     }
     .issue-badge {
         position: absolute;
-        color: #fff;
-        background-color: #1e3f6a;
+        color: #FFFFFF;
+        background-color: #05355A;
         padding: 1% 5%;
         top: -5%;
     }
     .left-text-part {
-        color: #1e3f6a;
+        color: #05355A;
         padding: 8% 5% 0%;
     }
     .banner-link {
@@ -130,7 +130,7 @@ span, .overlay-text {
         text-decoration: underline;
     }
     .right-head-text{
-        color: #fff;
+        color: #FFFFFF;
         text-align: right;
         font-family: cursive;
         position: relative;
@@ -147,7 +147,7 @@ span, .overlay-text {
 
 @media only screen  and (min-width : 1224px) {
     .action-section {
-        background-color: #9ae7a7;
+        background-color: #AEE6AB;
         /* padding: 2%; */
     }
     .action-head {
@@ -157,27 +157,27 @@ span, .overlay-text {
         text-align: center;
     }
     .action-badge {
-        color: #fff;
-        background-color: #1e3f6a;
-        border: 1px solid #1e3f6a;
+        color: #FFFFFF;
+        background-color: #05355A;
+        border: 1px solid #05355A;
         padding: 1% 4%;
     }
     .actions {
         padding: 3%;
     }
     .action-title {
-        color: #1e3f6a;
+        color: #05355A;
         font-weight: bold;
         margin-bottom: 2%;
     }
     .action-description {
-        color: #1e3f6a;
+        color: #05355A;
     }
 }
 
 @media only screen  and (min-width : 768px) {
     .action-section {
-        background-color: #9ae7a7;
+        background-color: #AEE6AB;
         /* padding: 2%; */
     }
     .action-head {
@@ -187,27 +187,27 @@ span, .overlay-text {
         text-align: center;
     }
     .action-badge {
-        color: #fff;
-        background-color: #1e3f6a;
-        border: 1px solid #1e3f6a;
+        color: #FFFFFF;
+        background-color: #05355A;
+        border: 1px solid #05355A;
         padding: 1% 4%;
     }
     .actions {
         padding: 3%;
     }
     .action-title {
-        color: #1e3f6a;
+        color: #05355A;
         font-weight: bold;
         margin-bottom: 2%;
     }
     .action-description {
-        color: #1e3f6a;
+        color: #05355A;
     }
 }
 
 @media only screen and (min-width : 320px){
     .action-section {
-        background-color: #9ae7a7;
+        background-color: #AEE6AB;
         /* padding: 2%; */
     }
     .action-head {
@@ -217,22 +217,22 @@ span, .overlay-text {
         text-align: center;
     }
     .action-badge {
-        color: #fff;
-        background-color: #1e3f6a;
-        border: 1px solid #1e3f6a;
+        color: #FFFFFF;
+        background-color: #05355A;
+        border: 1px solid #05355A;
         padding: 1% 4%;
     }
     .actions {
         padding: 3%;
     }
     .action-title {
-        color: #1e3f6a;
+        color: #05355A;
         font-weight: bold;
         margin: 2%;
         text-align: center;
     }
     .action-description {
-        color: #1e3f6a;
+        color: #05355A;
         text-align: center;
     }
 }
@@ -242,24 +242,24 @@ span, .overlay-text {
 
 @media only screen  and (min-width : 1224px) {
     .what-we-do {
-        background-color: #1e3f6a;
+        background-color: #05355A;
         padding: 5%;
     }
     .wedo-wrapper {
         text-align: left;
     }
     .wedo-badge {
-        background-color: #fff;
-        border: #fff;
-        color: #1e3f6a;
+        background-color: #FFFFFF;
+        border: #FFFFFF;
+        color: #05355A;
         padding: 1% 4%;
     }
     .wedo-head-text {
-        color: #fff;
+        color: #FFFFFF;
         margin-top: 2%;
     }
     .do-items {
-        background-color: #fff;
+        background-color: #FFFFFF;
         margin: 5% 2%;
         padding: 3%;
     }
@@ -270,13 +270,13 @@ span, .overlay-text {
     }
     .item-title {
         margin-top: 10px;
-        color: #1e3f6a;
+        color: #05355A;
         font-weight: bold;
         font-size: 1.5rem;
         text-align: center;
     }
     .item-description {
-        color:  #1e3f6a;
+        color:  #05355A;
         text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -290,36 +290,36 @@ span, .overlay-text {
         margin-top: 5%;
     }
     .do-read-more {
-        background-color: #9ae7a7;
-        border: 1px solid #9ae7a7;
+        background-color: #AEE6AB;
+        border: 1px solid #AEE6AB;
         border-radius: 20px;
         font-weight: bold;
-        color: #1e3f6a;
+        color: #05355A;
         padding: 2% 7%;
     }
 }
 
 @media only screen  and (min-width : 768px) {
     .what-we-do {
-        background-color: #1e3f6a;
+        background-color: #05355A;
         padding: 5%;
     }
     .wedo-wrapper {
         text-align: left;
     }
     .wedo-badge {
-        background-color: #fff;
-        border: #fff;
-        color: #1e3f6a;
+        background-color: #FFFFFF;
+        border: #FFFFFF;
+        color: #05355A;
         padding: 1% 4%;
     }
     .wedo-head-text {
-        color: #fff;
+        color: #FFFFFF;
         margin-top: 3%;
         font-size: 2.0rem;
     }
     .do-items {
-        background-color: #fff;
+        background-color: #FFFFFF;
         margin: 5% 2%;
         padding: 3%;
     }
@@ -330,13 +330,13 @@ span, .overlay-text {
     }
     .item-title {
         margin-top: 10px;
-        color: #1e3f6a;
+        color: #05355A;
         font-weight: bold;
         font-size: 1.5rem;
         text-align: center;
     }
     .item-description {
-        color:  #1e3f6a;
+        color:  #05355A;
         text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -350,35 +350,35 @@ span, .overlay-text {
         margin-top: 5%;
     }
     .do-read-more {
-        background-color: #9ae7a7;
-        border: 1px solid #9ae7a7;
+        background-color: #AEE6AB;
+        border: 1px solid #AEE6AB;
         border-radius: 20px;
         font-weight: bold;
-        color: #1e3f6a;
+        color: #05355A;
         padding: 2% 7%;
     }
 }
 
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .what-we-do {
-        background-color: #1e3f6a;
+        background-color: #05355A;
         padding: 5%;
     }
     .wedo-wrapper {
         text-align: center;
     }
     .wedo-badge {
-        background-color: #fff;
-        border: #fff;
-        color: #1e3f6a;
+        background-color: #FFFFFF;
+        border: #FFFFFF;
+        color: #05355A;
         padding: 1% 4%;
     }
     .wedo-head-text {
-        color: #fff;
+        color: #FFFFFF;
         margin-top: 2%;
     }
     .do-items {
-        background-color: #fff;
+        background-color: #FFFFFF;
         margin: 5% 2%;
         padding: 3%;
     }
@@ -389,13 +389,13 @@ span, .overlay-text {
     }
     .item-title {
         margin-top: 10px;
-        color: #1e3f6a;
+        color: #05355A;
         font-weight: bold;
         font-size: 1.5rem;
         text-align: center;
     }
     .item-description {
-        color:  #1e3f6a;
+        color:  #05355A;
         text-align: center;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -409,11 +409,11 @@ span, .overlay-text {
         margin-top: 5%;
     }
     .do-read-more {
-        background-color: #9ae7a7;
-        border: 1px solid #9ae7a7;
+        background-color: #AEE6AB;
+        border: 1px solid #AEE6AB;
         border-radius: 20px;
         font-weight: bold;
-        color: #1e3f6a;
+        color: #05355A;
         padding: 2% 7%;
     }
 }
@@ -432,7 +432,7 @@ span, .overlay-text {
         padding: 10% 15%;
     }
     .text-part {
-        color: #fff;
+        color: #FFFFFF;
         text-transform: uppercase;
     }
     .action-btn-wrapper {
@@ -440,43 +440,43 @@ span, .overlay-text {
         text-align: center;
     }
     .take-action-badge {
-        background-color: #9ae7a7;
-        border: 1px solid #9ae7a7;
+        background-color: #AEE6AB;
+        border: 1px solid #AEE6AB;
         border-radius: 20px;
         font-weight: bold;
-        color: #1e3f6a;
+        color: #05355A;
         padding: 2% 7%;
     }
     .do-you-btn-wrapper {
         text-align: center;
     }
     .do-you-know-badge {
-        background-color: #1e3f6a;
-        border: 1px solid #1e3f6a;
-        color: #fff;
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #FFFFFF;
         text-transform: uppercase;
         padding: 3% 10%;
     }
     .do-u-know-item {
-        background-color: #fff;
+        background-color: #FFFFFF;
         margin: 3%;
         margin-bottom: 7%;
         padding: 5%;
     }
     .dou-know-title {
-        color: #1e3f6a;
+        color: #05355A;
         font-size: 1.5rem;
         font-weight: bold;
     }
     .dou-know-description {
-        color: #1e3f6a;
+        color: #05355A;
         padding-left: 5%;
         padding: 3%;
         font-size: 1.1rem;
     }
     .social-icons {
-        background-color: #9ae7a7;
-        color: #1e3f6a;
+        background-color: #AEE6AB;
+        color: #05355A;
         margin: 25% 2%;
         font-weight: bold;
         font-size: 1rem;
@@ -497,7 +497,7 @@ span, .overlay-text {
         padding: 10% 6%;
     }
     .text-part {
-        color: #fff;
+        color: #FFFFFF;
         text-transform: uppercase;
     }
     .action-btn-wrapper {
@@ -505,43 +505,43 @@ span, .overlay-text {
         text-align: center;
     }
     .take-action-badge {
-        background-color: #9ae7a7;
-        border: 1px solid #9ae7a7;
+        background-color: #AEE6AB;
+        border: 1px solid #AEE6AB;
         border-radius: 20px;
         font-weight: bold;
-        color: #1e3f6a;
+        color: #05355A;
         padding: 2% 7%;
     }
     .do-you-btn-wrapper {
         text-align: center;
     }
     .do-you-know-badge {
-        background-color: #1e3f6a;
-        border: 1px solid #1e3f6a;
-        color: #fff;
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #FFFFFF;
         text-transform: uppercase;
         padding: 3% 10%;
     }
     .do-u-know-item {
-        background-color: #fff;
+        background-color: #FFFFFF;
         margin: 3%;
         margin-bottom: 7%;
         padding: 5%;
     }
     .dou-know-title {
-        color: #1e3f6a;
+        color: #05355A;
         font-size: 1.5rem;
         font-weight: bold;
     }
     .dou-know-description {
-        color: #1e3f6a;
+        color: #05355A;
         padding-left: 5%;
         padding: 3%;
         font-size: 1.1rem;
     }
     .social-icons {
-        background-color: #9ae7a7;
-        color: #1e3f6a;
+        background-color: #AEE6AB;
+        color: #05355A;
         margin: 25% 2%;
         font-weight: bold;
         font-size: 1rem;
@@ -562,7 +562,7 @@ span, .overlay-text {
         padding: 10% 6%;
     }
     .text-part {
-        color: #fff;
+        color: #FFFFFF;
         text-transform: uppercase;
     }
     .action-btn-wrapper {
@@ -570,11 +570,11 @@ span, .overlay-text {
         text-align: center;
     }
     .take-action-badge {
-        background-color: #9ae7a7;
-        border: 1px solid #9ae7a7;
+        background-color: #AEE6AB;
+        border: 1px solid #AEE6AB;
         border-radius: 20px;
         font-weight: bold;
-        color: #1e3f6a;
+        color: #05355A;
         padding: 2% 7%;
     }
     .do-you-btn-wrapper {
@@ -582,32 +582,32 @@ span, .overlay-text {
         margin-bottom: 10%;
     }
     .do-you-know-badge {
-        background-color: #1e3f6a;
-        border: 1px solid #1e3f6a;
-        color: #fff;
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #FFFFFF;
         text-transform: uppercase;
         padding: 3% 10%;
     }
     .do-u-know-item {
-        background-color: #fff;
+        background-color: #FFFFFF;
         
         margin-bottom: 7%;
         padding: 5%;
     }
     .dou-know-title {
-        color: #1e3f6a;
+        color: #05355A;
         font-size: 1.5rem;
         font-weight: bold;
     }
     .dou-know-description {
-        color: #1e3f6a;
+        color: #05355A;
         padding-left: 5%;
         padding: 3%;
         font-size: 1.1rem;
     }
     .social-icons {
-        background-color: #9ae7a7;
-        color: #1e3f6a;
+        background-color: #AEE6AB;
+        color: #05355A;
         margin: 5% 2%;
         font-weight: bold;
         font-size: 1rem;
@@ -621,17 +621,34 @@ span, .overlay-text {
 .article-part {
     padding: 5%;
 }
+.slider {
+    margin-top: 20%;
+}
+.carousel-item {
+    background-color: #05355A;
+    padding: 7% 10%;
+}
+.carousel-title {
+    color: #FFFFFF;
+}
+.carousel-description {
+    margin-top: 10%;
+    color: #FFFFFF;
+}
+.article-img {
+    height: 300px;
+}
 .readmore-wrapper {
     text-align: center;
     margin: 5%;
     margin-top: 3%;
 }
 .read-more {
-    background-color: #9ae7a7;
-    border: 1px solid #9ae7a7;
+    background-color: #AEE6AB;
+    border: 1px solid #AEE6AB;
     padding: 1% 3%;
     border-radius: 10px;
-    color: #1e3f6a;
+    color: #05355A;
     font-weight: bold;
 }
 .article-wrapper {
@@ -639,10 +656,10 @@ span, .overlay-text {
     margin: 2%;
 }
 .article-badge {
-    background-color: #1e3f6a;
-    border: 1px solid #1e3f6a;
+    background-color: #05355A;
+    border: 1px solid #05355A;
     padding: 2% 7%;
-    color: #fff;
+    color: #FFFFFF;
 }
 .art-img-part {
     text-align: center;
@@ -654,20 +671,20 @@ span, .overlay-text {
 
 /* pledge starts */
 .pledge-part {
-    background-color: #9ae7a7;
-    border-top: 1px solid #1e3f6a;;
-    border-bottom: 1px solid #1e3f6a;;
+    background-color: #AEE6AB;
+    border-top: 1px solid #05355A;;
+    border-bottom: 1px solid #05355A;;
     padding: 5% 10%;
 }
 .pledge-description {
-    color: #1e3f6a;
+    color: #05355A;
 }
 .btn-wrapper {
     text-align: center;
     margin: 2%;
 }
 .email-input {
-    background-color: #fff;
+    background-color: #FFFFFF;
     border: 1px solid gray;
     /* font-size: 24px; */
     border-radius: 10px;
@@ -675,10 +692,10 @@ span, .overlay-text {
     margin-top: 3%;
 }
 .pledge-button {
-    background-color: #1e3f6a;
-    border: 1px solid #1e3f6a;
+    background-color: #05355A;
+    border: 1px solid #05355A;
     font-weight: 600;
-    color: #fff;
+    color: #FFFFFF;
     border-radius: 20px;
     padding: 1% 5%;
     margin-top: 3%;
