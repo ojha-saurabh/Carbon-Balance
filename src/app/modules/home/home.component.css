@@ -624,6 +624,7 @@ span, .overlay-text {
 .readmore-wrapper {
     text-align: center;
     margin: 5%;
+    margin-top: 3%;
 }
 .read-more {
     background-color: #9ae7a7;
