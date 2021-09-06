@@ -3,7 +3,7 @@
     border-radius:50px;
     display: inline-block;
     text-align: center;
-    color:hsl(256, 57%, 17%);
+    color:#05355A;
     padding: 3px 19px 6px;
 }
 
@@ -15,7 +15,7 @@ header {
 .site-name{
   margin-top: -8px;
   font-size: 28px;
-  color: hsl(256, 57%, 17%);
+  color: #05355A
 }
 
   @media screen and (max-width: 600px) {

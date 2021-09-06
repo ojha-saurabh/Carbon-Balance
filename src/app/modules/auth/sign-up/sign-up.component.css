@@ -8,7 +8,7 @@
    }
 
 .white-bg {
-    background-color: #fff;
+    background-color: #FFFFFF;
     margin-left: 25%;
     margin-right: 25%;
 }
@@ -44,27 +44,12 @@
 }
 
 .section-text{
-    color: #fff;
+    color: #FFFFFF;
 }
 
 .box-text{
     color: hsl(256, 63%, 28%);
     font-weight: bolder;
-}
-
-@media screen and (max-width: 600px) {
-    .white-bg {
-        background-color: #fff;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
-    .login-form {
-        /* background-color: #fff; */
-        margin-left: 5%;
-        margin-right: 5%;
-        opacity: 0.9;
-    }
 }
 
 .example-form {
@@ -82,12 +67,12 @@
 
   .svg-text{
       font-size: 20px;
-      color: #fff;
+      color: #FFFFFF;
       font-weight: bolder;
   }
 
   .signup-text {
-    color: #fff;
+    color: #FFFFFF;
 }
 
 .btn-info {
@@ -103,11 +88,45 @@
       border-radius:50px;
       display: inline-block;
       text-align: center;
-      color:#fff;
+      color:#FFFFFF;
       padding: 3px 60px 6px;
   }
   .example-margin {        
-      color: #fff;
+      color: #FFFFFF;
+    }
+
+    .instruction {
+        color: rgb(112, 223, 112);
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .white-bg {
+            background-color: #fff;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    
+        .login-form {
+            /* background-color: #fff; */
+            margin-left: 5%;
+            margin-right: 5%;
+            opacity: 0.9;
+        }
+    
+        .btn-sign-in{
+            background-color: hsl(256, 57%, 17%);
+            padding: 7px 0px ;
+            width: 24% !important;
+            margin-left: 36%;
+            margin-right: 38%;
+            position: absolute;
+            margin-top: -22px;
+        }
+
+        .overlay-text{
+            text-align: center;
+        }
     }
 
   
