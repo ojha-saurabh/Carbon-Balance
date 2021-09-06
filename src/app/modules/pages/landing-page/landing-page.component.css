@@ -1,0 +1,217 @@
+/* banner starts */
+.banner {
+    text-align: center;
+    background-color: #05355A;
+    padding: 0 5% 3%;
+}
+.banner-img {
+    border: 5px solid #AEE6AB;
+    border-radius: 20px;
+    background-size: cover;
+    width: 100%;
+}
+.weclome-text {
+    margin-top: 3%;
+    color: #FFFFFF;
+}
+/* banner ends */
+
+/* score starts */
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .score {
+        background-color: #AEE6AB;
+        color: #05355A;
+        padding: 5%;
+    }
+    .score-head {
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 1%;
+    }
+    .score-list {
+        font-size: 1.5rem;
+    }
+    .carbon-offset-link, a {
+        margin-top: 5%;
+        color: #05355A;
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+}
+@media only screen  and (min-width : 768px) {
+    .score {
+        background-color: #AEE6AB;
+        color: #05355A;
+        padding: 5% 15%;
+    }
+    .score-head {
+        font-weight: bold;
+        font-size: 1.8rem;
+        margin-bottom: 1%;
+    }
+    .score-list {
+        font-size: 1.5rem;
+    }
+    .carbon-offset-link {
+        margin-top: 5%;
+    }
+    .carbon-offset-link {
+        margin-top: 5%;
+        color: #05355A !important;
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+}
+
+/* score ends */
+
+/* donate section starts */
+.donate-section {
+    background-color: #05355A;
+    padding: 3% ;
+    color: #FFFFFF;
+    font-size: 1.5rem;
+}
+.footprint-link {
+    margin: 5% 2%;
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+.donate-section-badge {
+    width: 50%;
+    background-color: #AEE6AB;
+    border: 1px solid #AEE6AB;
+    color: #05355A;
+    padding: 0.5% 2%;
+    border-radius: 25px;
+}
+.donate-section-list {
+    margin: 2%;
+}
+.donate-button-wrapper {
+    text-align: center;
+}
+.donate-button {
+    background-color: #AEE6AB;
+    border: 1px solid #AEE6AB;
+    color: #05355A;
+    padding: 1% 10%;
+    border-radius: 25px;
+    font-weight: bold;
+}
+/* donate section ends */
+
+/* action starts */
+
+@media only screen  and (min-width : 1224px) {
+    .action-section {
+        background-color: #AEE6AB;
+        /* padding: 2%; */
+    }
+    .action-head {
+        margin-top: -2% !important;
+    }
+    .action-wrapper {
+        text-align: center;
+    }
+    .action-badge {
+        color: #FFFFFF;
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        padding: 1% 4%;
+    }
+    .actions {
+        padding: 3%;
+    }
+    .action-title {
+        color: #05355A;
+        font-weight: bold;
+        margin-bottom: 2%;
+    }
+    .action-description {
+        color: #05355A;
+    }
+}
+
+@media only screen  and (min-width : 768px) {
+    .action-section {
+        background-color: #AEE6AB;
+        /* padding: 2%; */
+    }
+    .action-head {
+        margin-top: -2% !important;
+    }
+    .action-wrapper {
+        text-align: center;
+    }
+    .action-badge {
+        color: #FFFFFF;
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        padding: 1% 4%;
+    }
+    .actions {
+        padding: 3%;
+    }
+    .action-title {
+        color: #05355A;
+        font-weight: bold;
+        margin-bottom: 2%;
+    }
+    .action-description {
+        color: #05355A;
+    }
+}
+
+@media only screen and (min-width : 320px){
+    .action-section {
+        background-color: #AEE6AB;
+        /* padding: 2%; */
+    }
+    .action-head {
+        margin-top: -2% !important;
+    }
+    .action-wrapper {
+        text-align: center;
+    }
+    .action-badge {
+        color: #FFFFFF;
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        padding: 1% 4%;
+    }
+    .actions {
+        padding: 3%;
+    }
+    .action-title {
+        color: #05355A;
+        font-weight: bold;
+        margin: 2%;
+        text-align: center;
+    }
+    .action-description {
+        color: #05355A;
+        text-align: center;
+    }
+}
+/* action ends */
+
+/* post and gallery starts */
+.gallery-section {
+    background-color: #05355A;
+    padding: 3%;
+}
+.post-head {
+    color: #FFFFFF;
+}
+.post-content {
+    margin: 1%;
+    padding: 5%;
+    color: #05355A;
+    background-color: #bce7ba;
+}
+.post-link {
+    color: #05355A;
+    text-decoration: underline;
+}
+/* post and gallery ends */
