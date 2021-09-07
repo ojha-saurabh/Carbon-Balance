@@ -30,12 +30,14 @@ span, .overlay-text {
     background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
     /* background-size: cover; */
     padding: 5%;
+    background-position: right;
+    padding-bottom: 3em;
 }
 @media only screen and (min-width : 320px){
     /* Styles */
     .left-banner-part {
         width: 100%;
-        background-color: #FFFFFF;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 100%);
         padding: 7%;
     }
     .issue-wrapper {
@@ -45,9 +47,9 @@ span, .overlay-text {
         position: absolute;
         color: #FFFFFF;
         background-color: #05355A;
-        padding: 1% 5%;
-        top: -2%;
-    
+        padding: 0.4em 3em;
+        top: -5%;
+        font-size: 1.2em;
     }
     .left-text-part {
         color: #05355A;
@@ -66,15 +68,16 @@ span, .overlay-text {
         right: 3%;
     }
     .banner-footer {
-        margin-top: 20%;
-        margin-bottom: 10%;
+        /* margin-top: 20%;*/
+        margin-bottom: 2em; 
     }
 }
 @media only screen and (min-width : 768px) {
     /* Styles */
     .left-banner-part {
-        background-color: #FFFFFF;
-        padding: 5%;
+        /* background-color: #FFFFFF;
+        padding: 5%; */
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 100%);
     }
     .issue-wrapper {
         text-align: center;
@@ -102,13 +105,13 @@ span, .overlay-text {
         right: 3%;
     }
     .banner-footer {
-        margin-top: 40%;
-        margin-bottom: 0%;
+        /* margin-top: 40%;
+        margin-bottom: 0%; */
     }
 }
 @media only screen  and (min-width : 1224px) {
     .left-banner-part {
-        background-color: #FFFFFF;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 100%);
         padding: 5%;
     }
     .issue-wrapper {
@@ -137,7 +140,7 @@ span, .overlay-text {
         right: 3%;
     }
     .banner-footer {
-        margin-top: 40%;
+        /* margin-top: 40%; */
         margin-bottom: 0%;
     }
 }
@@ -161,6 +164,7 @@ span, .overlay-text {
         background-color: #05355A;
         border: 1px solid #05355A;
         padding: 1% 4%;
+       
     }
     .actions {
         padding: 3%;
@@ -190,7 +194,8 @@ span, .overlay-text {
         color: #FFFFFF;
         background-color: #05355A;
         border: 1px solid #05355A;
-        padding: 1% 4%;
+        /* padding: 1% 4%; */
+        margin: 0.7em !important;
     }
     .actions {
         padding: 3%;
@@ -220,7 +225,8 @@ span, .overlay-text {
         color: #FFFFFF;
         background-color: #05355A;
         border: 1px solid #05355A;
-        padding: 1% 4%;
+        padding: 0.5em 2em;
+        margin: -2.3em;
     }
     .actions {
         padding: 3%;
@@ -384,8 +390,10 @@ span, .overlay-text {
     }
     .item-image {
         width: 100%;
-        height: 13rem;
-        margin-top: -7%;
+        /* height: 13rem; */
+        margin-top: -9%;
+        text-align: center;
+        padding: 0 0.6em;
     }
     .item-title {
         margin-top: 10px;

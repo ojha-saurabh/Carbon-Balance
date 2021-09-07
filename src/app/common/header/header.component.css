@@ -4,16 +4,27 @@
     display: inline-block;
     text-align: center;
     color:#05355A;
-    padding: 3px 19px 6px;
+    padding: 6px 19px;
+    text-transform: uppercase;
 }
 
 
 header {
     background-color: rgb(243, 247, 250);
+    position: fixed;
+    width: 100%;
+    z-index: 99;
 }
 
+.navbar-collapse {
+  padding-top: .5rem;
+}
+.promo-action {
+  padding-top: 0.51em;
+}
 .site-name{
-  margin-top: -8px;
+  /* margin-top: -8px; */
+  margin-right: 2em;
   font-size: 28px;
   color: #05355A
 }
@@ -30,7 +41,7 @@ header {
     } */
 
     ul > li > a {
-      padding: 30px;
+      padding: 15px;
       font-weight: bold;
     }
   }
