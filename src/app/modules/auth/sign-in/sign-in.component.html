@@ -52,15 +52,18 @@
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                   </div> -->
                   <form class="example-form">
-                    <mat-form-field class="example-full-width" appearance="fill">
-                      <mat-label>EMAIL</mat-label>
-                      <input matInput placeholder="Enter email" value="">
-                    </mat-form-field>
-                  
-                    <mat-form-field class="example-full-width" appearance="fill">
-                        <mat-label>Password</mat-label>
-                        <input matInput placeholder="Enter password" value="">
-                    </mat-form-field>                                      
+                    <div class="form-row">
+                        <div class="form-group col-xs-12 col-md-12 col-sm-12">
+                            <label for="inputEmail4">EMAIL</label>
+                            <input type="text" class="form-control" placeholder="Enter mail" id="inputEmail4">
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-xs-12 col-md-12 col-sm-12">
+                            <label for="inputEmail4">PASSWORD</label>
+                            <input type="text" class="form-control" placeholder="Enter password" id="inputEmail4">
+                        </div>
+                    </div>                                      
                     <button type="button" class="btn btn-info float-left border-0 text-span mt-4">Login</button>                    
                   </form>
                   <a routerLink="/auth/register" class="float-right instruction"><i>Forget Password / Reset</i></a>         

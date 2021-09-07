@@ -99,6 +99,30 @@
         color: rgb(112, 223, 112);
     }
 
+    input {
+        border: 0;
+        background-color: transparent;
+        border-bottom: 1px solid #AEE6AB;
+        border-radius: 0px;
+    }
+    input:focus {
+        border: 0;
+        background-color: transparent;
+        border-bottom: 1px solid #AEE6AB;
+        border-radius: 0px;
+      }
+    
+      label {
+        color: #FFFFFF;
+        font-size: 1 em;
+        font-family: 'Roboto';
+    }
+
+    .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #CCC;
+            opacity: 1; /* Firefox */
+    }
+
 
       @media screen and (max-width: 600px) {
         .white-bg {
