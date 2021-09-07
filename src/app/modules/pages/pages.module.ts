@@ -5,8 +5,8 @@ import { PagesRoutingModule } from './pages-routing.module';
 import { PagesComponent } from './pages.component';
 import { CalculateCarbonComponent } from './calculate-carbon/calculate-carbon.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
-<<<<<<< HEAD
 import { TakeActionComponent } from './take-action/take-action.component';
+import { CreateProfileComponent } from './create-profile/create-profile.component';
 
 
 @NgModule({
@@ -14,15 +14,9 @@ import { TakeActionComponent } from './take-action/take-action.component';
     PagesComponent,
     CalculateCarbonComponent,
     LandingPageComponent,
-    TakeActionComponent
+    TakeActionComponent,
+    CreateProfileComponent
   ],
-=======
-import { CreateProfileComponent } from './create-profile/create-profile.component';
-
-
-@NgModule({
-  declarations: [PagesComponent, CalculateCarbonComponent, LandingPageComponent, CreateProfileComponent],
->>>>>>> saurabh
   imports: [
     CommonModule,
     PagesRoutingModule

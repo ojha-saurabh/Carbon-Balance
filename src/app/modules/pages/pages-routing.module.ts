@@ -7,15 +7,12 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { PagesComponent } from './pages.component';
 import { TakeActionComponent } from './take-action/take-action.component';
 
-<<<<<<< HEAD
 const routes: Routes = [
   { path: 'caculate-co2', component: CalculateCarbonComponent },
   { path: 'landing-page', component: LandingPageComponent },
-  { path: 'take-action', component: TakeActionComponent }
+  { path: 'take-action', component: TakeActionComponent },
+  {path: 'create-profile', component: CreateProfileComponent}
 ];
-=======
-const routes: Routes = [{ path: 'caculate-co2', component: CalculateCarbonComponent }, { path: 'landing-page', component: LandingPageComponent }, {path: 'create-profile', component: CreateProfileComponent}];
->>>>>>> saurabh
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
