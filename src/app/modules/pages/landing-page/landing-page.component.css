@@ -52,7 +52,7 @@
     .score-list {
         font-size: 1.5rem;
     }
-    .carbon-offset-link {
+    .carbon-offset-link-space {
         margin-top: 5%;
     }
     .carbon-offset-link {
@@ -73,7 +73,7 @@
     font-size: 1.5rem;
 }
 .footprint-link {
-    margin: 5% 2%;
+    margin: 5% 4%;
     color: #FFFFFF;
     text-decoration: underline;
 }
@@ -98,6 +98,10 @@
     padding: 1% 10%;
     border-radius: 25px;
     font-weight: bold;
+    margin-bottom: 10%;
+}
+.carousel-indicators {
+    color: blue;
 }
 /* donate section ends */
 
@@ -203,6 +207,7 @@
 }
 .post-head {
     color: #FFFFFF;
+    margin: 2%;
 }
 .post-content {
     margin: 1%;
@@ -213,5 +218,10 @@
 .post-link {
     color: #05355A;
     text-decoration: underline;
+}
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .gallery-head {
+        font-size: 1.8rem;
+    }
 }
 /* post and gallery ends */
