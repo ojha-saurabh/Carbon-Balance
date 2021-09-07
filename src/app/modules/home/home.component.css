@@ -181,6 +181,9 @@ span, .overlay-text {
 /* action starts */
 
 @media only screen  and (min-width : 1224px) {
+    .action-items {
+        padding: 2% 5%;
+    }
     .action-section {
         background-color: #AEE6AB;
         /* padding: 2%; */
@@ -212,6 +215,9 @@ span, .overlay-text {
 }
 
 @media only screen  and (min-width : 768px) {
+    .action-items {
+        padding: 2% 5%;
+    }
     .action-section {
         background-color: #AEE6AB;
         /* padding: 2%; */
@@ -243,6 +249,9 @@ span, .overlay-text {
 }
 
 @media only screen and (min-width : 320px){
+    .action-items {
+        padding: 5%;
+    }
     .action-section {
         background-color: #AEE6AB;
         /* padding: 2%; */
@@ -519,13 +528,21 @@ span, .overlay-text {
         font-size: 1.1rem;
     }
     .social-icons {
-        background-color: #AEE6AB;
+        /* background-color: #AEE6AB;
         color: #05355A;
         margin: 25% 2%;
         font-weight: bold;
         font-size: 1rem;
         text-align: center;
+        border-radius: 70px; */
+        background-color: #AEE6AB;
+        color: #05355A;
+        margin: 15% 2%;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
         border-radius: 70px;
+        padding: 10%;
     }
 }
 
@@ -586,11 +603,12 @@ span, .overlay-text {
     .social-icons {
         background-color: #AEE6AB;
         color: #05355A;
-        margin: 25% 2%;
+        margin: 15% 2%;
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
         border-radius: 70px;
+        padding: 10%;
     }
 }
 
@@ -655,11 +673,12 @@ span, .overlay-text {
     .social-icons {
         background-color: #AEE6AB;
         color: #05355A;
-        margin: 5% 2%;
+        margin: 3% 42%;
         font-weight: bold;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-align: center;
         border-radius: 70px;
+        padding: 1% 0%;
     }
 }
 /* dou know ends */

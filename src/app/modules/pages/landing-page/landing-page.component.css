@@ -5,8 +5,9 @@
     padding: 0 5% 3%;
 }
 .banner-img {
-    border: 5px solid #AEE6AB;
-    border-radius: 20px;
+    /* border: 5px solid #AEE6AB; */
+    /* border-radius: 20px; */
+    /* background-image: url("./../../../../assets/pictures/Protest.jpg"); */
     background-size: cover;
     width: 100%;
 }
@@ -108,6 +109,9 @@
 /* action starts */
 
 @media only screen  and (min-width : 1224px) {
+    .action-items {
+        padding: 2% 5%;
+    }
     .action-section {
         background-color: #AEE6AB;
         /* padding: 2%; */
@@ -123,6 +127,7 @@
         background-color: #05355A;
         border: 1px solid #05355A;
         padding: 1% 4%;
+       
     }
     .actions {
         padding: 3%;
@@ -138,6 +143,9 @@
 }
 
 @media only screen  and (min-width : 768px) {
+    .action-items {
+        padding: 2% 5%;
+    }
     .action-section {
         background-color: #AEE6AB;
         /* padding: 2%; */
@@ -152,7 +160,8 @@
         color: #FFFFFF;
         background-color: #05355A;
         border: 1px solid #05355A;
-        padding: 1% 4%;
+        /* padding: 1% 4%; */
+        margin: 0.7em !important;
     }
     .actions {
         padding: 3%;
@@ -168,6 +177,9 @@
 }
 
 @media only screen and (min-width : 320px){
+    .action-items {
+        padding: 5%;
+    }
     .action-section {
         background-color: #AEE6AB;
         /* padding: 2%; */
@@ -182,7 +194,8 @@
         color: #FFFFFF;
         background-color: #05355A;
         border: 1px solid #05355A;
-        padding: 1% 4%;
+        padding: 0.5em 2em;
+        margin: -2.3em;
     }
     .actions {
         padding: 3%;
@@ -218,6 +231,10 @@
 .post-link {
     color: #05355A;
     text-decoration: underline;
+}
+.post-img {
+    height: 100px;
+    margin: 1.5% 0.5%;
 }
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .gallery-head {
