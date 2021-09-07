@@ -34,6 +34,12 @@ span, .overlay-text {
     padding-bottom: 3em;
 }
 @media only screen and (min-width : 320px){
+    .banner {
+        background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
+        /* background-size: cover; */
+        padding: 5%;
+        background-size: cover;
+    }
     /* Styles */
     .left-banner-part {
         width: 100%;
@@ -71,8 +77,16 @@ span, .overlay-text {
         /* margin-top: 20%;*/
         margin-bottom: 2em; 
     }
+    .main-baneer-head {
+        font-size: 2.0rem;
+    }
 }
 @media only screen and (min-width : 768px) {
+    .banner {
+        background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
+        /* background-size: cover; */
+        padding: 5%;
+    }
     /* Styles */
     .left-banner-part {
         /* background-color: #FFFFFF;
@@ -104,12 +118,21 @@ span, .overlay-text {
         position: relative;
         right: 3%;
     }
+    .right-text {
+        font-size: 3.5rem !important;
+        text-transform: uppercase;
+    }
     .banner-footer {
         /* margin-top: 40%;
         margin-bottom: 0%; */
     }
 }
 @media only screen  and (min-width : 1224px) {
+    .banner {
+        background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
+        /* background-size: cover; */
+        padding: 5%;
+    }
     .left-banner-part {
         background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 100%);
         padding: 5%;
@@ -128,6 +151,9 @@ span, .overlay-text {
         color: #05355A;
         padding: 8% 5% 0%;
     }
+    .main-baneer-head {
+        font-size: 2.5rem;
+    }
     .banner-link {
         margin-top: 5rem;
         text-decoration: underline;
@@ -138,6 +164,12 @@ span, .overlay-text {
         font-family: cursive;
         position: relative;
         right: 3%;
+        font-weight: bold;
+        /* font-size: 2.9rem; */
+    }
+    .right-text {
+        font-size: 4.0rem !important;
+        text-transform: uppercase;
     }
     .banner-footer {
         /* margin-top: 40%; */
@@ -382,6 +414,10 @@ span, .overlay-text {
     .wedo-head-text {
         color: #FFFFFF;
         margin-top: 2%;
+        margin: 2%;
+    }
+    .wedo-main-head-text {
+        font-size: 2.0rem;
     }
     .do-items {
         background-color: #FFFFFF;
@@ -569,6 +605,9 @@ span, .overlay-text {
         width: 100%;
         padding: 10% 6%;
     }
+    .dou-know-head-text {
+        font-size: 2.0rem;
+    }
     .text-part {
         color: #FFFFFF;
         text-transform: uppercase;
@@ -626,15 +665,31 @@ span, .overlay-text {
 /* dou know ends */
 
 /* article starts */
-.article-part {
+
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .article-part {
+        padding: 5%;
+        margin-top: -11% !important;
+    }
+    .article-image {
+        /* height: 300px; */
+        margin-left: 5%;
+    }
+}
+.carousel-left-part {
+    background-color: #05355A;
     padding: 5%;
 }
-.slider {
-    margin-top: 20%;
+.article-part {
+    padding: 5%;
+    margin-top: -8%;
 }
+/* .slider {
+    margin-top: 20%;
+} */
 .carousel-item {
-    background-color: #05355A;
-    padding: 7% 10%;
+    /* background-color: #05355A; */
+    padding: 5% 0%;
 }
 .carousel-title {
     color: #FFFFFF;
@@ -666,7 +721,7 @@ span, .overlay-text {
 .article-badge {
     background-color: #05355A;
     border: 1px solid #05355A;
-    padding: 2% 7%;
+    padding: 1% 5%;
     color: #FFFFFF;
 }
 .art-img-part {
@@ -674,6 +729,7 @@ span, .overlay-text {
 }
 .article-image {
     width: 90%;
+    margin: 0% 5%;
 }
 /* article ends */
 
@@ -707,5 +763,10 @@ span, .overlay-text {
     border-radius: 20px;
     padding: 1% 5%;
     margin-top: 3%;
+}
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .pledge-text {
+        font-size: 2.0rem;
+    }
 }
 /* pledge ends */
