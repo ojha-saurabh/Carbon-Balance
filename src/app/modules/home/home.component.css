@@ -30,12 +30,20 @@ span, .overlay-text {
     background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
     /* background-size: cover; */
     padding: 5%;
+    background-position: right;
+    padding-bottom: 3em;
 }
 @media only screen and (min-width : 320px){
+    .banner {
+        background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
+        /* background-size: cover; */
+        padding: 5%;
+        background-size: cover;
+    }
     /* Styles */
     .left-banner-part {
         width: 100%;
-        background-color: #FFFFFF;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 100%);
         padding: 7%;
     }
     .issue-wrapper {
@@ -45,9 +53,9 @@ span, .overlay-text {
         position: absolute;
         color: #FFFFFF;
         background-color: #05355A;
-        padding: 1% 5%;
-        top: -2%;
-    
+        padding: 0.4em 3em;
+        top: -5%;
+        font-size: 1.2em;
     }
     .left-text-part {
         color: #05355A;
@@ -66,15 +74,24 @@ span, .overlay-text {
         right: 3%;
     }
     .banner-footer {
-        margin-top: 20%;
-        margin-bottom: 10%;
+        /* margin-top: 20%;*/
+        margin-bottom: 2em; 
+    }
+    .main-baneer-head {
+        font-size: 2.0rem;
     }
 }
 @media only screen and (min-width : 768px) {
+    .banner {
+        background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
+        /* background-size: cover; */
+        padding: 5%;
+    }
     /* Styles */
     .left-banner-part {
-        background-color: #FFFFFF;
-        padding: 5%;
+        /* background-color: #FFFFFF;
+        padding: 5%; */
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 100%);
     }
     .issue-wrapper {
         text-align: center;
@@ -101,14 +118,23 @@ span, .overlay-text {
         position: relative;
         right: 3%;
     }
+    .right-text {
+        font-size: 3.5rem !important;
+        text-transform: uppercase;
+    }
     .banner-footer {
-        margin-top: 40%;
-        margin-bottom: 0%;
+        /* margin-top: 40%;
+        margin-bottom: 0%; */
     }
 }
 @media only screen  and (min-width : 1224px) {
+    .banner {
+        background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
+        /* background-size: cover; */
+        padding: 5%;
+    }
     .left-banner-part {
-        background-color: #FFFFFF;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 100%);
         padding: 5%;
     }
     .issue-wrapper {
@@ -125,6 +151,9 @@ span, .overlay-text {
         color: #05355A;
         padding: 8% 5% 0%;
     }
+    .main-baneer-head {
+        font-size: 2.5rem;
+    }
     .banner-link {
         margin-top: 5rem;
         text-decoration: underline;
@@ -135,9 +164,15 @@ span, .overlay-text {
         font-family: cursive;
         position: relative;
         right: 3%;
+        font-weight: bold;
+        /* font-size: 2.9rem; */
+    }
+    .right-text {
+        font-size: 4.0rem !important;
+        text-transform: uppercase;
     }
     .banner-footer {
-        margin-top: 40%;
+        /* margin-top: 40%; */
         margin-bottom: 0%;
     }
 }
@@ -161,6 +196,7 @@ span, .overlay-text {
         background-color: #05355A;
         border: 1px solid #05355A;
         padding: 1% 4%;
+       
     }
     .actions {
         padding: 3%;
@@ -190,7 +226,8 @@ span, .overlay-text {
         color: #FFFFFF;
         background-color: #05355A;
         border: 1px solid #05355A;
-        padding: 1% 4%;
+        /* padding: 1% 4%; */
+        margin: 0.7em !important;
     }
     .actions {
         padding: 3%;
@@ -220,7 +257,8 @@ span, .overlay-text {
         color: #FFFFFF;
         background-color: #05355A;
         border: 1px solid #05355A;
-        padding: 1% 4%;
+        padding: 0.5em 2em;
+        margin: -2.3em;
     }
     .actions {
         padding: 3%;
@@ -376,6 +414,10 @@ span, .overlay-text {
     .wedo-head-text {
         color: #FFFFFF;
         margin-top: 2%;
+        margin: 2%;
+    }
+    .wedo-main-head-text {
+        font-size: 2.0rem;
     }
     .do-items {
         background-color: #FFFFFF;
@@ -384,8 +426,10 @@ span, .overlay-text {
     }
     .item-image {
         width: 100%;
-        height: 13rem;
-        margin-top: -7%;
+        /* height: 13rem; */
+        margin-top: -9%;
+        text-align: center;
+        padding: 0 0.6em;
     }
     .item-title {
         margin-top: 10px;
@@ -561,6 +605,9 @@ span, .overlay-text {
         width: 100%;
         padding: 10% 6%;
     }
+    .dou-know-head-text {
+        font-size: 2.0rem;
+    }
     .text-part {
         color: #FFFFFF;
         text-transform: uppercase;
@@ -618,15 +665,31 @@ span, .overlay-text {
 /* dou know ends */
 
 /* article starts */
-.article-part {
+
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .article-part {
+        padding: 5%;
+        margin-top: -11% !important;
+    }
+    .article-image {
+        /* height: 300px; */
+        margin-left: 5%;
+    }
+}
+.carousel-left-part {
+    background-color: #05355A;
     padding: 5%;
 }
-.slider {
-    margin-top: 20%;
+.article-part {
+    padding: 5%;
+    margin-top: -8%;
 }
+/* .slider {
+    margin-top: 20%;
+} */
 .carousel-item {
-    background-color: #05355A;
-    padding: 7% 10%;
+    /* background-color: #05355A; */
+    padding: 5% 0%;
 }
 .carousel-title {
     color: #FFFFFF;
@@ -658,7 +721,7 @@ span, .overlay-text {
 .article-badge {
     background-color: #05355A;
     border: 1px solid #05355A;
-    padding: 2% 7%;
+    padding: 1% 5%;
     color: #FFFFFF;
 }
 .art-img-part {
@@ -666,6 +729,7 @@ span, .overlay-text {
 }
 .article-image {
     width: 90%;
+    margin: 0% 5%;
 }
 /* article ends */
 
@@ -699,5 +763,10 @@ span, .overlay-text {
     border-radius: 20px;
     padding: 1% 5%;
     margin-top: 3%;
+}
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .pledge-text {
+        font-size: 2.0rem;
+    }
 }
 /* pledge ends */
