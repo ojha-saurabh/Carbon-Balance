@@ -122,10 +122,10 @@ span, .overlay-text {
         font-size: 3.5rem !important;
         text-transform: uppercase;
     }
-    .banner-footer {
-        /* margin-top: 40%;
-        margin-bottom: 0%; */
-    }
+    /* .banner-footer {
+        margin-top: 40%;
+        margin-bottom: 0%;
+    } */
 }
 @media only screen  and (min-width : 1224px) {
     .banner {
@@ -166,6 +166,11 @@ span, .overlay-text {
         right: 3%;
         font-weight: bold;
         /* font-size: 2.9rem; */
+    }
+    .right-head-text-main {
+        margin: 1% 2%;
+        font-size: 3.5rem !important;
+        text-transform: uppercase;
     }
     .right-text {
         font-size: 4.0rem !important;
@@ -232,7 +237,7 @@ span, .overlay-text {
         color: #FFFFFF;
         background-color: #05355A;
         border: 1px solid #05355A;
-        /* padding: 1% 4%; */
+        padding: 1% 4%;
         margin: 0.7em !important;
     }
     .actions {
@@ -248,7 +253,7 @@ span, .overlay-text {
     }
 }
 
-@media only screen and (min-width : 320px){
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px){
     .action-items {
         padding: 5%;
     }

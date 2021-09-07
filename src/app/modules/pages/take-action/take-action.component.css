@@ -1,32 +1,209 @@
 /* action part starts */
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .action-part {
-        margin-top: 19%;
         background-color: #05355A;
+        padding: 3%;
+    }
+    .action-head {
+        color: #FFFFFF;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .action-sub-head {
+        color: #FFFFFF;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .submit-action-wrapper {
+        text-align: center;
+    }
+    .submit-action-button {
+        background-color: #bce7ba;
+        border: 1px solid #bce7ba;
+        color: black;
+        font-weight: bold;
+        padding: 1% 5%;
+        border-radius: 25px;
+        margin: 1%;
+        font-size: 1.3rem;
+    }
+    .checkout-action-link-part {
+        text-align: center;
+    }
+    .checkout-action-link {
+        color: #bce7ba;
+        font-size: 1.4rem;
+        text-decoration: underline;
     }
 }
 @media only screen  and (min-width : 768px) {
     .action-part {
-        margin-top: 11%;
         background-color: #05355A;
+        padding: 3%;
+    }
+    .action-head {
+        color: #FFFFFF;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .action-sub-head {
+        color: #FFFFFF;
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .submit-action-wrapper {
+        text-align: center;
+    }
+    .submit-action-button {
+        background-color: #bce7ba;
+        border: 1px solid #bce7ba;
+        color: black;
+        font-weight: bold;
+        padding: 1% 5%;
+        border-radius: 25px;
+        margin: 1%;
+        font-size: 1.3rem;
+    }
+    .checkout-action-link-part {
+        text-align: center;
+    }
+    .checkout-action-link {
+        color: #bce7ba;
+        font-size: 1.4rem;
+        text-decoration: underline;
     }
 }
 @media only screen  and (min-width : 1224px) {
     .action-part {
-        margin-top: 7%;
         background-color: #05355A;
     }
+}
+.action-question-part {
+    padding: 1% 5%;
+}
+.questions{
+    border-top: 1px solid #AEE6AB;
+    padding: 8px;
+    font-family: initial;
+    color: #FFFFFF;
+} 
+.custom-control > label {
+    color: #AEE6AB;
+}
+.add-question {
+    text-align: end;
+    font-size: 2.5rem;
+    background: transparent;
+}
+.add-question-button {
+    color: #AEE6AB;
+    background-color: #05355A;
+    border: 1px solid #05355A;
 }
 /* action part ends */
 
 /* invite part starts */
 .invite-part {
     background-color: #AEE6AB;
+    padding: 3%;
 }
+.invite-head {
+    color: #05355A;
+    font-size: 2.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+.invite-form-part {
+    padding: 1% 5%;
+}
+.invite-label {
+    color: #05355A;
+    font-size: 1 em;
+    font-family: 'Roboto';
+}
+.invite-input {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px solid #05355A;
+    border-radius: 0px;
+}
+.invite-input:focus {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px solid #05355A;
+    border-radius: 0px;
+}
+.invite-text-box {
+    background-color: #FFFFFF;
+    color: #000000;
+    border: 1px solid #000000;
+    padding: 2%;
+    text-align: center;
+}
+.invite-wrapper {
+    text-align: center;
+}
+.invite-button {
+    background-color: #05355A;
+    border: 1px solid #05355A;
+    color: #AEE6AB;
+    font-weight: bold;
+    border-radius: 25px;
+    margin: 2%;
+    padding: 1% 7%;
+    font-size: 1.5rem;
+}
+
 /* invite part ends */
 
 /* blog part starts */
 .blog-part {
     background-color: #05355A;
+    padding: 3%;
+}
+.blog-head {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    text-align: center;
+}
+.fa-book {
+    color: #AEE6AB;
+}
+.blog-form-part {
+    padding: 1% 5%;
+}
+.blog-label {
+    color: #AEE6AB;
+}
+.blog-input {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px solid #AEE6AB;
+    border-radius: 0px;
+}
+.blog-input:focus {
+    border: 0;
+    background-color: transparent;
+    border-bottom: 2px solid #AEE6AB;
+    border-radius: 0px;
+  }
+.form-button-wrapper {
+    text-align: center;
+}
+.blog-submit-button {
+    background-color: #bce7ba;
+    border: 1px solid #bce7ba;
+    color: black;
+    font-weight: bold;
+    padding: 1% 6%;
+    border-radius: 25px;
+    margin: 1%;
+    font-size: 1.3rem;
+}
+.blog-footer {
+    margin-top: 2%;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 2.0rem;
 }
 /* blog part ends */
