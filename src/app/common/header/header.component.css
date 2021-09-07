@@ -1,5 +1,5 @@
 .text-span{
-    background:rgb(112, 223, 112);
+    background:#AEE6AB;
     border-radius:50px;
     display: inline-block;
     text-align: center;
@@ -29,17 +29,17 @@ header {
   color: #05355A
 }
 
-header {
-  margin-bottom: 10%;
-}
+/* header {
+  margin-bottom: 10% !important;
+} */
 
   @media screen and (max-width: 600px) {
     .navbar-nav{
         text-align: center;
     }
-    header {
+    /* header {
       margin-bottom: 10%;
-    }
+    } */
   }
 
   @media screen and (min-width: 601px) {
