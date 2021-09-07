@@ -69,6 +69,10 @@ h5 {
     color: #AEE6AB;
 }
 
+.custom-control > label {
+    color: #AEE6AB;
+}
+
 @media screen and (max-width: 600px) {
     .questionaire-body{
         margin-left: 5%;
