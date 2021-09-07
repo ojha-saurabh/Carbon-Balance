@@ -1,6 +1,21 @@
 /* action part starts */
-.action-part {
-    background-color: #05355A;
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .action-part {
+        margin-top: 19%;
+        background-color: #05355A;
+    }
+}
+@media only screen  and (min-width : 768px) {
+    .action-part {
+        margin-top: 11%;
+        background-color: #05355A;
+    }
+}
+@media only screen  and (min-width : 1224px) {
+    .action-part {
+        margin-top: 7%;
+        background-color: #05355A;
+    }
 }
 /* action part ends */
 
