@@ -3,8 +3,13 @@
     margin: 0;
     padding: 0;
 }
-html, body { height: 100%; max-width: 100%; overflow-x: hidden; }
-body { font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body { 
+    font-family: 'Permanent Marker', cursive;
+    height: 100%; 
+    max-width: 100%; 
+    overflow-x: hidden;
+}
+/* body { font-family: Roboto, "Helvetica Neue", sans-serif; } */
 
 .wrapper {
     margin-top: 4em;

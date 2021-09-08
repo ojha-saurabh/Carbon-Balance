@@ -25,8 +25,9 @@ header {
 .site-name{
   /* margin-top: -8px; */
   margin-right: 2em;
-  font-size: 28px;
-  color: #05355A
+  font-size: 24px;
+  color: #05355A;
+  text-transform: uppercase;
 }
 
 /* header {

@@ -8,6 +8,7 @@
         color: #FFFFFF;
         font-size: 2.5rem;
         text-align: center;
+        font-weight: bold;
     }
     .action-sub-head {
         color: #FFFFFF;
@@ -45,6 +46,7 @@
         color: #FFFFFF;
         font-size: 2.5rem;
         text-align: center;
+        font-weight: bold;
     }
     .action-sub-head {
         color: #FFFFFF;
@@ -103,13 +105,21 @@
 /* action part ends */
 
 /* invite part starts */
+@media only screen  and (min-width : 768px) {
+    .invite-head {
+        color: #05355A;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: bold;
+    }
+}
 .invite-part {
     background-color: #AEE6AB;
     padding: 3%;
 }
 .invite-head {
     color: #05355A;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     text-align: center;
     font-weight: bold;
 }
@@ -163,8 +173,9 @@
 }
 .blog-head {
     color: #FFFFFF;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     text-align: center;
+    font-weight: bold;
 }
 .fa-book {
     color: #AEE6AB;
@@ -205,5 +216,63 @@
     text-align: center;
     color: #FFFFFF;
     font-size: 2.0rem;
+}
+.upload-img-part {
+    background-color: #bce7ba;
+    color: #05355A;
+    margin: 3.5% 2.5%;
+    padding: 2% 4%;
+}
+.upload-image-head {
+    font-size: 2.0em;
+    text-align: center;
+    font-weight: bold;
+}
+.upload-wrapper {
+    text-align: center;
+    margin: 2%;
+}
+.upload-button {
+    background-color: #05355A;
+    border: 1px solid #05355A;
+    color: #bce7ba;
+    font-weight: bold;
+    padding: 1.5% 15%;
+    border-radius: 25px;
+    font-size: 1.5em;
+}
+.upload-text-1 {
+    font-size: 1.2em;
+}
+.upload-text-2 {
+    font-size: 1.5em;
+}
+@media only screen  and (min-width : 768px) {
+    .upload-image-head {
+        font-size: 2.5em;
+        text-align: center;
+        font-weight: bold;
+    }
+    .blog-head {
+        color: #FFFFFF;
+        font-size: 2.5rem;
+        text-align: center;
+        font-weight: bold;
+    }
+    .upload-img-part {
+        background-color: #bce7ba;
+        color: #05355A;
+        margin: 2.5%;
+        padding: 2% 4%;
+    }
+    .upload-button {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #bce7ba;
+        font-weight: bold;
+        padding: 1% 8%;
+        border-radius: 25px;
+        font-size: 1.5em;
+    }
 }
 /* blog part ends */
