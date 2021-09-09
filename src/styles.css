@@ -4,7 +4,8 @@
     padding: 0;
 }
 html, body { 
-    font-family: 'Permanent Marker', cursive;
+    /* font-family: 'Permanent Marker', cursive; */
+    font-family: Roboto, "Helvetica Neue", sans-serif;
     height: 100%; 
     max-width: 100%; 
     overflow-x: hidden;

@@ -26,11 +26,13 @@
 .overlay-text{
     color: #FFFFFF;
     text-align: right;
-    font-family: cursive;
+    font-family: kalam;
+    font-size: 3.5rem;
+    text-transform: uppercase;
 }
 
 .btn-sign-in {
-    background-color: hsl(256, 57%, 17%);
+    background-color: #05355A;
     padding: 7px 0px;
     width: 15%;    
     margin-left: 42%;
@@ -48,7 +50,7 @@
 }
 
 .box-text{
-    color: hsl(256, 63%, 28%);
+    color: #05355A;
     font-weight: bolder;
 }
 
@@ -65,10 +67,14 @@
     font-size: 16px;
   }
 
+  .social-links {
+    text-decoration: none;
+  }
   .svg-text{
       font-size: 20px;
       color: #fff;
       font-weight: bolder;
+      text-decoration: none;
   }
 
   .signup-text {
@@ -76,7 +82,7 @@
   }
 
   .btn-info {
-        background-color: rgb(119, 228, 115);;
+        background-color: #C1F7D5;
     }
 
     .ng-star-inserted {
@@ -84,31 +90,32 @@
     }
 
     .text-span{
-        background:rgb(112, 223, 112);
+        background:#05355A;
         border-radius:50px;
         display: inline-block;
         text-align: center;
-        color:#fff;
+        color: #C1F7D5;
         padding: 3px 60px 6px;
+        font-weight: bold;
     }
     .example-margin {        
         color: #fff;
       }
 
       .instruction {
-        color: rgb(112, 223, 112);
+        color: #AEE6AB;
     }
-
+    
     input {
         border: 0;
         background-color: transparent;
-        border-bottom: 1px solid #AEE6AB;
+        border-bottom: 2px solid #05355A;
         border-radius: 0px;
     }
     input:focus {
         border: 0;
         background-color: transparent;
-        border-bottom: 1px solid #AEE6AB;
+        border-bottom: 2px solid #05355A;
         border-radius: 0px;
       }
     
@@ -116,6 +123,7 @@
         color: #FFFFFF;
         font-size: 1 em;
         font-family: 'Roboto';
+        font-weight: bold;
     }
 
     .form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
@@ -139,16 +147,17 @@
         }
     
         .text-span{
-            background:rgb(112, 223, 112);
+            background:#05355A;
             border-radius:50px;
             display: inline-block;
             text-align: center;
-            color:#fff;
+            color: #C1F7D5;
+            font-weight: bold;
             padding: 3px 25px 6px !important;
         }
     
         .btn-sign-in{
-            background-color: hsl(256, 57%, 17%);
+            background-color: #C1F7D5;
             padding: 7px 0px ;
             width: 24% !important;
             margin-left: 36%;

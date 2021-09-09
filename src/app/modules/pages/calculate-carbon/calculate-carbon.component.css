@@ -6,10 +6,12 @@
 .head{
     color: #FFFFFF;
     font-size: 1.5em;
-    font-family: cursive;
-    border-bottom: 1px solid #AEE6AB;
+    border-bottom: 1px solid #C1F7D5;
     text-align: center;
-    padding: 7px;    
+    padding: 7px;   
+    font-family: kalam; 
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .questionaire-body{
@@ -26,7 +28,7 @@
 .custom-select {
     background-color: #05355A;
     border-color: #05355A;
-    color: #AEE6AB;
+    color: #C1F7D5;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -43,12 +45,12 @@
 }
 
 h5 {
-    color: #AEE6AB;
-    border-bottom: 1px solid #AEE6AB;;
+    color: #C1F7D5;
+    border-bottom: 1px solid #C1F7D5;;
 }
 
 .text-span{
-    background:#AEE6AB;
+    background:#C1F7D5;
     border-radius:50px;
     display: inline-block;
     text-align: center;
@@ -63,14 +65,16 @@ h5 {
     font-family: cursive;
     font-size: 33px;
     font-weight: bold;
+    font-family: kalam;
+    text-transform: uppercase;
 }
 
 .bottom-sec > span > a{
-    color: #AEE6AB;
+    color: #C1F7D5;
 }
 
 .custom-control > label {
-    color: #AEE6AB;
+    color: #C1F7D5;
 }
 
 @media screen and (max-width: 600px) {

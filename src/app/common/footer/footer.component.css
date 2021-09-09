@@ -31,10 +31,14 @@ footer {
 }
 
 .footer-text-last-col{
-    font-family: cursive;
+    font-family: kalam;
     font-size: 33px;
     font-weight: bold;
     color: #05355A;
+}
+.footer-last {
+    font-weight: bold !important;
+    text-align: end;
 }
 
 .site-name{

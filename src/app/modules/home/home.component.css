@@ -1,30 +1,3 @@
-/* .take-action {
-    background: url("../../../assets/pictures/Collaborate.jpg") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-   }
-
-.white-bg {
-    background-color: #FFFFFF;
-}
-
-.overlay-text{
-    color: #FFFFFF;
-}
-
-span, .overlay-text {
-    background-color: darkblue;
-    padding: 7px 0px;
-    width: 30%;
-}
-
-.align-middle {
-    margin-top:50%;
-} */
-
-
 /* banner starts */
 .banner {
     background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
@@ -69,8 +42,9 @@ span, .overlay-text {
         top: 10%;
         color: #FFFFFF;
         text-align: right;
-        font-family: cursive;
+        font-family: kalam;
         position: relative;
+        font-weight: 700;
         right: 3%;
     }
     .banner-footer {
@@ -114,9 +88,10 @@ span, .overlay-text {
     .right-head-text{
         color: #FFFFFF;
         text-align: right;
-        font-family: cursive;
+        font-family: kalam;
         position: relative;
         right: 3%;
+        font-weight: 700;
     }
     .right-text {
         font-size: 3.5rem !important;
@@ -161,7 +136,7 @@ span, .overlay-text {
     .right-head-text{
         color: #FFFFFF;
         text-align: right;
-        font-family: cursive;
+        font-family: kalam;
         position: relative;
         right: 3%;
         font-weight: bold;
@@ -190,7 +165,7 @@ span, .overlay-text {
         padding: 2% 5%;
     }
     .action-section {
-        background-color: #AEE6AB;
+        background-color: #C1F7D5;
         /* padding: 2%; */
     }
     .action-head {
@@ -225,7 +200,7 @@ span, .overlay-text {
         padding: 2% 5%;
     }
     .action-section {
-        background-color: #AEE6AB;
+        background-color: #C1F7D5;
         /* padding: 2%; */
     }
     .action-head {
@@ -260,7 +235,7 @@ span, .overlay-text {
         padding: 5%;
     }
     .action-section {
-        background-color: #AEE6AB;
+        background-color: #C1F7D5;
         /* padding: 2%; */
     }
     .action-head {
@@ -345,8 +320,8 @@ span, .overlay-text {
         margin-top: 5%;
     }
     .do-read-more {
-        background-color: #AEE6AB;
-        border: 1px solid #AEE6AB;
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
         border-radius: 20px;
         font-weight: bold;
         color: #05355A;
@@ -405,8 +380,8 @@ span, .overlay-text {
         margin-top: 5%;
     }
     .do-read-more {
-        background-color: #AEE6AB;
-        border: 1px solid #AEE6AB;
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
         border-radius: 20px;
         font-weight: bold;
         color: #05355A;
@@ -435,6 +410,7 @@ span, .overlay-text {
     }
     .wedo-main-head-text {
         font-size: 2.0rem;
+        text-align: center;
     }
     .do-items {
         background-color: #FFFFFF;
@@ -470,8 +446,8 @@ span, .overlay-text {
         margin-top: 5%;
     }
     .do-read-more {
-        background-color: #AEE6AB;
-        border: 1px solid #AEE6AB;
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
         border-radius: 20px;
         font-weight: bold;
         color: #05355A;
@@ -503,9 +479,14 @@ span, .overlay-text {
         margin: 10%;
         text-align: center;
     }
+    .dou-know-head-text {
+        font-size: 3.5rem;
+        font-family: kalam;
+        font-weight: bold;
+    }
     .take-action-badge {
-        background-color: #AEE6AB;
-        border: 1px solid #AEE6AB;
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
         border-radius: 20px;
         font-weight: bold;
         color: #05355A;
@@ -539,14 +520,14 @@ span, .overlay-text {
         font-size: 1.1rem;
     }
     .social-icons {
-        /* background-color: #AEE6AB;
+        /* background-color: #C1F7D5;
         color: #05355A;
         margin: 25% 2%;
         font-weight: bold;
         font-size: 1rem;
         text-align: center;
         border-radius: 70px; */
-        background-color: #AEE6AB;
+        background-color: #C1F7D5;
         color: #05355A;
         margin: 15% 2%;
         font-weight: bold;
@@ -572,13 +553,18 @@ span, .overlay-text {
         color: #FFFFFF;
         text-transform: uppercase;
     }
+    .dou-know-head-text {
+        font-size: 2.5rem;
+        font-family: kalam;
+        font-weight: bold;
+    }
     .action-btn-wrapper {
         margin: 10%;
         text-align: center;
     }
     .take-action-badge {
-        background-color: #AEE6AB;
-        border: 1px solid #AEE6AB;
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
         border-radius: 20px;
         font-weight: bold;
         color: #05355A;
@@ -612,7 +598,7 @@ span, .overlay-text {
         font-size: 1.1rem;
     }
     .social-icons {
-        background-color: #AEE6AB;
+        background-color: #C1F7D5;
         color: #05355A;
         margin: 15% 2%;
         font-weight: bold;
@@ -636,6 +622,8 @@ span, .overlay-text {
     }
     .dou-know-head-text {
         font-size: 2.0rem;
+        font-family: kalam;
+        font-weight: bold;
     }
     .text-part {
         color: #FFFFFF;
@@ -646,8 +634,8 @@ span, .overlay-text {
         text-align: center;
     }
     .take-action-badge {
-        background-color: #AEE6AB;
-        border: 1px solid #AEE6AB;
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
         border-radius: 20px;
         font-weight: bold;
         color: #05355A;
@@ -682,7 +670,7 @@ span, .overlay-text {
         font-size: 1.1rem;
     }
     .social-icons {
-        background-color: #AEE6AB;
+        background-color: #C1F7D5;
         color: #05355A;
         margin: 3% 42%;
         font-weight: bold;
@@ -754,8 +742,8 @@ span, .overlay-text {
     margin-top: 3%;
 }
 .read-more {
-    background-color: #AEE6AB;
-    border: 1px solid #AEE6AB;
+    background-color: #C1F7D5;
+    border: 1px solid #C1F7D5;
     padding: 1% 4%;
     border-radius: 20px;
     color: #05355A;
@@ -779,7 +767,7 @@ span, .overlay-text {
 
 /* pledge starts */
 .pledge-part {
-    background-color: #AEE6AB;
+    background-color: #C1F7D5;
     border-top: 1px solid #05355A;;
     border-bottom: 1px solid #05355A;;
     padding: 5% 10%;
@@ -797,7 +785,7 @@ span, .overlay-text {
     border-radius: 10px;
     padding: 1% 2%;
     margin-top: 3%;
-    font-size: 1.0rem;
+    font-size: 1.3rem;
 }
 .pledge-button {
     background-color: #05355A;
@@ -808,9 +796,22 @@ span, .overlay-text {
     padding: 1% 5%;
     margin-top: 3%;
 }
+.pledge-text {
+    font-family: kalam;
+    font-weight: bold;
+    font-size: 2.8rem;
+}
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .pledge-text {
         font-size: 2.0rem;
+    }
+    .email-input {
+        background-color: #FFFFFF;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 1% 2%;
+        margin-top: 3%;
+        font-size: 1.0rem;
     }
 }
 /* pledge ends */

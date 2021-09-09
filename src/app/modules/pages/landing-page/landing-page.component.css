@@ -18,12 +18,19 @@
         margin-top: 1%;
     }
     .banner-img {
-        /* border: 5px solid #AEE6AB; */
+        /* border: 5px solid #C1F7D5; */
         /* border-radius: 20px; */
         background-image: url("./../../../../assets/pictures/Protest.jpg");
         height: 200px;
         background-size: cover;
         width: 100%;
+    }
+    .weclome-text {
+        margin-top: 3%;
+        color: #FFFFFF;
+        font-family: kalam;
+        font-weight: bold;
+        font-size: 1.5rem;
     }
 }
 @media only screen  and (min-width : 768px) {
@@ -39,39 +46,40 @@
         margin-top: 1%;
     }
     .banner-img {
-        /* border: 5px solid #AEE6AB; */
+        /* border: 5px solid #C1F7D5; */
         /* border-radius: 20px; */
         background-image: url("./../../../../assets/pictures/Protest.jpg");
         height: 400px;
         background-size: cover;
         width: 100%;
     }
+    .weclome-text {
+        margin-top: 3%;
+        color: #FFFFFF;
+        font-family: kalam;
+        font-weight: bold;
+        font-size: 2.5rem;
+    }
 }
 
-.weclome-text {
-    margin-top: 3%;
-    color: #FFFFFF;
-    /* font-family: "Permanent Marker"; */
-    font-weight: 300;
-}
 /* banner ends */
 
 /* score starts */
 .score-select {
     border: none;
-    background-color: #AEE6AB;
+    background-color: #C1F7D5;
     color: #05355A;
     font-weight: bold;
 }
 .score-select :focus {
     border: none;
-    background-color: #AEE6AB;
+    background-color: #C1F7D5;
     color: #05355A;
     font-weight: bold;
 }
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .score {
-        background-color: #AEE6AB;
+        background-color: #C1F7D5;
         color: #05355A;
         padding: 5%;
     }
@@ -79,6 +87,11 @@
         font-weight: bold;
         font-size: 1.8rem;
         margin-bottom: 1%;
+        font-family: kalam;
+    }
+    .score-value {
+        font-family: kalam;
+        text-transform: uppercase;
     }
     .score-list {
         font-size: 1.5rem;
@@ -92,7 +105,7 @@
 }
 @media only screen  and (min-width : 768px) {
     .score {
-        background-color: #AEE6AB;
+        background-color: #C1F7D5;
         color: #05355A;
         padding: 5% 15%;
     }
@@ -100,6 +113,11 @@
         font-weight: bold;
         font-size: 1.8rem;
         margin-bottom: 1%;
+        font-family: kalam;
+    }
+    .score-value {
+        font-family: kalam;
+        text-transform: uppercase;
     }
     .score-list {
         font-size: 1.5rem;
@@ -118,6 +136,27 @@
 /* score ends */
 
 /* donate section starts */
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .donate-section-badge {
+        width: 50%;
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
+        color: #05355A;
+        padding: 0.5% 1%;
+        border-radius: 25px;
+        font-size: 1.3rem;
+    }
+}
+@media only screen  and (min-width : 768px) {
+    .donate-section-badge {
+        width: 50%;
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
+        color: #05355A;
+        padding: 0.5% 2%;
+        border-radius: 25px;
+    }
+}
 .donate-section {
     background-color: #05355A;
     padding: 3% ;
@@ -129,14 +168,7 @@
     color: #FFFFFF;
     text-decoration: underline;
 }
-.donate-section-badge {
-    width: 50%;
-    background-color: #AEE6AB;
-    border: 1px solid #AEE6AB;
-    color: #05355A;
-    padding: 0.5% 2%;
-    border-radius: 25px;
-}
+
 .donate-section-list {
     margin: 2%;
 }
@@ -144,8 +176,8 @@
     text-align: center;
 }
 .donate-button {
-    background-color: #AEE6AB;
-    border: 1px solid #AEE6AB;
+    background-color: #C1F7D5;
+    border: 1px solid #C1F7D5;
     color: #05355A;
     padding: 1% 10%;
     border-radius: 25px;
@@ -164,7 +196,7 @@
         padding: 2% 5%;
     }
     .action-section {
-        background-color: #AEE6AB;
+        background-color: #C1F7D5;
         /* padding: 2%; */
     }
     .action-head {
@@ -199,7 +231,7 @@
         padding: 2% 5%;
     }
     .action-section {
-        background-color: #AEE6AB;
+        background-color: #C1F7D5;
         /* padding: 2%; */
     }
     .action-head {
@@ -229,12 +261,12 @@
     }
 }
 
-@media only screen and (min-width : 320px){
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .action-items {
         padding: 5%;
     }
     .action-section {
-        background-color: #AEE6AB;
+        background-color: #C1F7D5;
         /* padding: 2%; */
     }
     .action-head {
@@ -275,24 +307,35 @@
 .post-head {
     color: #FFFFFF;
     margin: 2%;
+    font-family: kalam;
 }
 .post-content {
     margin: 1%;
     padding: 5%;
     color: #05355A;
-    background-color: #bce7ba;
+    background-color: #C1F7D5;
 }
 .post-link {
     color: #05355A;
     text-decoration: underline;
 }
 .post-img {
-    height: 100px;
-    margin: 1.5% 0.5%;
+    width: 48%;
+    height: 250px;
+    margin: 1.5% 1%;
+}
+.gallery-head {
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .gallery-head {
         font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .post-img {
+        height: 100px;
+        margin: 1.5% 0.5%;
     }
 }
 /* post and gallery ends */
