@@ -3,12 +3,15 @@
     .action-part {
         background-color: #05355A;
         padding: 3%;
+        margin-top: 28%;
     }
     .action-head {
         color: #FFFFFF;
         font-size: 2.5rem;
         text-align: center;
         font-weight: bold;
+        font-family: kalam;
+        text-transform: uppercase;
     }
     .action-sub-head {
         color: #FFFFFF;
@@ -47,6 +50,8 @@
         font-size: 2.5rem;
         text-align: center;
         font-weight: bold;
+        font-family: kalam;
+        text-transform: uppercase;
     }
     .action-sub-head {
         color: #FFFFFF;
@@ -84,13 +89,13 @@
     padding: 1% 5%;
 }
 .questions{
-    border-top: 1px solid #AEE6AB;
+    border-top: 1px solid #C1F7D5;
     padding: 8px;
     font-family: initial;
     color: #FFFFFF;
 } 
 .custom-control > label {
-    color: #AEE6AB;
+    color: #C1F7D5;
 }
 .add-question {
     text-align: end;
@@ -98,23 +103,35 @@
     background: transparent;
 }
 .add-question-button {
-    color: #AEE6AB;
+    color: #C1F7D5;
     background-color: #05355A;
     border: 1px solid #05355A;
 }
 /* action part ends */
 
 /* invite part starts */
-@media only screen  and (min-width : 768px) {
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .invite-head {
         color: #05355A;
         font-size: 2.5rem;
         text-align: center;
         font-weight: bold;
+        text-transform: uppercase;
+        font-family: kalam;
+    }
+}
+@media only screen  and (min-width : 768px) {
+    .invite-head {
+        color: #05355A;
+        font-size: 3.0rem;
+        text-align: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        font-family: kalam;
     }
 }
 .invite-part {
-    background-color: #AEE6AB;
+    background-color: #C1F7D5;
     padding: 3%;
 }
 .invite-head {
@@ -156,7 +173,7 @@
 .invite-button {
     background-color: #05355A;
     border: 1px solid #05355A;
-    color: #AEE6AB;
+    color: #C1F7D5;
     font-weight: bold;
     border-radius: 25px;
     margin: 2%;
@@ -176,26 +193,27 @@
     font-size: 2.0rem;
     text-align: center;
     font-weight: bold;
+    font-family: kalam;
 }
 .fa-book {
-    color: #AEE6AB;
+    color: #C1F7D5;
 }
 .blog-form-part {
     padding: 1% 5%;
 }
 .blog-label {
-    color: #AEE6AB;
+    color: #C1F7D5;
 }
 .blog-input {
     border: 0;
     background-color: transparent;
-    border-bottom: 2px solid #AEE6AB;
+    border-bottom: 2px solid #C1F7D5;
     border-radius: 0px;
 }
 .blog-input:focus {
     border: 0;
     background-color: transparent;
-    border-bottom: 2px solid #AEE6AB;
+    border-bottom: 2px solid #C1F7D5;
     border-radius: 0px;
   }
 .form-button-wrapper {
@@ -216,6 +234,9 @@
     text-align: center;
     color: #FFFFFF;
     font-size: 2.0rem;
+    font-family: kalam;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 .upload-img-part {
     background-color: #bce7ba;
@@ -227,6 +248,7 @@
     font-size: 2.0em;
     text-align: center;
     font-weight: bold;
+    font-family: kalam;
 }
 .upload-wrapper {
     text-align: center;
