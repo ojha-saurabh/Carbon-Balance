@@ -85,22 +85,32 @@
     }
     .score-head {
         font-weight: bold;
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         margin-bottom: 1%;
         font-family: kalam;
     }
+    .score-des {
+        text-align: left;
+    }
     .score-value {
+        /* text-align: right; */
         font-family: kalam;
         text-transform: uppercase;
     }
+    td {
+        text-align: center;
+    }
     .score-list {
-        font-size: 1.5rem;
+        font-size: 1.1rem;
     }
     .carbon-offset-link, a {
         margin-top: 5%;
         color: #05355A;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
         text-decoration: underline;
+    }
+    .carbon-offset-link-space {
+        margin-top: 5%;
     }
 }
 @media only screen  and (min-width : 768px) {
@@ -138,13 +148,42 @@
 /* donate section starts */
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .donate-section-badge {
-        width: 50%;
+        width: 100%;
         background-color: #C1F7D5;
         border: 1px solid #C1F7D5;
         color: #05355A;
         padding: 0.5% 1%;
         border-radius: 25px;
         font-size: 1.3rem;
+        margin-bottom: 2%;
+    }
+    .score-text {
+        text-align: left;
+        font-size: 1.3rem;
+    }
+    .donate-section-list {
+        margin: 2% 1%;
+    }
+    .donate-button {
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
+        color: #05355A;
+        padding: 1% 10%;
+        border-radius: 25px;
+        font-weight: bold;
+        margin-bottom: 10%;
+    }
+    .donate-table {
+        margin: 0 1%;
+    }
+    .rebase-link {
+        margin: 3% 0;
+        margin-left: -3%;
+    }
+    .footprint-link {
+        /* margin: 5% 4%; */
+        color: #FFFFFF;
+        text-decoration: underline;
     }
 }
 @media only screen  and (min-width : 768px) {
@@ -155,38 +194,49 @@
         color: #05355A;
         padding: 0.5% 2%;
         border-radius: 25px;
+        margin-bottom: 2%;
+    }
+    .donate-table {
+        margin: 0 5%;
+    }
+    .donate-button {
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
+        color: #05355A;
+        padding: 1% 10%;
+        border-radius: 25px;
+        font-weight: bold;
+        margin-bottom: 1%;
+    }
+    .rebase-link {
+        margin: 3% 0;
+    }
+    .footprint-link {
+        margin: 5% 4%;
+        color: #FFFFFF;
+        text-decoration: underline;
     }
 }
 .donate-section {
     background-color: #05355A;
-    padding: 3% ;
+    padding: 5% ;
     color: #FFFFFF;
     font-size: 1.5rem;
 }
-.footprint-link {
-    margin: 5% 4%;
-    color: #FFFFFF;
-    text-decoration: underline;
-}
+
+
 
 .donate-section-list {
     margin: 2%;
+    padding: 2%;
 }
 .donate-button-wrapper {
     text-align: center;
 }
-.donate-button {
-    background-color: #C1F7D5;
-    border: 1px solid #C1F7D5;
-    color: #05355A;
-    padding: 1% 10%;
-    border-radius: 25px;
-    font-weight: bold;
-    margin-bottom: 10%;
-}
-.carousel-indicators {
+
+/* .carousel-indicators {
     color: blue;
-}
+} */
 /* donate section ends */
 
 /* action starts */
