@@ -83,27 +83,30 @@
                 </div>  
             </div>  
             <button type="button" class="btn btn-info float-right border-0 rounded-0">Register</button>              -->
-            <form class="example-form">
+            <form class="example-form" #signUpForm="ngForm">
                 <div class="form-row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="inputEmail4">EMAIL</label>
-                        <input type="text" class="form-control" placeholder="Enter mail" id="inputEmail4">
+                        <input type="text" class="form-control" placeholder="Enter mail" id="inputEmail4" name="email" #email="ngModel" [(ngModel)]="payLoad.email" required>
+                        <div [hidden]="email.valid || email.pristine" class="alert alert-danger">Email is required.</div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="inputEmail4">PASSWORD</label>
-                        <input type="text" class="form-control" placeholder="Enter password" id="inputEmail4">
+                        <input type="password" class="form-control" placeholder="Enter password" id="inputEmail4" name="password" #password="ngModel" [(ngModel)]="payLoad.password" required>                        
+                        <div [hidden]="password.valid || password.pristine" class="alert alert-danger">Password is required.</div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="inputEmail4">CONFIRM PASSWORD</label>
-                        <input type="text" class="form-control" placeholder="Enter confirm password" id="inputEmail4">
+                        <input type="password" class="form-control" placeholder="Enter confirm password" id="inputEmail4" name="confirmPassword" #confirmPassword="ngModel" [(ngModel)]="payLoad.confirmPassword" required>
+                        <div [hidden]="confirmPassword.valid || confirmPassword.pristine" class="alert alert-danger">Confirm password is required.</div>
                     </div>
                 </div>
                 <span class=" example-margin"><input type="checkbox">Creating an account means you agree to the terms and conditions of this site/application.</span>                    
-                <button type="button" class="btn btn-info float-left border-0 text-span mt-4">Register</button>                    
+                <button type="button" class="btn btn-info float-left border-0 text-span mt-4" [disabled]="!signUpForm.form.valid">Register</button>                    
               </form>
               <!-- <a routerLink="/auth/register" class="float-right instruction"><i>Forget Password / Reset</i></a>  -->
         </form>

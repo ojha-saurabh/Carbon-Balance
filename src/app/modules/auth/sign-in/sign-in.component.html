@@ -51,20 +51,22 @@
                     <label for="exampleInputPassword1">Password</label>
                     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                   </div> -->
-                  <form class="example-form">
+                  <form class="example-form" #signInForm="ngForm">
                     <div class="form-row">
                         <div class="form-group col-xs-12 col-md-12 col-sm-12">
                             <label for="inputEmail4">EMAIL</label>
-                            <input type="text" class="form-control" placeholder="Enter mail" id="inputEmail4">
+                            <input type="text" class="form-control" placeholder="Enter mail" id="inputEmail4" name="email" #email="ngModel" [(ngModel)]="payLoad.email" required>
+                            <div [hidden]="email.valid || email.pristine" class="alert alert-danger">Email is required.</div>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-xs-12 col-md-12 col-sm-12">
                             <label for="inputEmail4">PASSWORD</label>
-                            <input type="text" class="form-control" placeholder="Enter password" id="inputEmail4">
+                            <input type="password" class="form-control" placeholder="Enter password" id="inputEmail4" name="password" #password="ngModel" [(ngModel)]="payLoad.password" required>                        
+                            <div [hidden]="password.valid || password.pristine" class="alert alert-danger">Password is required.</div>
                         </div>
                     </div>                                      
-                    <button type="button" class="btn btn-info float-left border-0 text-span mt-4">Login</button>                    
+                    <button type="button" class="btn btn-info float-left border-0 text-span mt-4" [disabled]="!signInForm.form.valid">Login</button>                    
                   </form>
                   <a routerLink="/auth/register" class="float-right instruction"><i>Forget Password / Reset</i></a>         
               </form>
