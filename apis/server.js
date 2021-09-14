@@ -10,6 +10,12 @@ app.set('port', port);
 
 const server = http.createServer(app);
 
+let url =`http://localhost:${port}`;
+
+if(process.env.ENVIRONMENT=='production'){
+    url = `http://localhost:${port}`;
+}
+
 server.listen(port, ()=>{
-    console.log(`Node app is running at http://localhost:${port}`);
+    console.log(`Node app is running at ${url}`);
 })

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { AuthService } from 'src/app/global/sevices/auth.service';
 
 @Component({
   selector: 'app-sign-in',
@@ -7,14 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
 
+
   payLoad = {
     email:'',
     password:''
   }
 
-  constructor() { }
+  @ViewChild("signInForm") form:any;
+
+  constructor(private auth : AuthService) { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+    if(this.form.valid){
+      console.log(this.form.value);
+      this.auth.login(this.form.value).subscribe((response:any)=>{
+        this.auth.handleToken(response);              
+      })
+    }
   }
 
 }
