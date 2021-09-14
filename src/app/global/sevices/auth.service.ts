@@ -23,11 +23,9 @@ export class AuthService {
   handleToken(params:{status:boolean, message:string, token:string}){
     let decoded:any = this.jwtHelper.decodeToken(params.token); 
     if(decoded){
-      console.log(decoded.exp);
-      const expiresAt = moment().add(decoded.exp,'second');
-      localStorage.setItem('authToken', params.token);
-      Swal.fire('Hurray!!!', params.message, 'success');
+      localStorage.setItem('authToken', params.token);      
       this.router.navigate(['/pages/create-profile']);
+      Swal.fire('Hurray!!!', params.message, 'success');
     }else{
       Swal.fire('Oops...', 'Something went wrong!', 'error');
     }
