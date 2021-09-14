@@ -1,6 +1,6 @@
 /* banner starts */
 .banner {
-    background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
+    background-image: url("./../../../assets/pictures/home1.jpg");
     /* background-size: cover; */
     padding: 5%;
     background-position: right;
@@ -8,7 +8,7 @@
 }
 @media only screen and (min-width : 320px){
     .banner {
-        background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
+        background-image: url("./../../../assets/pictures/home1.jpg");
         /* background-size: cover; */
         padding: 5%;
         background-size: cover;
@@ -46,10 +46,13 @@
         position: relative;
         font-weight: 700;
         right: 3%;
+        text-transform: uppercase;
     }
     .banner-footer {
-        /* margin-top: 20%;*/
-        margin-bottom: 2em; 
+        font-weight: bold;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: 1.5rem; 
     }
     .main-baneer-head {
         font-size: 2.0rem;
@@ -57,7 +60,7 @@
 }
 @media only screen and (min-width : 768px) {
     .banner {
-        background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
+        background-image: url("./../../../assets/pictures/home1.jpg");
         /* background-size: cover; */
         padding: 5%;
     }
@@ -92,6 +95,7 @@
         position: relative;
         right: 3%;
         font-weight: 700;
+        text-transform: uppercase;
     }
     .right-text {
         font-size: 3.5rem !important;
@@ -104,7 +108,7 @@
 }
 @media only screen  and (min-width : 1224px) {
     .banner {
-        background-image: url("./../../../assets/pictures/landon-parenteau-12rtohgXu9I-unsplash.jpg");
+        background-image: url("./../../../assets/pictures/home1.jpg");
         /* background-size: cover; */
         padding: 5%;
     }
@@ -140,6 +144,7 @@
         position: relative;
         right: 3%;
         font-weight: bold;
+        text-transform: uppercase;
         /* font-size: 2.9rem; */
     }
     .right-head-text-main {
@@ -154,6 +159,7 @@
     .banner-footer {
         /* margin-top: 40%; */
         margin-bottom: 0%;
+        font-weight: bold;
     }
 }
 /* banner ends */
@@ -774,6 +780,7 @@
 }
 .pledge-description {
     color: #05355A;
+    text-transform: uppercase;
 }
 .btn-wrapper {
     text-align: center;
@@ -804,6 +811,7 @@
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .pledge-text {
         font-size: 2.0rem;
+        text-transform: uppercase;
     }
     .email-input {
         background-color: #FFFFFF;
