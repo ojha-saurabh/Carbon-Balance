@@ -1,10 +1,20 @@
+const authModel = require("../models/authModel")
 let controller = {};
 
-controller.firstFunction = firstFunction;
+controller.login = login;
 
-function firstFunction(req, res){
-    console.log('Auth function is working')
-    res.status(200).send('Auth function is working');
+
+//Login functionality
+
+function login(req, res){
+    console.log('Auth function is working', req.body)
+    authModel.login(req.body).then((response)=>{    
+        if(response.status){
+            return res.status(200).send(response);
+        }else{
+            res.status(301).send(response);
+        }   
+    })
 }
 
 module.exports = controller;

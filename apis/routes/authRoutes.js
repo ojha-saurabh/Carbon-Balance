@@ -8,7 +8,6 @@ router.use((req,res,next)=>{
     console.log('Middleware function is running');
     next();
 })
-
-router.route('/').get(authController.firstFunction);
+router.route('/login').post(authController.login);
 
 module.exports = router;

@@ -87,7 +87,7 @@
                 <div class="form-row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="inputEmail4">EMAIL</label>
-                        <input type="text" class="form-control" placeholder="Enter mail" id="inputEmail4" name="email" #email="ngModel" [(ngModel)]="payLoad.email" required>
+                        <input type="text" class="form-control" placeholder="Enter mail" id="inputEmail4" name="email" #email="ngModel" [(ngModel)]="payLoad.email" required email>
                         <div [hidden]="email.valid || email.pristine" class="alert alert-danger">Email is required.</div>
                     </div>
                 </div>
