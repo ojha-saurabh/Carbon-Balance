@@ -7,6 +7,7 @@ import { CalculateCarbonComponent } from './calculate-carbon/calculate-carbon.co
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { TakeActionComponent } from './take-action/take-action.component';
 import { CreateProfileComponent } from './create-profile/create-profile.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,7 +20,9 @@ import { CreateProfileComponent } from './create-profile/create-profile.componen
   ],
   imports: [
     CommonModule,
-    PagesRoutingModule
+    PagesRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ]
 })
 export class PagesModule { }

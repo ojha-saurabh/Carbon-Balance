@@ -6,72 +6,67 @@
         </div>
         <div class="action-sub-head">Select the activity from the list below</div>
         <div class="action-question-part">
-            <div class="questions mt-4">
-                <h3>How big is your living space?</h3>
-                <div class="mb-1">
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline1">Small (500 Square Feet)</label>
-                  </div>
+            <div class="row ques-div">
+                <div class="col-md-12 col-sm-12 ques">
+                    <select name="" id="">
+                        <option *ngFor="let q of questions">{{q.title}}</option>
+                    </select>
                 </div>
-                <div class="mb-1">
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline2">Medium (1000 Square Feet)</label>
-                  </div>
+                <div class="col-md-12 col-sm-12">
+                    <select name="" id="" class="action-question options" (change)="onChange1($event.target)">
+                        <option></option>
+                        <option value="1 Count">1 Count</option>
+                        <option value="2 Count">2 Count</option>
+                    </select>
                 </div>
-          
-                <div class="mb-1">
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline3">Square Feet Square Feet)
-                    </label>
-                  </div>
-                </div>
-          
-                <div class="mb-2">
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline4">Other</label>
-                  </div>
-                </div>
-                <h5>If you have shared living spaces, divide it by the number of roommates who use it.</h5>
             </div>
-            <div class="questions mt-4">
-                <h3>Do you use a car to get around?</h3>
-                <div class="mb-1">
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline21" name="customRadioInline2" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline21">Yes</label>
-                  </div>
+            <div class="row ques-div">
+                <div class="col-md-12 col-sm-12 ques">
+                    <select name="" id="">
+                        <option *ngFor="let q of questions">{{q.title}}</option>
+                    </select>
                 </div>
-                <div class="mb-1">
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline22" name="customRadioInline2" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline22">No</label>
-                  </div>
+                <div class="col-md-12 col-sm-12">
+                    <select name="" id="" class="action-question options" (change)="onChange1($event.target)">
+                        <option></option>
+                        <option value="1 Count">1 Count</option>
+                        <option value="2 Count">2 Count</option>
+                    </select>
                 </div>
-          
-                <div class="mb-1">
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline23" name="customRadioInline2" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline23">Electric Car
-                    </label>
-                  </div>
-                </div>
-          
-                <div class="mb-2">
-                  <div class="custom-control custom-radio custom-control-inline">
-                    <input type="radio" id="customRadioInline24" name="customRadioInline2" class="custom-control-input">
-                    <label class="custom-control-label" for="customRadioInline24">Other</label>
-                  </div>
-                </div>
-                <h5>If you use rideshare, drive a hybrid, or rent a car for long trips, check Yes</h5>
             </div>
-            <div class="questions mt-4">
-                <div class="add-question">
-                    <button class="add-question-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+            <div class="row ques-div">
+                <div class="col-md-12 col-sm-12 ques">
+                    <select name="" id="">
+                        <option *ngFor="let q of questions">{{q.title}}</option>
+                    </select>
                 </div>
+                <div class="col-md-12 col-sm-12 options-seclect">
+                    <select name="" id="" class="action-question options" (change)="onChange1($event.target)">
+                        <option></option>
+                        <option value="1 Count">1 Count</option>
+                        <option value="2 Count">2 Count</option>
+                    </select>
+                </div>
+            </div>
+            <!-- <div class="ques-div">
+                <select name="" id="" class="action-question" (change)="onChange2($event.target)"
+                [(ngModel)]="selectedValue">
+                    <option>Used cycle for errand this month</option>
+                    <option value="10 Times">10 Times</option>
+                    <option value="14 Times">14 Times</option>
+                </select>
+                <div class="change-text">{{chgvalue2}}</div>
+            </div> -->
+            <!-- <div class="ques-div">
+                <select name="" id="" class="action-question" (change)="onChange3($event.target)">
+                    <option>Volunteered in a tree plantation drive this month</option>
+                    <option value="8 Trees">8 Trees</option>
+                    <option value="10 Trees">10 Trees</option>
+                </select>
+                <div class="change-text">{{chgvalue3}}</div>
+            </div> -->
+            <div class="add-question">
+                <button class="add-question-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
             </div>
         </div>
         <div class="submit-action-wrapper">
