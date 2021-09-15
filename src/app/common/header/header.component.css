@@ -8,7 +8,6 @@
     text-transform: uppercase;
 }
 
-
 header {
     background-color: rgb(243, 247, 250);
     position: fixed;
@@ -22,37 +21,75 @@ header {
 .promo-action {
   padding-top: 0.51em;
 }
-.site-name{
-  /* margin-top: -8px; */
-  margin-right: 1em;
-  font-size: 24px;
-  color: #05355A;
-  text-transform: uppercase;
+
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px)  {
+  .site-name{
+    margin-right: 1em;
+    font-size: 1.2rem;
+    color: #05355A;
+    text-transform: uppercase;
+  }
+  .navbar-nav{
+      text-align: center;
+  }
+  .btn-outline-default {
+    color: #949495;
+    border: none;
+    font-weight: bold;
+  }
+  .btn-outline-default :hover {
+    color: #949495;
+    border: none;
+    font-weight: bold;
+  }
 }
 
-/* header {
-  margin-bottom: 10% !important;
-} */
-
-  @media screen and (max-width: 600px) {
-    .navbar-nav{
-        text-align: center;
-    }
-    /* header {
-      margin-bottom: 10%;
-    } */
+@media screen and (min-width: 1224px) {
+  .site-name{
+    margin-right: 1em;
+    font-size: 1.5rem;
+    color: #05355A;
+    text-transform: uppercase;
   }
-
-  @media screen and (min-width: 601px) {
-    /* .navbar {      
-      margin: 10px auto 5px 20px;
-    } */
-
-    ul > li > a {
-      padding: 15px;
-      font-weight: bold;
-    }
-    .nav-item-button {
-      margin-top: -0.5%;
-    }
+  ul > li > a {
+    padding: 15px;
+    font-weight: bold;
   }
+  .nav-item-button {
+    margin-top: -0.5%;
+  }
+  .right-nav-items {
+    text-align: right;
+  }
+  .d-inline-block {
+    margin-top: 1%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .site-name{
+    margin-right: 1em;
+    font-size: 1.5rem;
+    color: #05355A;
+    text-transform: uppercase;
+  }
+  ul > li > a {
+    /* padding: 15px; */
+    font-weight: bold;
+    font-size: 0.9rem;
+
+  }
+  .nav-item-button {
+    margin-top: -0.5%;
+  }
+  
+  .btn-outline-default {
+    color: #949495;
+    border: none;
+    font-weight: bold;
+  }
+  .btn-outline-default :hover {
+    color: #949495;
+    border: none;
+    font-weight: bold;
+  }
+}

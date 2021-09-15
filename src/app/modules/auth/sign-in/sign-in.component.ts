@@ -25,7 +25,11 @@ export class SignInComponent implements OnInit {
     if(this.form.valid){
       console.log(this.form.value);
       this.auth.login(this.form.value).subscribe((response:any)=>{
-        this.auth.handleToken(response);              
+        this.auth.handleToken(response);  
+        console.log('=============res', response);    
+        // if(response.status) {
+        //   window.location.reload();
+        // }        
       })
     }
   }

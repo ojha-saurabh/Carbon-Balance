@@ -23,7 +23,8 @@ export class AuthService {
   handleToken(params:{status:boolean, message:string, token:string}){
     let decoded:any = this.jwtHelper.decodeToken(params.token); 
     if(decoded){
-      localStorage.setItem('authToken', params.token);      
+      localStorage.setItem('authToken', params.token);
+      localStorage.setItem('isLoggedIn', 'True');
       this.router.navigate(['/pages/create-profile']);
       Swal.fire('Hurray!!!', params.message, 'success');
     }else{
