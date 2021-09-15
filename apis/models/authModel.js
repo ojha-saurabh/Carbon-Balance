@@ -1,24 +1,38 @@
 const Q = require('q');
 const jwt = require('jsonwebtoken');
+const bcrypt = require('bcryptjs');
+const mongoose = require('mongoose');
+
+//MogoDB Connection
+const db = mongoose.connect(`mongodb://localhost:27017/${process.env.DATABASE_NAME}`, {useNewUrlParser: true, useUnifiedTopology: true}, (err, dbo)=>{
+    if(err){
+        console.log(err);
+    }
+    if(dbo){
+        console.log('Database connected');
+    }
+});
+
+const { Users } = require('../schema/commonSchema');
 
 let model = {};
 
 model.login = login;
+model.register = register;
+
+module.exports = model;
 
 
 //Login functionality
-function login(params){
+async function login(params){
     let deferred = Q.defer();
-    console.log('Auth model is working', params)
-    if(params.email!='' && params.password!=''){
-        console.log(process.env.JWT_SECRET)
-        params.name = 'Saurabh Ojha';
-        delete params.password;
-        jwt.sign(params, process.env.JWT_SECRET,{
+    let user = await Users.findOne({ email:params.email });
+    if(user && bcrypt.compareSync(params.password, user.password)){   
+        jwt.sign({id:user._id, email: user.email}, process.env.JWT_SECRET,{
             expiresIn:process.env.JWT_EXPIRES_IN
         },(err,token)=>{
             if(err){
-                deferred.resolve({status:false, message:'Something went wrong'});
+                deferred.resolve({status:false, message:'Something went wrong', error:err});
             }else{
                 deferred.resolve({status:true, message:'Logged in successfully',token:token});
             }            
@@ -37,5 +51,25 @@ function login(params){
     return deferred.promise;
 }
 
-module.exports = model;
+async function register(params){
+    let deferred = Q.defer();
+    console.log('Seeding authors to ' + mongoose.connection.name + '...');
+    let user = await Users.findOne({ email:params.email });
+    if(!user){
+        let saveObj = {email:params.email, password:bcrypt.hashSync(params.password, 10)};
+        // console.log(saveObj); return 
+        var newUser = new Users(saveObj);
+        let dataSave = await newUser.save();
+        // console.log(dataSave);
+        if(!dataSave._id){
+            deferred.resolve({status:false, message:'Something went wrong'});
+        }else{
+            deferred.resolve({status:true, message:'User created successfully'});
+        }   
+    }else{
+        deferred.resolve({status:false, message:'Entered email is already registered with us.'});
+    }
+    
+    return deferred.promise;
+}
 

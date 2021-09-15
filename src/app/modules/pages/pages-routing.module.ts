@@ -10,10 +10,10 @@ import { PagesComponent } from './pages.component';
 import { TakeActionComponent } from './take-action/take-action.component';
 
 const routes: Routes = [
-  { path: 'caculate-co2', component: CalculateCarbonComponent, canActivate:[AfterLoginGuard] },
-  { path: 'landing-page', component: LandingPageComponent, canActivate:[AfterLoginGuard] },
-  { path: 'take-action', component: TakeActionComponent, canActivate:[AfterLoginGuard] },
-  { path: 'create-profile', component: CreateProfileComponent, canActivate:[AfterLoginGuard] }
+  { path: 'caculate-co2', component: CalculateCarbonComponent, canActivate: [AfterLoginGuard] },
+  { path: 'landing-page', component: LandingPageComponent, canActivate: [AfterLoginGuard] },
+  { path: 'take-action', component: TakeActionComponent, canActivate: [AfterLoginGuard] },
+  { path: 'create-profile', component: CreateProfileComponent, canActivate: [AfterLoginGuard] }
 ];
 
 @NgModule({

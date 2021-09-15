@@ -83,12 +83,12 @@
                 </div>  
             </div>  
             <button type="button" class="btn btn-info float-right border-0 rounded-0">Register</button>              -->
-            <form class="example-form" #signUpForm="ngForm">
+            <form class="example-form" #signUpForm="ngForm" (ngSubmit)="onSubmit()" >
                 <div class="form-row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="inputEmail4">EMAIL</label>
                         <input type="text" class="form-control" placeholder="Enter mail" id="inputEmail4" name="email" #email="ngModel" [(ngModel)]="payLoad.email" required email>
-                        <div [hidden]="email.valid || email.pristine" class="alert alert-danger">Email is required.</div>
+                        <div [hidden]="email.valid || email.pristine" class="alert alert-danger">Please enter a valid email.</div>
                     </div>
                 </div>
                 <div class="form-row">
@@ -106,7 +106,7 @@
                     </div>
                 </div>
                 <span class=" example-margin"><input type="checkbox">Creating an account means you agree to the terms and conditions of this site/application.</span>                    
-                <button type="button" class="btn btn-info float-left border-0 text-span mt-4" [disabled]="!signUpForm.form.valid">Create Account</button>  
+                <button type="submit" class="btn btn-info float-left border-0 text-span mt-4" [disabled]="!signUpForm.form.valid">Create Account</button>  
               </form>
               <!-- <a routerLink="/auth/register" class="float-right instruction"><i>Forget Password / Reset</i></a>  -->
         </form>
