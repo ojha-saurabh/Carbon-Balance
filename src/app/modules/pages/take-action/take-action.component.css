@@ -13,7 +13,7 @@
     }
     .action-head {
         color: #FFFFFF;
-        font-size: 2.5rem;
+        font-size: 2.0rem;
         text-align: center;
         font-weight: bold;
         font-family: kalam;
@@ -21,7 +21,7 @@
     }
     .action-sub-head {
         color: #FFFFFF;
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         text-align: center;
     }
     .submit-action-wrapper {
@@ -185,7 +185,7 @@ a:hover {
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .invite-head {
         color: #05355A;
-        font-size: 2.5rem;
+        font-size: 1.5rem;
         text-align: center;
         font-weight: bold;
         text-transform: uppercase;
@@ -301,15 +301,6 @@ a:hover {
     margin: 1%;
     font-size: 1.3rem;
 }
-.blog-footer {
-    margin-top: 2%;
-    text-align: center;
-    color: #FFFFFF;
-    font-size: 2.0rem;
-    font-family: kalam;
-    text-transform: uppercase;
-    font-weight: bold;
-}
 .upload-img-part {
     background-color: #C1F7D5;
     color: #05355A;
@@ -341,7 +332,27 @@ a:hover {
 .upload-text-2 {
     font-size: 1.5em;
 }
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .blog-footer {
+        margin-top: 2%;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        font-family: kalam;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
 @media only screen  and (min-width : 768px) {
+    .blog-footer {
+        margin-top: 2%;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 2.0rem;
+        font-family: kalam;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
     .upload-image-head {
         font-size: 2.5em;
         text-align: center;

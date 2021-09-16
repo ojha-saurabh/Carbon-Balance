@@ -6,7 +6,7 @@
     background-position: right;
     padding-bottom: 3em;
 }
-@media only screen and (min-width : 320px){
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px){
     .banner {
         background-image: url("./../../../assets/pictures/home1.jpg");
         /* background-size: cover; */
@@ -28,13 +28,14 @@
         background-color: #05355A;
         padding: 0.4em 3em;
         top: -5%;
-        font-size: 1.2em;
+        font-size: 1.1em;
     }
     .left-text-part {
         color: #05355A;
         padding: 8% 5% 0%;
     }
     .banner-link {
+        color: #05355A;
         margin-top: 5rem;
         text-decoration: underline;
     }
@@ -55,10 +56,10 @@
         font-size: 1.5rem; 
     }
     .main-baneer-head {
-        font-size: 2.0rem;
+        font-size: 1.8rem;
     }
 }
-@media only screen and (min-width : 768px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .banner {
         background-image: url("./../../../assets/pictures/home1.jpg");
         /* background-size: cover; */
@@ -79,14 +80,21 @@
         background-color: #05355A;
         padding: 1% 5%;
         top: -5%;
+        left: 10%;
     }
     .left-text-part {
         color: #05355A;
-        padding: 8% 5% 0%;
+        padding: 8% 5% 5%;
+    }
+    .main-baneer-head {
+        font-size: 2.0rem;
+        margin-bottom: 5%;
     }
     .banner-link {
-        margin-top: 5rem;
+        margin-top: 5%;
+        margin-bottom: 5%;
         text-decoration: underline;
+        color: #05355A;
     }
     .right-head-text{
         color: #FFFFFF;
@@ -128,14 +136,19 @@
     }
     .left-text-part {
         color: #05355A;
-        padding: 8% 5% 0%;
+        padding: 5% 5% 0%;
     }
     .main-baneer-head {
         font-size: 2.5rem;
+        margin-bottom: 5%;
     }
     .banner-link {
+        color: #05355A;
         margin-top: 5rem;
         text-decoration: underline;
+    }
+    .banner-link :hover {
+        color: #e7b649 !important;
     }
     .right-head-text{
         color: #FFFFFF;
@@ -275,7 +288,9 @@
 /* action ends */
 
 /* what we do starts */
-
+.do-col {
+    padding: 0;
+}
 @media only screen  and (min-width : 1224px) {
     .what-we-do {
         background-color: #05355A;
@@ -415,7 +430,7 @@
         margin: 2%;
     }
     .wedo-main-head-text {
-        font-size: 2.0rem;
+        font-size: 1.8rem;
         text-align: center;
     }
     .do-items {
@@ -463,8 +478,9 @@
 /* what we do ends */
 
 /* dou know starts */
-.fa-facebook {
+.fa-facebook-official {
     font-size: 20px;
+    /* background-color: ; */
 }
 @media only screen  and (min-width : 1224px) {
     .dou-know {
@@ -541,11 +557,12 @@
         font-size: 1.5rem;
         text-align: center;
         border-radius: 70px;
-        padding: 10%;
+        padding: 1% 69% 1% 35%;
+        padding-right: 90%;
     }
 }
 
-@media only screen  and (min-width : 768px) {
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
     .dou-know {
         background-image: url("./../../../assets/pictures/Collaborate.jpg");
         background-repeat: no-repeat;
@@ -613,7 +630,8 @@
         font-size: 1.5rem;
         text-align: center;
         border-radius: 70px;
-        padding: 10%;
+        padding: 2% 32% 2% 30%;
+        padding-right: 95%;
     }
 }
 
@@ -680,12 +698,15 @@
     .social-icons {
         background-color: #C1F7D5;
         color: #05355A;
-        margin: 3% 42%;
+        margin: 6% 42%;
         font-weight: bold;
         font-size: 1.5rem;
         text-align: center;
         border-radius: 70px;
-        padding: 1% 0%;
+        padding: 1% 50% 2% 15%;
+    }
+    .icons-col {
+        width: 25%;
     }
 }
 /* dou know ends */
@@ -709,6 +730,16 @@
         width: 90%;
         height: 250px;
     }
+    .article-badge {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        padding: 1% 8%;
+        color: #FFFFFF;
+    }
+    .carousel-title {
+        color: #FFFFFF;
+        font-size: 1.6rem;
+    }
 }
 @media only screen  and (min-width : 768px) {
     .carousel-left-part {
@@ -726,16 +757,18 @@
         width: 90%;
         height: 400px;
     }
+    .article-badge {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        padding: 1% 5%;
+        color: #FFFFFF;
+    }
+    .carousel-title {
+        color: #FFFFFF;
+    }
 }
-/* .slider {
-    margin-top: 20%;
-} */
 .carousel-item {
-    /* background-color: #05355A; */
     padding: 5% 0%;
-}
-.carousel-title {
-    color: #FFFFFF;
 }
 .carousel-description {
     margin-top: 10%;
@@ -756,16 +789,11 @@
     border-radius: 20px;
     color: #05355A;
     font-weight: bold;
+    text-decoration: none;
 }
 .article-wrapper {
     text-align: center;
     margin: 2%;
-}
-.article-badge {
-    background-color: #05355A;
-    border: 1px solid #05355A;
-    padding: 1% 5%;
-    color: #FFFFFF;
 }
 .art-img-part {
     text-align: center;
@@ -812,8 +840,9 @@
 }
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .pledge-text {
-        font-size: 2.0rem;
+        font-size: 1.8rem;
         text-transform: uppercase;
+        text-align: center;
     }
     .email-input {
         background-color: #FFFFFF;
