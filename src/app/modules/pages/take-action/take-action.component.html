@@ -7,12 +7,12 @@
         <div class="action-sub-head">Select the activity from the list below</div>
         <div class="action-question-part">
             <div class="row ques-div">
-                <div class="col-md-12 col-sm-12 ques">
+                <div class="col-md-8 col-sm-12 ques">
                     <select name="" id="">
-                        <option *ngFor="let q of questions">{{q.title}}</option>
+                        <option *ngFor="let q of questions">{{q.title}} this is the text for demo</option>
                     </select>
                 </div>
-                <div class="col-md-12 col-sm-12">
+                <div class="col-md-4 col-sm-12">
                     <select name="" id="" class="action-question options" (change)="onChange1($event.target)">
                         <option></option>
                         <option value="1 Count">1 Count</option>
@@ -21,12 +21,12 @@
                 </div>
             </div>
             <div class="row ques-div">
-                <div class="col-md-12 col-sm-12 ques">
+                <div class="col-md-8 col-sm-12 ques">
                     <select name="" id="">
                         <option *ngFor="let q of questions">{{q.title}}</option>
                     </select>
                 </div>
-                <div class="col-md-12 col-sm-12">
+                <div class="col-md-4 col-sm-12">
                     <select name="" id="" class="action-question options" (change)="onChange1($event.target)">
                         <option></option>
                         <option value="1 Count">1 Count</option>
@@ -35,12 +35,12 @@
                 </div>
             </div>
             <div class="row ques-div">
-                <div class="col-md-12 col-sm-12 ques">
+                <div class="col-md-8 col-sm-12 ques">
                     <select name="" id="">
                         <option *ngFor="let q of questions">{{q.title}}</option>
                     </select>
                 </div>
-                <div class="col-md-12 col-sm-12 options-seclect">
+                <div class="col-md-4 col-sm-12 options-seclect">
                     <select name="" id="" class="action-question options" (change)="onChange1($event.target)">
                         <option></option>
                         <option value="1 Count">1 Count</option>
@@ -66,11 +66,13 @@
                 <div class="change-text">{{chgvalue3}}</div>
             </div> -->
             <div class="add-question">
-                <button class="add-question-button"><i class="fa fa-plus" aria-hidden="true"></i></button>
+                <button class="add-question-button">
+                    <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;<span class="add-action-text">Add New Action</span>
+                </button>
             </div>
-        </div>
-        <div class="submit-action-wrapper">
-            <button class="submit-action-button">Submit My Action</button>
+            <div class="submit-action-wrapper">
+                <button class="submit-action-button">Submit My Action</button>
+            </div>
         </div>
         <div class="checkout-action-link-part">
             <a href="#" class="checkout-action-link">Checkout the Carbon Offset Ideas</a>

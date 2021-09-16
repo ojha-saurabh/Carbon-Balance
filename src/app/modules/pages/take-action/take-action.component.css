@@ -9,7 +9,7 @@
     .action-part {
         background-color: #05355A;
         padding: 3%;
-        margin-top: 28%;
+        /* margin-top: 28%; */
     }
     .action-head {
         color: #FFFFFF;
@@ -21,29 +21,49 @@
     }
     .action-sub-head {
         color: #FFFFFF;
-        font-size: 1.8rem;
+        font-size: 1.4rem;
         text-align: center;
     }
     .submit-action-wrapper {
         text-align: center;
     }
     .submit-action-button {
-        background-color: #C1F7D5;
-        border: 1px solid #C1F7D5;
-        color: black;
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #C1F7D5;
         font-weight: bold;
-        padding: 1% 5%;
+        padding: 1.5% 7%;
         border-radius: 25px;
         margin: 1%;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
     }
     .checkout-action-link-part {
         text-align: center;
+        padding: 3%;
     }
     .checkout-action-link {
         color: #C1F7D5;
-        font-size: 1.4rem;
+        font-size: 1.1rem;
         text-decoration: underline;
+    }
+    select {
+        padding: 1%;
+        font-size: 1.0rem;
+        max-width: 100%;
+        margin-bottom: 1%;
+    }
+    .add-question-button {
+        color: #05355A;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 1%;
+        font-size: 1.0rem;
+    }
+    .change-text {
+        text-align: right;
+        color: #C1F7D5;
+        padding: 1%;
+        font-size: 0.8rem;
     }
 }
 @media only screen  and (min-width : 768px) {
@@ -74,9 +94,9 @@
         text-align: center;
     }
     .submit-action-button {
-        background-color: #C1F7D5;
-        border: 1px solid #C1F7D5;
-        color: black;
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #C1F7D5;
         font-weight: bold;
         padding: 1% 5%;
         border-radius: 25px;
@@ -85,54 +105,63 @@
     }
     .checkout-action-link-part {
         text-align: center;
+        padding: 2%;
     }
     .checkout-action-link {
         color: #C1F7D5;
         font-size: 1.4rem;
         text-decoration: underline;
     }
+    select {
+        padding: 1%;
+        font-size: 1.2rem;
+        max-width: 100%;
+    }
+    .add-question-button {
+        color: #05355A;
+        border: 1px solid gray;
+        border-radius: 5px;
+        padding: 1%;
+        font-size: 1.3rem;
+    }
+    .change-text {
+        text-align: right;
+        color: #C1F7D5;
+        padding: 1%;
+        font-size: 1.0rem;
+    }
 }
-@media only screen  and (min-width : 1224px) {
+/* @media only screen  and (min-width : 1224px) {
     .action-part {
         background-color: #05355A;
         padding: 0 15%;
     }
+} */
+a:hover {
+    color: #e7b649 !important;
+    text-decoration: underline;
 }
-.change-text {
-    text-align: right;
-    color: #C1F7D5;
-    padding: 1%;
-    font-size: 1.0rem;
-}
-select {
-    border: none;
-    color: #C1F7D5;
-    background-color: #05355A;
-    padding: 1%;
-    font-size: 1.2rem;
-    width: 100%;
-}
-.ques {
+
+
+/* .ques {
     font-size: 1.33rem;
-}
-.options-seclect {
+} */
+/* .options-seclect {
     float: right;
     width: 50%;
     text-align: right;
-}
+} */
 .options {
     float: right;
-    width: 50%;
-    text-align: right;
 }
 .ques-div {
-    border-top: 1px solid #C1F7D5;
-    border-bottom: 1px solid #C1F7D5;
+    border-bottom: 1px solid #05355A;
     margin: 2%;
     color: #C1F7D5;
     padding: 1.5% 0%;
 }
 .action-question-part {
+    background-color: #FFFFFF;
     padding: 1% 4%;
 }
 .questions{
@@ -147,14 +176,9 @@ select {
 .add-question {
     margin-right: 2%;
     text-align: end;
-    font-size: 2.5rem;
     background: transparent;
 }
-.add-question-button {
-    color: #C1F7D5;
-    background-color: #05355A;
-    border: 1px solid #05355A;
-}
+
 /* action part ends */
 
 /* invite part starts */
@@ -312,7 +336,7 @@ select {
     font-size: 1.5em;
 }
 .upload-text-1 {
-    font-size: 1.2em;
+    font-size: 1.0em;
 }
 .upload-text-2 {
     font-size: 1.5em;
