@@ -12,6 +12,7 @@
         /* background-size: cover; */
         padding: 5%;
         background-size: cover;
+        padding-bottom: 10%;
     }
     /* Styles */
     .left-banner-part {
@@ -252,6 +253,8 @@
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px){
     .action-items {
         padding: 5%;
+        display: grid;
+        grid-template-columns: 4fr;
     }
     .action-section {
         background-color: #C1F7D5;

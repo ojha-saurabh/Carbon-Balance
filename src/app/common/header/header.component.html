@@ -25,14 +25,14 @@
           <li class="nav-item nav-item-button" *ngIf="!isLoggedIn">
               <a class="nav-link promo-action" routerLink="/auth/register" ><span class="text-span"><strong>Join Today</strong></span></a>
           </li>
-          <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown" *ngIf="isLoggedIn">
+          <!-- <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown" *ngIf="isLoggedIn">
             <button class="btn btn-outline-default mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">
               <i class="fa fa-user"></i> UserName
             </button>
             <div ngbDropdownMenu aria-labelledby="dropdownManual">
               <button ngbDropdownItem (click)="logOut()">LogOut</button>
             </div>
-          </div>
+          </div> -->
         </ul>
       </div>
     </div>

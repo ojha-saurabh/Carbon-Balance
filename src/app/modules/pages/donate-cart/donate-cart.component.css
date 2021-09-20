@@ -1,0 +1,175 @@
+.donate-cart {
+    background: url("../../../../assets/pictures/sea_snow.jpg") no-repeat center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5% 5% 0 5%;
+}
+.fa-heart-o {
+    color: #C1F7D5;;
+}
+.head {
+    color: #FFFFFF;
+}
+.cart-body {
+    background-color: #05355A;
+    padding: 3% 10%;
+    border: 0.2px solid orange;
+    text-align: center;
+}
+
+a :hover {
+    color: #e7b649 !important;
+    text-decoration: underline;
+}
+@media only screen  and (min-width : 1224px) {
+    .title-head {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-family: kalam;
+        font-weight: bold;
+        text-align: center;
+    }
+    .sub-title {
+        color: #FFFFFF;
+        font-size: 2.0rem;
+        font-weight: bold;
+    }
+    .check-box-part {
+        padding: 3%;
+        text-align: left;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+    .box {
+        margin: 1%;
+        border: 5px solid #C1F7D5;
+        padding: 2%;
+        text-align: left;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+    }
+    .btn-wrapper {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .cancel {
+        color:  #C1F7D5;
+        font-size: 1.5rem;
+        text-decoration: underline;
+    }
+    .checkout-btn {
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
+        color: #05355A;
+        padding: 1% 30%;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .align-left {
+        float: left;
+    }
+    .align-right {
+        float: right;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .title-head {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-family: kalam;
+        font-weight: bold;
+        text-align: center;
+    }
+    .sub-title {
+        color: #FFFFFF;
+        font-size: 1.8rem;
+        font-weight: bold;
+    }
+    .check-box-part {
+        padding: 3%;
+        text-align: left;
+        color: #FFFFFF;
+        font-size: 1.3rem;
+    }
+    .box {
+        margin: 1%;
+        border: 5px solid #C1F7D5;
+        padding: 2%;
+        text-align: left;
+        color: #FFFFFF;
+        font-size: 1.3rem;
+    }
+    .btn-wrapper {
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+    .cancel {
+        color:  #C1F7D5;
+        font-size: 1.3rem;
+        text-decoration: underline;
+    }
+    .checkout-btn {
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
+        color: #05355A;
+        padding: 1% 20%;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .align-left {
+        float: left;
+    }
+    .align-right {
+        float: right;
+    }
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+    .title-head {
+        text-transform: uppercase;
+        font-size: 2.5rem;
+        font-family: kalam;
+        font-weight: bold;
+        text-align: center;
+    }
+    .sub-title {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .check-box-part {
+        padding: 3%;
+        text-align: left;
+        color: #FFFFFF;
+        font-size: 1.0rem;
+    }
+    .box {
+        margin: 1%;
+        border: 5px solid #C1F7D5;
+        padding: 2%;
+        text-align: left;
+        color: #FFFFFF;
+        font-size: 1.0rem;
+    }
+    .btn-wrapper {
+        margin-top: 5%;
+        margin-bottom: 15%;
+    }
+    .cancel {
+        color:  #C1F7D5;
+        font-size: 1.0rem;
+        text-decoration: underline;
+    }
+    .checkout-btn {
+        background-color: #C1F7D5;
+        border: 1px solid #C1F7D5;
+        color: #05355A;
+        padding: 1% 20%;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1.0rem;
+        margin-right: 5%;
+    }
+    
+}
