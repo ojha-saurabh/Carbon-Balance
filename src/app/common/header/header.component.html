@@ -1,6 +1,6 @@
 <header>
   <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light ">
-    <a class="navbar-brand site-name" href="#"><strong>Carbon </strong>Balance</a>
+    <a class="navbar-brand site-name" routerLink="/"><strong>Carbon </strong>Balance</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -25,12 +25,21 @@
           <li class="nav-item nav-item-button" *ngIf="!isLoggedIn">
               <a class="nav-link promo-action" routerLink="/auth/register" ><span class="text-span"><strong>Join Today</strong></span></a>
           </li>
-          <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown" *ngIf="isLoggedIn">
+          <!-- <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown" *ngIf="isLoggedIn">
             <button class="btn btn-outline-default mr-2" id="dropdownManual" ngbDropdownAnchor (focus)="myDrop.open()">
               <i class="fa fa-user"></i> UserName
             </button>
             <div ngbDropdownMenu aria-labelledby="dropdownManual">
               <button ngbDropdownItem (click)="logOut()">LogOut</button>
+            </div>
+          </div> -->
+          <div class="dropdown d-inline-block float-right" *ngIf="isLoggedIn">
+            <button class="btn btn-outline-default mr-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa fa-cog" aria-hidden="true"></i> {{this.userName}}
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" routerLink="/pages/create-profile" ><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Profile</a>              
+              <a class="dropdown-item" href="javascript:void(0);" (click)="logOut()"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp;Logout</a>
             </div>
           </div>
         </ul>

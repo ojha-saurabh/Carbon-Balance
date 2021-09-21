@@ -1,19 +1,9 @@
 const Q = require('q');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
-const mongoose = require('mongoose');
+const { db } = require('../db/db')
 
-//MogoDB Connection
-const db = mongoose.connect(`mongodb://localhost:27017/${process.env.DATABASE_NAME}`, {useNewUrlParser: true, useUnifiedTopology: true}, (err, dbo)=>{
-    if(err){
-        console.log(err);
-    }
-    if(dbo){
-        console.log('Database connected');
-    }
-});
-
-const { Users } = require('../schema/commonSchema');
+const { Users, Questions } = require('../schema/commonSchema');
 
 let model = {};
 
@@ -53,7 +43,6 @@ async function login(params){
 
 async function register(params){
     let deferred = Q.defer();
-    console.log('Seeding authors to ' + mongoose.connection.name + '...');
     let user = await Users.findOne({ email:params.email });
     if(!user){
         let saveObj = {email:params.email, password:bcrypt.hashSync(params.password, 10)};

@@ -28,10 +28,6 @@ export class SignInComponent implements OnInit {
       console.log(this.form.value);
       this.auth.login(this.form.value).subscribe((response: any) => {
         this.auth.handleToken(response);
-        console.log('=============res', response);    
-        // if(response.status) {
-        //   window.location.reload();
-        // }   
       }, (error: any) => {
         Swal.fire('Oops...', error.message, 'error');
       });

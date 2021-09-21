@@ -87,21 +87,21 @@
                 <div class="form-row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="inputEmail4">EMAIL</label>
-                        <input type="text" class="form-control" placeholder="Enter mail" id="inputEmail4" name="email" #email="ngModel" [(ngModel)]="payLoad.email" required email>
+                        <input type="text" class="form-control" placeholder="Enter mail"  name="email" #email="ngModel" [(ngModel)]="payLoad.email" autocomplete="off" required email>
                         <div [hidden]="email.valid || email.pristine" class="alert alert-danger">Please enter a valid email.</div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="inputEmail4">PASSWORD</label>
-                        <input type="password" class="form-control" placeholder="Enter password" id="inputEmail4" name="password" #password="ngModel" [(ngModel)]="payLoad.password" required>                        
+                        <input type="password" class="form-control" placeholder="Enter password"  name="password" #password="ngModel" [(ngModel)]="payLoad.password" autocomplete="off" required>                        
                         <div [hidden]="password.valid || password.pristine" class="alert alert-danger">Password is required.</div>
                     </div>
                 </div>
                 <div class="form-row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="inputEmail4">CONFIRM PASSWORD</label>
-                        <input type="password" class="form-control" placeholder="Enter confirm password" id="inputEmail4" name="confirmPassword" #confirmPassword="ngModel" [(ngModel)]="payLoad.confirmPassword" required>
+                        <input type="password" class="form-control" placeholder="Enter confirm password"  name="confirmPassword" #confirmPassword="ngModel" autocomplete="off" [(ngModel)]="payLoad.confirmPassword" required>
                         <div [hidden]="confirmPassword.valid || confirmPassword.pristine" class="alert alert-danger">Confirm password is required.</div>
                     </div>
                 </div>

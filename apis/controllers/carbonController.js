@@ -1,11 +1,21 @@
+const carbonModel = require("../models/carbonModel")
 let controller = {};
 
-controller.firstFunction = firstFunction;
-
-function firstFunction(req, res){
-    console.log('Carbon function is working')
-    res.status(200).send('Carbon function is working');
-}
+controller.questionaire = questionaire;
 
 module.exports = controller;
+console.log('i am here')
+
+//Questionaire functionality
+
+function questionaire(req, res){
+    carbonModel.questionaire(req.body,req.tokenDecoded).then((response)=>{    
+        if(response.status){
+            return res.status(200).send(response);
+        }else{
+            res.status(201).send(response);
+        }   
+    })
+}
+
 

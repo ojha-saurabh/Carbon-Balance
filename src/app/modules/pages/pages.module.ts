@@ -23,6 +23,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     PagesRoutingModule,
     FormsModule,
     ReactiveFormsModule
-  ]
+  ],
 })
 export class PagesModule { }

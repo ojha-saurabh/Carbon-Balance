@@ -33,9 +33,10 @@ export class AuthService {
     if (decoded){
       localStorage.setItem('authToken', params.token);
       localStorage.setItem('isLoggedIn', 'True');
-      this.router.navigate(['/pages/create-profile']);
       this.userData.next(decoded);
+      this.router.navigate(['/pages/create-profile']);
       Swal.fire('Hurray!!!', params.message, 'success');
+      this.getUserData();
     }else{
       Swal.fire('Oops...', 'Something went wrong!', 'error');
     }
@@ -71,6 +72,17 @@ export class AuthService {
       decoded = '';
     }
     this.userData.next(decoded);
+  }
+
+  getDecodedUserdata: any = () =>{
+    let decoded: any = '';
+    const token: any = localStorage.getItem('authToken');
+    if (!this.jwtHelper.isTokenExpired(token)){
+      decoded = this.jwtHelper.decodeToken(token);
+    }else{
+      decoded = '';
+    }
+    return decoded;
   }
 
 }

@@ -11,7 +11,6 @@ export class AfterLoginGuard implements CanActivate {
 
   tokenExist = false;
   constructor( private router: Router, private auth: AuthService){
-
     const token = localStorage.getItem('authToken');
     if (token) {
       this.tokenExist = true;

@@ -6,6 +6,9 @@ app.use(express.urlencoded({limit:'50mb', extended:true, parameterLimit:1000000}
 app.use(express.json());
 app.use(cors({origin:"http://localhost:4200"}))
 
+//Token validator
+
+
 //Routes
 const authRouter = require('./routes/authRoutes');
 const carbonRouter = require('./routes/carbonRoutes');

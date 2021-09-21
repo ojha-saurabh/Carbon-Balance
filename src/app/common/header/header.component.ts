@@ -12,19 +12,26 @@ export class HeaderComponent implements OnInit {
 
 userData: any;
 isLoggedIn: any = false;
+userName: any;
 
-constructor( private auth: AuthService,
-             private route: Router
-             ) { }
+constructor( private auth: AuthService, private route: Router) { }
 
 ngOnInit(): void {
-  this.isLoggedIn = localStorage.getItem('isLoggedIn');
   this.auth.userData.subscribe(response => {
+    this.isLoggedIn = this.auth.isLoggedIn();
+    if (this.isLoggedIn){
+      if (response.name){
+        this.userName = response.name;
+      }else{
+        const str: any = response.email.split('@')[0];
+        this.userName = str;
+      }
+    }
     this.userData = response;
   });
 }
-  
-  logOut() {
+
+logOut: any = () => {
     localStorage.clear();
     this.route.navigateByUrl('/');
     window.location.reload();
