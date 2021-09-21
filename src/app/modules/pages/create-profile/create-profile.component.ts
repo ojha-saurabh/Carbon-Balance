@@ -47,7 +47,7 @@ export class CreateProfileComponent implements OnInit {
   }
   selectFile: any = (event: any) => {
     this.selectedFiles = event.target.files;
-    console.log('===============',this.selectedFiles);
+    console.log('============profile pic===',this.selectedFiles);
     console.log('===============',this.selectedFiles?.item(0));
     let file = this.selectedFiles?.item(0);
 
@@ -57,7 +57,7 @@ export class CreateProfileComponent implements OnInit {
   }
   selectFile1: any = (event: any) => {
     this.selectedFiles1 = event.target.files;
-    console.log('===============',this.selectedFiles);
+    console.log('==============banner=',this.selectedFiles1);
   }
   upload: any = () => {
 
