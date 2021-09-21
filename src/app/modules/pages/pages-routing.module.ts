@@ -8,12 +8,18 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 
 import { PagesComponent } from './pages.component';
 import { TakeActionComponent } from './take-action/take-action.component';
+import { DonateOptionsComponent } from './donate-options/donate-options.component';
+import { DonateCartComponent } from './donate-cart/donate-cart.component';
+import { DonateFinalComponent } from './donate-final/donate-final.component';
 
 const routes: Routes = [
   { path: 'caculate-co2', component: CalculateCarbonComponent, canActivate: [AfterLoginGuard] },
   { path: 'landing-page', component: LandingPageComponent, canActivate: [AfterLoginGuard] },
   { path: 'take-action', component: TakeActionComponent, canActivate: [AfterLoginGuard] },
-  { path: 'create-profile', component: CreateProfileComponent, canActivate: [AfterLoginGuard] }
+  { path: 'create-profile', component: CreateProfileComponent, canActivate: [AfterLoginGuard] },
+  { path: 'donate-options', component: DonateOptionsComponent, canActivate: [AfterLoginGuard] },
+  { path: 'donate-cart', component: DonateCartComponent, canActivate: [AfterLoginGuard] },
+  { path: 'thanks-to-donate', component: DonateFinalComponent, canActivate: [AfterLoginGuard] }
 ];
 
 @NgModule({

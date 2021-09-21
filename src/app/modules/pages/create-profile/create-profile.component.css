@@ -33,13 +33,13 @@ label {
 input {
     border: 0;
     background-color: transparent;
-    border-bottom: 1px solid #C1F7D5;
+    border-bottom: 2px solid #C1F7D5;
     border-radius: 0px;
 }
 input:focus {
     border: 0;
     background-color: transparent;
-    border-bottom: 1px solid #C1F7D5;
+    border-bottom: 2px solid #C1F7D5;
     border-radius: 0px;
   }
 

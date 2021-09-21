@@ -1,0 +1,49 @@
+<section>
+    <div class="donate-cart">
+        <div class="title-head">
+            <!-- <i class="fa fa-heart-o" aria-hidden="true"></i> &nbsp;  -->
+            <span class="head">We Can Save the future.</span>
+        </div>
+        <div class="cart-body">
+            <div class="sub-title">
+                Organization/Project you have selected
+            </div>
+            <div class="check-box-part">
+                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"> &nbsp;
+                <label for="vehicle1"> Borehole Rehabilitation Project in Uganda </label><br>
+                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car"> &nbsp;
+                <label for="vehicle2"> Solar project by ACME group </label><br>
+                <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat"> &nbsp;
+                <label for="vehicle3"> Peralta I Wind Power Project </label>
+            </div>
+            <div class="sub-title">
+                Choose a donation amount 
+            </div>
+            <div class="box">
+                <input type="radio" id="html" name="select_money" value="HTML"> &nbsp;
+                <label for="html">INR 1000</label><br>
+                <input type="radio" id="css" name="select_money" value="CSS"> &nbsp;
+                <label for="css">INR 1000</label><br>
+                <input type="radio" id="javascript" name="select_money" value="JavaScript"> &nbsp;
+                <label for="javascript">INR 5000</label><br>
+                <input type="radio" id="custom" name="select_money" value="custom"> &nbsp;
+                <label for="custom">
+                    <input type="number" placeholder="Enter Custom Amount" class="input-class">
+                </label>
+            </div>
+            <div class="sub-title">
+                Please Choose
+            </div>
+            <div class="box">
+                <input type="radio" id="Monthly" name="select" value="Monthly"> &nbsp;
+                <label for="Monthly">Monthly</label><br>
+                <input type="radio" id="OneTime" name="select" value="OneTime"> &nbsp;
+                <label for="OneTime">One Time</label>
+            </div>
+            <div class="btn-wrapper">
+                <p class="align-left"><a class="cancel" [routerLink]="[ '/pages/donate-options' ]">Cancel</a></p>
+                <p class="align-right"><button class="checkout-btn" (click)="gotoDonateThanks()">Checkout</button></p>
+            </div>
+        </div>
+    </div>
+</section>
