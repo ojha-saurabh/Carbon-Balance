@@ -30,5 +30,6 @@ router.use((req, res, next) => {
 })
 
 router.route('/questionaire').get(carbonController.questionaire);
+router.route('/saveCalculatedFootprint').post(carbonController.saveCalculatedFootprint);
 
 module.exports = router;

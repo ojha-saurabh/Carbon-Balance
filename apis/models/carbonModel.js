@@ -8,6 +8,7 @@ const { Users, Questions } = require('../schema/commonSchema');
 let model = {};
 
 model.questionaire = questionaire;
+model.saveCalculatedFootprint = saveCalculatedFootprint;
 
 module.exports = model;
 
@@ -17,4 +18,8 @@ async function questionaire(params, userData){
     const questions = await Questions.find({});
     deferred.resolve({status:true, data:questions});
     return deferred.promise;
+}
+
+function saveCalculatedFootprint(params){
+    console.log(params);
 }
