@@ -8,6 +8,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { TakeActionComponent } from './take-action/take-action.component';
 import { CreateProfileComponent } from './create-profile/create-profile.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DonateOptionsComponent } from './donate-options/donate-options.component';
+import { DonateCartComponent } from './donate-cart/donate-cart.component';
+import { DonateFinalComponent } from './donate-final/donate-final.component';
 
 
 @NgModule({
@@ -16,7 +19,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     CalculateCarbonComponent,
     LandingPageComponent,
     TakeActionComponent,
-    CreateProfileComponent
+    CreateProfileComponent,
+    DonateOptionsComponent,
+    DonateCartComponent,
+    DonateFinalComponent
   ],
   imports: [
     CommonModule,

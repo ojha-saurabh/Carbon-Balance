@@ -5,7 +5,29 @@
         <div class="form">
             <div class="row mt-4">
                 <div class="form-group col-xs-6 col-md-6 col-sm-6">
-                    <label for="inputEmail4">UPLOAD PROFILE PICTURE</label>
+                    <input type="file" (change)="selectFile($event)" />
+                    <br>
+                    <br>
+                    <button class="btn btn-success btn-sm" [disabled]="!selectedFiles" (click)="upload()">UPLOAD PROFILE PICTURE</button>
+                    <!-- <label for="inputEmail4">UPLOAD PROFILE PICTURE</label> -->
+                    <!-- <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                aria-describedby="inputGroupFileAddon01">
+                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="form-group col-xs-6 col-md-6 col-sm-6">
+                    <!-- <label for="inputEmail4">UPLOAD PROFILE BANNER</label>
+                    <input type="file" placeholder="UPLOAD PROFILE BANNER"> -->
+                    <input type="file" (change)="selectFile1($event)" />
+                    <br>
+                    <br>
+                    <button class="btn btn-success btn-sm" [disabled]="!selectedFiles1" (click)="upload1()">UPLOAD PROFILE BANNER</button>
                     <!-- <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
@@ -19,85 +41,80 @@
                     <input type="file" class="custom-file-input" id="inputGroupFile01"
                                 aria-describedby="inputGroupFileAddon01">
                 </div>
-                <div class="form-group col-xs-6 col-md-6 col-sm-6">
-                    <label for="inputEmail4">UPLOAD PROFILE BANNER</label>
-                    <!-- <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
-                        </div>
-                        <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                aria-describedby="inputGroupFileAddon01">
-                            <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-                        </div>
-                    </div> -->
-                    <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                aria-describedby="inputGroupFileAddon01">
-                </div>
             </div>
-            <div class="row">
-                <div class="form-group col-xs-6 col-md-6 col-sm-6">
-                    <label for="inputEmail4">DISPLAY NAME</label>
-                    <input type="text" class="form-control" id="inputEmail4">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-xs-6 col-md-6 col-sm-6">
-                    <label for="inputEmail4">FIRST NAME</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="form-group col-xs-6 col-md-6 col-sm-6">
-                    <label for="inputPassword4">LAST NAME</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-xs-12 col-md-12 col-sm-12">
-                    <label for="inputEmail4">FIRST NAME</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-xs-4 col-md-4 col-sm-4">
-                    <label for="inputEmail4">ZIP CODE</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="form-group col-xs-4 col-md-4 col-sm-4">
-                    <label for="inputPassword4">STATE</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="form-group col-xs-4 col-md-4 col-sm-4">
-                    <label for="inputPassword4">AGE GROUP</label>
-                    <input type="password" class="form-control" id="inputPassword4">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-xs-12 col-md-12 col-sm-12">
-                    <label for="inputEmail4">EMAIL ID</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-xs-12 col-md-12 col-sm-12">
-                    <label for="inputEmail4">OCCUPATION</label>
-                    <input type="email" class="form-control" id="inputEmail4">
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-xs-10 col-md-10 col-sm-10">
-                    <span class="checkbox"><input type="checkbox">&nbsp;I agree to the terms and conditions of this site. </span> 
-                </div>
-                <div class="form-group col-xs-2 col-md-2 col-sm-2">
-                    <div class="float-right" >
-                        <a href="">Read T&C</a>
+            <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="form-group col-xs-6 col-md-12 col-sm-6">
+                        <label for="DisplayName">DISPLAY NAME</label>
+                        <input type="text" class="form-control" id="DisplayName" formControlName="DisplayName">
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-xs-12 col-md-12 col-sm-12 text-center">
-                    <button type="button" class="btn btn-info  border-0 text-span mt-4">CREATE PROFILE</button>
+                <div class="row">
+                    <div class="form-group col-xs-6 col-md-12 col-sm-6">
+                        <label for="About">About</label>
+                        <input type="text" class="form-control" id="About" formControlName="About">
+                    </div>
                 </div>
-            </div>
+                <div class="row">
+                    <div class="form-group col-xs-6 col-md-6 col-sm-6">
+                        <label for="FirstName">FIRST NAME</label>
+                        <input type="text" class="form-control" id="FirstName" formControlName="FirstName">
+                    </div>
+                    <div class="form-group col-xs-6 col-md-6 col-sm-6">
+                        <label for="LastName">LAST NAME</label>
+                        <input type="text" class="form-control" id="LastName" formControlName="LastName">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-12 col-md-12 col-sm-12">
+                        <label for="StreetAddress">Street Address</label>
+                        <input type="email" class="form-control" id="StreetAddress" formControlName="StreetAddress">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-4 col-md-4 col-sm-4">
+                        <label for="ZipCode">ZIP CODE</label>
+                        <input type="email" class="form-control" id="ZipCode" formControlName="ZipCode">
+                    </div>
+                    <div class="form-group col-xs-4 col-md-4 col-sm-4">
+                        <label for="State">STATE</label>
+                        <input type="text" class="form-control" id="State" formControlName="State">
+                    </div>
+                    <div class="form-group col-xs-4 col-md-4 col-sm-4">
+                        <label for="AgeGroup">AGE GROUP</label>
+                        <input type="text" class="form-control" id="AgeGroup" formControlName="AgeGroup">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-12 col-md-12 col-sm-12">
+                        <label for="EmailId">EMAIL ID</label>
+                        <input type="email" class="form-control" id="EmailId" formControlName="EmailId">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-12 col-md-12 col-sm-12">
+                        <label for="Occupation">OCCUPATION</label>
+                        <input type="email" class="form-control" id="Occupation" formControlName="Occupation">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-10 col-md-10 col-sm-10">
+                        <span class="checkbox">
+                            <input type="checkbox" formControlName="isChecked">&nbsp;I agree to the terms and conditions of this site. 
+                        </span> 
+                    </div>
+                    <div class="form-group col-xs-2 col-md-2 col-sm-2">
+                        <div class="float-right" >
+                            <a href="">Read T&C</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-xs-12 col-md-12 col-sm-12 text-center">
+                        <button type="submit" class="btn btn-info  border-0 text-span mt-4">CREATE PROFILE</button>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </section>
