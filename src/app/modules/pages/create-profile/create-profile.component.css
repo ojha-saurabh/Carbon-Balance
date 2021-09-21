@@ -29,7 +29,13 @@ label {
 }
 
 /* Input Border */
-
+.invalid-feedback {
+    color: red;
+    display: inline-block;
+    font-size: 1.0rem;
+    padding-left: 2%;
+    margin-bottom: 1%;
+}
 input {
     border: 0;
     background-color: transparent;
@@ -60,10 +66,28 @@ input:focus {
     font-size: 20px;
     font-weight: 600;
 }
+.read-tc {
+    color: #FFFFFF;
+    text-decoration: underline;
+}
+a:hover {
+    color: #e7b649 !important;
+    text-decoration: underline;
+}
+.custom-file-label {
+    color: #000000;
+}
 
 @media screen and (max-width: 600px) {
     .banner{
         margin-left: 5%;
         margin-right: 5%;
+    }
+    .invalid-feedback {
+        color: red;
+        display: inline-block;
+        font-size: 1.0rem;
+        padding-left: 5%;
+        margin-bottom: 1%;
     }
 }

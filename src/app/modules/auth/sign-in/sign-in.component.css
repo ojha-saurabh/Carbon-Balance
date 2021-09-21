@@ -157,7 +157,7 @@
         }
     
         .btn-sign-in{
-            background-color: #C1F7D5;
+            background-color: #05355A;
             padding: 7px 0px ;
             width: 24% !important;
             margin-left: 36%;
@@ -168,5 +168,10 @@
 
         .overlay-text{
             text-align: center;
+        }
+        .box-text{
+            color: #05355A;
+            font-weight: bolder;
+            font-size: 1.6rem;
         }
     }

@@ -34,11 +34,11 @@ export class AuthService {
       localStorage.setItem('authToken', params.token);
       localStorage.setItem('isLoggedIn', 'True');
       this.userData.next(decoded);
-      // this.router.navigate(['/pages/create-profile']);
-      // Swal.fire('Hurray!!!', params.message, 'success');
+      this.router.navigate(['/pages/create-profile']);
+      Swal.fire('Hurray!!!', params.message, 'success');
       this.getUserData();
     }else{
-      // Swal.fire('Oops...', 'Something went wrong!', 'error');
+      Swal.fire('Oops...', 'Something went wrong!', 'error');
     }
   }
 
@@ -68,6 +68,14 @@ export class AuthService {
     const token: any = localStorage.getItem('authToken');
     if (!this.jwtHelper.isTokenExpired(token)){
       decoded = this.jwtHelper.decodeToken(token);
+      console.log('======decoded', decoded);
+      if(decoded.displayName) {
+        localStorage.setItem('UserName', decoded.displayName);
+      } else {
+        let email = decoded.email;
+        let name = email.split('@')
+        localStorage.setItem('UserName', name[0]);
+      }
     }else{
       decoded = '';
     }

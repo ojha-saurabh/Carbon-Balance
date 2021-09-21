@@ -5,10 +5,20 @@
         <div class="form">
             <div class="row mt-4">
                 <div class="form-group col-xs-6 col-md-6 col-sm-6">
-                    <input type="file" (change)="selectFile($event)" />
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupFileAddon01" (click)="upload()">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                             aria-describedby="inputGroupFileAddon01" (change)="selectFile($event)" >
+                            <label class="custom-file-label" for="inputGroupFile01">Choose Profile Picture</label>
+                        </div>
+                    </div>
+                    <!-- <input type="file" (change)="selectFile($event)" />
                     <br>
                     <br>
-                    <button class="btn btn-success btn-sm" [disabled]="!selectedFiles" (click)="upload()">UPLOAD PROFILE PICTURE</button>
+                    <button class="btn btn-success btn-sm" [disabled]="!selectedFiles" (click)="upload()">UPLOAD PROFILE PICTURE</button> -->
                     <!-- <label for="inputEmail4">UPLOAD PROFILE PICTURE</label> -->
                     <!-- <div class="input-group mb-3">
                         <div class="input-group-prepend">
@@ -22,12 +32,20 @@
                     </div> -->
                 </div>
                 <div class="form-group col-xs-6 col-md-6 col-sm-6">
-                    <!-- <label for="inputEmail4">UPLOAD PROFILE BANNER</label>
-                    <input type="file" placeholder="UPLOAD PROFILE BANNER"> -->
-                    <input type="file" (change)="selectFile1($event)" />
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="inputGroupFileAddon01" (click)="upload1()">Upload</span>
+                        </div>
+                        <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="inputGroupFile01"
+                             aria-describedby="inputGroupFileAddon01" (change)="selectFile1($event)" >
+                            <label class="custom-file-label" for="inputGroupFile01">Choose Profile Banner</label>
+                        </div>
+                    </div>
+                    <!-- <input type="file" (change)="selectFile1($event)" />
                     <br>
                     <br>
-                    <button class="btn btn-success btn-sm" [disabled]="!selectedFiles1" (click)="upload1()">UPLOAD PROFILE BANNER</button>
+                    <button class="btn btn-success btn-sm" [disabled]="!selectedFiles1" (click)="upload1()">UPLOAD PROFILE BANNER</button> -->
                     <!-- <div class="input-group mb-3">
                         <div class="input-group-prepend">
                             <span class="input-group-text" id="inputGroupFileAddon01">Upload</span>
@@ -46,55 +64,95 @@
                 <div class="row">
                     <div class="form-group col-xs-6 col-md-12 col-sm-6">
                         <label for="DisplayName">DISPLAY NAME</label>
-                        <input type="text" class="form-control" id="DisplayName" formControlName="DisplayName">
+                        <input type="text" class="form-control" id="DisplayName" formControlName="DisplayName"
+                         [ngClass]="{ 'is-invalid': submitted && f?.DisplayName?.errors }" required>
+                    </div>
+                    <div *ngIf="submitted && f.DisplayName.errors" class="invalid-feedback">
+                        <div *ngIf="f?.DisplayName.errors.required">DisplayName is required.</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-xs-6 col-md-12 col-sm-6">
-                        <label for="About">About</label>
-                        <input type="text" class="form-control" id="About" formControlName="About" required>
+                        <label for="About">ABOUT</label>
+                        <input type="text" class="form-control" id="About" formControlName="About" 
+                        [ngClass]="{ 'is-invalid': submitted && f?.About?.errors }" required>
+                    </div>
+                    <div *ngIf="submitted && f.About.errors" class="invalid-feedback">
+                        <div *ngIf="f?.About.errors.required">About is required.</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-xs-6 col-md-6 col-sm-6">
                         <label for="FirstName">FIRST NAME</label>
-                        <input type="text" class="form-control" id="FirstName" formControlName="FirstName">
+                        <input type="text" class="form-control" id="FirstName" formControlName="FirstName"
+                        [ngClass]="{ 'is-invalid': submitted && f?.FirstName?.errors }" required>
+                    </div>
+                    <div *ngIf="submitted && f.FirstName.errors" class="invalid-feedback">
+                        <div *ngIf="f?.FirstName.errors.required">FirstName is required.</div>
                     </div>
                     <div class="form-group col-xs-6 col-md-6 col-sm-6">
                         <label for="LastName">LAST NAME</label>
-                        <input type="text" class="form-control" id="LastName" formControlName="LastName">
+                        <input type="text" class="form-control" id="LastName" formControlName="LastName"
+                        [ngClass]="{ 'is-invalid': submitted && f?.LastName?.errors }" required>
+                    </div>
+                    <div *ngIf="submitted && f.LastName.errors" class="invalid-feedback">
+                        <div *ngIf="f?.LastName.errors.required">LastName is required.</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
-                        <label for="StreetAddress">Street Address</label>
-                        <input type="email" class="form-control" id="StreetAddress" formControlName="StreetAddress">
+                        <label for="StreetAddress">STREET ADDRESS</label>
+                        <input type="email" class="form-control" id="StreetAddress" formControlName="StreetAddress" 
+                        [ngClass]="{ 'is-invalid': submitted && f?.StreetAddress?.errors }" required>
+                    </div>
+                    <div *ngIf="submitted && f.StreetAddress.errors" class="invalid-feedback">
+                        <div *ngIf="f?.StreetAddress.errors.required">StreetAddress is required.</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-xs-4 col-md-4 col-sm-4">
                         <label for="ZipCode">ZIP CODE</label>
-                        <input type="email" class="form-control" id="ZipCode" formControlName="ZipCode">
+                        <input type="email" class="form-control" id="ZipCode" formControlName="ZipCode" 
+                        [ngClass]="{ 'is-invalid': submitted && f?.ZipCode?.errors }" required>
+                    </div>
+                    <div *ngIf="submitted && f.ZipCode.errors" class="invalid-feedback">
+                        <div *ngIf="f?.ZipCode.errors.required">ZipCode is required.</div>
                     </div>
                     <div class="form-group col-xs-4 col-md-4 col-sm-4">
                         <label for="State">STATE</label>
-                        <input type="text" class="form-control" id="State" formControlName="State">
+                        <input type="text" class="form-control" id="State" formControlName="State" 
+                        [ngClass]="{ 'is-invalid': submitted && f?.State?.errors }" required>
+                    </div>
+                    <div *ngIf="submitted && f.State.errors" class="invalid-feedback">
+                        <div *ngIf="f?.State.errors.required">State is required.</div>
                     </div>
                     <div class="form-group col-xs-4 col-md-4 col-sm-4">
                         <label for="AgeGroup">AGE GROUP</label>
-                        <input type="text" class="form-control" id="AgeGroup" formControlName="AgeGroup">
+                        <input type="text" class="form-control" id="AgeGroup" formControlName="AgeGroup" 
+                        [ngClass]="{ 'is-invalid': submitted && f?.AgeGroup?.errors }" required>
+                    </div>
+                    <div *ngIf="submitted && f.AgeGroup.errors" class="invalid-feedback">
+                        <div *ngIf="f?.AgeGroup.errors.required">Age is required.</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="EmailId">EMAIL ID</label>
-                        <input type="email" class="form-control" id="EmailId" formControlName="EmailId">
+                        <input type="email" class="form-control" id="EmailId" formControlName="EmailId" 
+                        [ngClass]="{ 'is-invalid': submitted && f?.EmailId?.errors }" required>
+                    </div>
+                    <div *ngIf="submitted && f.EmailId.errors" class="invalid-feedback">
+                        <div *ngIf="f?.EmailId.errors.required">EmailId is required.</div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="Occupation">OCCUPATION</label>
-                        <input type="email" class="form-control" id="Occupation" formControlName="Occupation">
+                        <input type="email" class="form-control" id="Occupation" formControlName="Occupation" 
+                        [ngClass]="{ 'is-invalid': submitted && f?.Occupation?.errors }" required>
+                    </div>
+                    <div *ngIf="submitted && f.Occupation.errors" class="invalid-feedback">
+                        <div *ngIf="f?.Occupation.errors.required">Occupation is required.</div>
                     </div>
                 </div>
                 <div class="row">
@@ -106,7 +164,7 @@
                     </div>
                     <div class="form-group col-xs-2 col-md-2 col-sm-2">
                         <div class="float-right" >
-                            <a href="">Read T&C</a>
+                            <a href="#" class="read-tc">Read T&C</a>
                         </div>
                     </div>
                 </div>

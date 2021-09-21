@@ -14,6 +14,7 @@ export class CreateProfileComponent implements OnInit {
   isChecked = false;
   selectedFiles?: FileList;
   selectedFiles1?: FileList;
+  submitted = false;
 
   constructor(
     private router: Router,
@@ -48,9 +49,17 @@ export class CreateProfileComponent implements OnInit {
     }
   }
  
+  get f() { return this.profileForm.controls; }
+
   onSubmit: any = () => {
-    console.log('Your order has been submitted', this.profileForm.value);
-    this.toastr.success('Profile Updated Successfully!', 'Success!');
+    this.submitted = true;
+    if(this.profileForm.pristine) {
+      console.log('Your order has been submitted', this.profileForm.value, this.profileForm);
+      this.toastr.success('Profile Updated Successfully!', 'Success!');
+    } else {
+      this.toastr.error('Please Fill the Required Fields to Update Profile!', 'Error!');
+    }
+    // this.profileForm.controls['DisplayName'].markAsTouched()
   }
 
   selectFile: any = (event: any) => {
@@ -68,7 +77,7 @@ export class CreateProfileComponent implements OnInit {
     console.log('==============banner=',this.selectedFiles1);
   }
   upload: any = () => {
-
+    console.log('=============up');
   }
   upload1: any = () => {
 
