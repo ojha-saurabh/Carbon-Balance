@@ -34,11 +34,11 @@ export class AuthService {
       localStorage.setItem('authToken', params.token);
       localStorage.setItem('isLoggedIn', 'True');
       this.userData.next(decoded);
-      this.router.navigate(['/pages/create-profile']);
-      Swal.fire('Hurray!!!', params.message, 'success');
+      // this.router.navigate(['/pages/create-profile']);
+      // Swal.fire('Hurray!!!', params.message, 'success');
       this.getUserData();
     }else{
-      Swal.fire('Oops...', 'Something went wrong!', 'error');
+      // Swal.fire('Oops...', 'Something went wrong!', 'error');
     }
   }
 

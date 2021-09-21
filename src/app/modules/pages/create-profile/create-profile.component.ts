@@ -11,6 +11,7 @@ import { ToastrService } from 'ngx-toastr';
 export class CreateProfileComponent implements OnInit {
 
   profileForm: any;
+  isChecked = false;
   selectedFiles?: FileList;
   selectedFiles1?: FileList;
 
@@ -37,18 +38,21 @@ export class CreateProfileComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  onSubmit: any = () => {
-    console.log('Your order has been submitted', this.profileForm.value);
+  onCheckChange: any = (event: any) => {
     if(this.profileForm.value.isChecked === true) {
       console.log('===========hiii');
-      this.toastr.success('Profile Updated Successfully!', 'Success!');
+      this.isChecked = true;
     } else {
       console.log('1111111111111111===========hiii');
-      debugger;
-      this.toastr.error('Please Accept the Terms and conditions before Creating Profile!', 'Error!');
-      debugger;
+      this.isChecked = false;
     }
   }
+ 
+  onSubmit: any = () => {
+    console.log('Your order has been submitted', this.profileForm.value);
+    this.toastr.success('Profile Updated Successfully!', 'Success!');
+  }
+
   selectFile: any = (event: any) => {
     this.selectedFiles = event.target.files;
     console.log('============profile pic===',this.selectedFiles);

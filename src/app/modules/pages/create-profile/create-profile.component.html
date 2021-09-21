@@ -52,7 +52,7 @@
                 <div class="row">
                     <div class="form-group col-xs-6 col-md-12 col-sm-6">
                         <label for="About">About</label>
-                        <input type="text" class="form-control" id="About" formControlName="About">
+                        <input type="text" class="form-control" id="About" formControlName="About" required>
                     </div>
                 </div>
                 <div class="row">
@@ -100,7 +100,8 @@
                 <div class="row">
                     <div class="form-group col-xs-10 col-md-10 col-sm-10">
                         <span class="checkbox">
-                            <input type="checkbox" formControlName="isChecked">&nbsp;I agree to the terms and conditions of this site. 
+                            <input type="checkbox" formControlName="isChecked" (change)="onCheckChange($event)">&nbsp;
+                            I agree to the terms and conditions of this site. 
                         </span> 
                     </div>
                     <div class="form-group col-xs-2 col-md-2 col-sm-2">
@@ -111,7 +112,7 @@
                 </div>
                 <div class="row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12 text-center">
-                        <button type="submit" class="btn btn-info  border-0 text-span mt-4">CREATE PROFILE</button>
+                        <button type="submit" class="btn btn-info  border-0 text-span mt-4" [disabled]="!profileForm.valid && !isChecked">CREATE PROFILE</button>
                     </div>
                 </div>
             </form>
