@@ -42,10 +42,15 @@ export class AuthService {
     }
   }
 
-  logout: any = () =>  {
-      localStorage.removeItem('authToken');
+  logout: any = (params: any = '') =>  {
+    localStorage.clear();
+    if (params === 'tokenError'){
+      Swal.fire('Token error!!!', 'Auth token might be expired. Please login again.', 'success');
+      this.router.navigate(['/auth/login']);
+    }else{
       Swal.fire('Successful!!!', 'You have been logged out successfully.', 'success');
-      this.router.navigate(['/']);
+      this.router.navigate(['/auth/login']);
+    }
   }
 
   tokenExpired: any = () => {

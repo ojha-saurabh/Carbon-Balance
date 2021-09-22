@@ -13,7 +13,7 @@ import { DonateCartComponent } from './donate-cart/donate-cart.component';
 import { DonateFinalComponent } from './donate-final/donate-final.component';
 
 const routes: Routes = [
-  { path: 'caculate-co2', component: CalculateCarbonComponent, canActivate: [AfterLoginGuard] },
+  { path: 'calculate-co2', component: CalculateCarbonComponent, canActivate: [AfterLoginGuard] },
   { path: 'landing-page', component: LandingPageComponent, canActivate: [AfterLoginGuard] },
   { path: 'take-action', component: TakeActionComponent, canActivate: [AfterLoginGuard] },
   { path: 'create-profile', component: CreateProfileComponent, canActivate: [AfterLoginGuard] },

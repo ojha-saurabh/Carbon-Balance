@@ -18,7 +18,15 @@ export class CarbonService {
   }
 
   saveCalculatedFootprint: any = (params: any) => {
-    console.log(params);
     return this.http.post(environment.apiBaseURL + 'carbon/saveCalculatedFootprint', params);
+  }
+
+  getActions: any = (params: {email: string, password: string}) => {
+    return this.http.get(environment.apiBaseURL + 'carbon/getActions');
+  }
+
+  saveCalculatedActions: any = (params: any) => {
+    console.log(params);
+    return this.http.post(environment.apiBaseURL + 'carbon/saveCalculatedActions', params);
   }
 }

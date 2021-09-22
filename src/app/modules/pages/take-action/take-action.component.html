@@ -5,77 +5,43 @@
             <i class="fa fa-male" aria-hidden="true"></i>&nbsp;&nbsp;Take Action
         </div>
         <div class="action-sub-head">Select the activity from the list below</div>
-        <div class="action-question-part">
-            <div class="row ques-div">
-                <div class="col-md-8 col-sm-12 ques">
-                    <select name="" id="">
-                        <option *ngFor="let q of questions">{{q.title}} this is the text for demo</option>
-                    </select>
+        <form name="actionForm" #actionForm="ngForm" (ngSubmit)="onSubmit(actionForm)">
+            <div class="action-question-part">
+            
+                <div class="row ques-div" *ngFor="let data of saveObjArray; let i = index">               
+                    <div class="col-md-6 col-sm-12 ques">
+                        <select name="action{{i}}" #action{{i}} (change)="changeAction(i, $event)">
+                            <option *ngFor="let action of actionData; let j = index" [selected]="action.action==data.action" [value]="j">{{ action.action }}</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 col-sm-12 " > 
+                        <div class="input-group" *ngIf="data.options[data.selectedOption].optionText == 'Other' ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3" >Custom value</span>
+                              </div>
+                            <input type="number" class="form-control" [value]="data.otherInput" placeholder="Custom value" (keyup)="otherInputFunc(i, $event)">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12"> 
+                        <select name="actionOption{{i}}" #actionOption{{i}} class="action-question options" (change)="changeOption(i, $event)">
+                            <!-- <option value="" selected>Select</option> -->
+                            <option *ngFor="let option of data.options; let j = index" [value]="j" [selected]="j == data.selectedOption"> {{option.optionText}}</option>
+                        </select>
+                    </div>                    
                 </div>
-                <div class="col-md-4 col-sm-12">
-                    <select name="" id="" class="action-question options" (change)="onChange1($event.target)">
-                        <option></option>
-                        <option value="1 Count">1 Count</option>
-                        <option value="2 Count">2 Count</option>
-                    </select>
+                
+                <div class="add-question" *ngIf="saveObjArray?.length < actionData?.length">
+                    <button type="button" class="btn add-question-button" (click)="addAction()">
+                        <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;<span class="add-action-text">Add New Action</span>
+                    </button>
                 </div>
-            </div>
-            <div class="row ques-div">
-                <div class="col-md-8 col-sm-12 ques">
-                    <select name="" id="">
-                        <option *ngFor="let q of questions">{{q.title}}</option>
-                    </select>
-                </div>
-                <div class="col-md-4 col-sm-12">
-                    <select name="" id="" class="action-question options" (change)="onChange1($event.target)">
-                        <option></option>
-                        <option value="1 Count">1 Count</option>
-                        <option value="2 Count">2 Count</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row ques-div">
-                <div class="col-md-8 col-sm-12 ques">
-                    <select name="" id="">
-                        <option *ngFor="let q of questions">{{q.title}}</option>
-                    </select>
-                </div>
-                <div class="col-md-4 col-sm-12 options-seclect">
-                    <select name="" id="" class="action-question options" (change)="onChange1($event.target)">
-                        <option></option>
-                        <option value="1 Count">1 Count</option>
-                        <option value="2 Count">2 Count</option>
-                    </select>
+                <div class="submit-action-wrapper">
+                    <button class="btn submit-action-button">Submit My Action</button>
                 </div>
             </div>
-            <!-- <div class="ques-div">
-                <select name="" id="" class="action-question" (change)="onChange2($event.target)"
-                [(ngModel)]="selectedValue">
-                    <option>Used cycle for errand this month</option>
-                    <option value="10 Times">10 Times</option>
-                    <option value="14 Times">14 Times</option>
-                </select>
-                <div class="change-text">{{chgvalue2}}</div>
-            </div> -->
-            <!-- <div class="ques-div">
-                <select name="" id="" class="action-question" (change)="onChange3($event.target)">
-                    <option>Volunteered in a tree plantation drive this month</option>
-                    <option value="8 Trees">8 Trees</option>
-                    <option value="10 Trees">10 Trees</option>
-                </select>
-                <div class="change-text">{{chgvalue3}}</div>
-            </div> -->
-            <div class="add-question">
-                <button class="add-question-button">
-                    <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;<span class="add-action-text">Add New Action</span>
-                </button>
-            </div>
-            <div class="submit-action-wrapper">
-                <button class="submit-action-button">Submit My Action</button>
-            </div>
-        </div>
+        </form>
         <div class="checkout-action-link-part">
-            <a href="#" class="checkout-action-link">Checkout the Carbon Offset Ideas</a>
+            <a routerLink="/pages/calculate-co2" class="checkout-action-link">Checkout the Carbon Offset Ideas</a>
         </div>
     </div>
 </section>
