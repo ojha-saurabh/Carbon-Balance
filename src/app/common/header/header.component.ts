@@ -62,9 +62,7 @@ ngOnInit(): void {
 }
 
 logOut: any = () => {
-    localStorage.clear();
-    this.route.navigateByUrl('/');
-    window.location.reload();
+    this.auth.logout();
   }
 
 }
