@@ -28,6 +28,27 @@ export class AuthService {
     return this.http.post(environment.apiBaseURL + 'auth/register', params);
   }
 
+  getUserByEmail: any = (params: {email: string}) => {
+    return this.http.post(environment.apiBaseURL + 'auth/getUserById', params);
+  }
+
+  createProfile: any = (params: any) => {
+    console.log('================params', params);
+    const formData = new FormData();
+    formData.append("displayName", params.displayName);
+    formData.append("about", params.about);
+    formData.append("firstName", params.firstName);
+    formData.append("lastName", params.lastName);
+    formData.append("email", params.email);
+    formData.append("streetAddress", params.streetAddress);
+    formData.append("zipCode", params.zipCode);
+    formData.append("state", params.state);
+    formData.append("age", params.age);
+    formData.append("occupation", params.occupation);
+    formData.append("termsAccepted", params.termsAccepted);
+    return this.http.post(environment.apiBaseURL + 'auth/createProfile', params);
+  }
+
   handleToken: any = (params: {status: boolean, message: string, token: string}) => {
     const decoded: any = this.jwtHelper.decodeToken(params.token);
     if (decoded){
@@ -68,14 +89,6 @@ export class AuthService {
     const token: any = localStorage.getItem('authToken');
     if (!this.jwtHelper.isTokenExpired(token)){
       decoded = this.jwtHelper.decodeToken(token);
-      console.log('======decoded', decoded);
-      if(decoded.displayName) {
-        localStorage.setItem('UserName', decoded.displayName);
-      } else {
-        let email = decoded.email;
-        let name = email.split('@')
-        localStorage.setItem('UserName', name[0]);
-      }
     }else{
       decoded = '';
     }
