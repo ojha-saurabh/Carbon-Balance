@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-a :hover {
+a:hover {
     color: #e7b649 !important;
     text-decoration: underline;
 }

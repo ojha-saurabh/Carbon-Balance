@@ -109,17 +109,19 @@
     input {
         border: 0;
         background-color: transparent;
-        border-bottom: 2px solid #05355A;
+        border-bottom: 2px solid #FFFFFF;
         border-radius: 0px;
+        color: #FFFFFF;
     }
     input:focus {
         border: 0;
         background-color: transparent;
-        border-bottom: 2px solid #05355A;
+        color: #FFFFFF;
+        border-bottom: 2px solid #FFFFFF;
         border-radius: 0px;
-      }
+    }
     
-      label {
+    label {
         color: #FFFFFF;
         font-size: 1 em;
         font-family: 'Roboto';
@@ -157,7 +159,7 @@
         }
     
         .btn-sign-in{
-            background-color: #C1F7D5;
+            background-color: #05355A;
             padding: 7px 0px ;
             width: 24% !important;
             margin-left: 36%;
@@ -168,5 +170,10 @@
 
         .overlay-text{
             text-align: center;
+        }
+        .box-text{
+            color: #05355A;
+            font-weight: bolder;
+            font-size: 1.6rem;
         }
     }

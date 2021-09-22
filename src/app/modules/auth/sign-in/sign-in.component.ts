@@ -35,15 +35,15 @@ export class SignInComponent implements OnInit {
       this.auth.login(this.form.value).subscribe((response: any) => {
         this.auth.handleToken(response);
         console.log('==========response', response);
-        if(response.status == true && response.token != '' ) {
-          this.toastr.success('Success!', 'You have loggedin Successfully');
-          this.router.navigateByUrl('/pages/create-profile');
-        } else {
-          this.toastr.error('oops!', response.message);
-        }
+        // if(response.status == true && response.token != '' ) {
+        //   this.toastr.success('Success!', 'You have loggedin Successfully');
+        //   this.router.navigateByUrl('/pages/create-profile');
+        // } else {
+        //   this.toastr.error('oops!', response.message);
+        // }
       }, (error: any) => {
-        // Swal.fire('Oops...', error.message, 'error');
-        this.toastr.error('oops!', error.message);
+        Swal.fire('Oops...', error.message, 'error');
+        // this.toastr.error('oops!', error.message);
       });
     }
   }

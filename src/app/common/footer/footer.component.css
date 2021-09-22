@@ -46,4 +46,11 @@ footer {
     font-size: 24px;
     text-transform: uppercase;
     color: #05355A;
-  }
+}
+.site-name:hover{
+    margin-top: -8px;
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #05355A;
+    text-decoration: none;
+}

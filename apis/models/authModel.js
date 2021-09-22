@@ -7,6 +7,8 @@ let model = {};
 
 model.login = login;
 model.register = register;
+model.getUserById = getUserById;
+model.createUserProfile = createUserProfile;
 
 module.exports = model;
 
@@ -52,6 +54,53 @@ async function register(params){
                     deferred.resolve({status:false, message:'Something went wrong'});           
                 }
             })       
+        }
+    })
+    
+    return deferred.promise;
+}
+
+// get user by id
+
+async function getUserById(params){
+    let deferred = Q.defer();
+
+    db.get().collection('tbl_users').findOne({ email:params.email }, (err, user) =>{
+        if(err) deferred.reject(err.name+': '+err.message);
+        console.log('==============',user);
+        if(user){
+            deferred.resolve({status:true, message:'', data: user});
+        }
+    })
+    
+    return deferred.promise;
+}
+
+
+// create profile
+
+async function createUserProfile(body){
+    let deferred = Q.defer();
+    console.log('================body', body);
+    // console.log('================11111111111body', req.body);
+    db.get().collection('tbl_users').
+    findOneAndUpdate({ email:body.email },{$set : {
+        "displayName": body?.displayName,
+        "about": body?.about,
+        "firstName": body?.firstName,
+        "lastName": body?.lastName,
+        "email": body?.email,
+        "streetAddress": body?.streetAddress,
+        "zipCode": body?.zipCode,
+        "state": body?.state,
+        "age": body?.age,
+        "occupation": body?.occupation,
+        "termsAccepted": body?.termsAccepted,
+    }}, (err, user) =>{
+        if(err) deferred.reject(err.name+': '+err.message);
+        console.log('==============',user);
+        if(user){
+            deferred.resolve({status:true, message:'Profile Created Successfully.', data: user});
         }
     })
     

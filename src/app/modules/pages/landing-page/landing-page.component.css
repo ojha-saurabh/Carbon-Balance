@@ -31,6 +31,7 @@
         font-family: kalam;
         font-weight: bold;
         font-size: 1.5rem;
+        text-transform: uppercase;
     }
 }
 @media only screen  and (min-width : 768px) {
@@ -59,6 +60,7 @@
         font-family: kalam;
         font-weight: bold;
         font-size: 2.5rem;
+        text-transform: uppercase;
     }
 }
 
@@ -275,6 +277,7 @@
         font-weight: bold;
         margin-bottom: 2%;
         font-size: 1.2rem;
+        text-decoration: none;
     }
     .action-description {
         color: #05355A;
@@ -299,7 +302,7 @@
         color: #FFFFFF;
         background-color: #05355A;
         border: 1px solid #05355A;
-        /* padding: 1% 4%; */
+        padding: 1% 4%;
         margin: 0.7em !important;
     }
     .actions {
@@ -310,15 +313,18 @@
         font-weight: bold;
         margin-bottom: 2%;
         font-size: 1.2rem;
+        text-decoration: none;
     }
     .action-description {
         color: #05355A;
     }
 }
 
-@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px){
     .action-items {
         padding: 5%;
+        display: grid;
+        grid-template-columns: 4fr;
     }
     .action-section {
         background-color: #C1F7D5;
@@ -346,11 +352,16 @@
         margin: 2%;
         text-align: center;
         font-size: 1.2rem;
+        text-decoration: none;
     }
     .action-description {
         color: #05355A;
         text-align: center;
     }
+}
+a:hover {
+    color: #e7b649 !important;
+    text-decoration: underline;
 }
 /* action ends */
 
@@ -385,8 +396,28 @@
     font-weight: bold;
     /* margin-top: 4%; */
 }
+.gallery-head1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    /* margin-top: 4%; */
+}
+.blog-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+.blog-head {
+    font-weight: bold;
+    /* font-size: 1.6rem; */
+}
 
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .blog-head {
+        font-weight: bold;
+        font-size: 1.6rem;
+    }
     .gallery-head {
         font-size: 1.8rem;
         font-weight: bold;

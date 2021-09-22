@@ -11,5 +11,7 @@ router.use((req,res,next)=>{
 
 router.route('/login').post(authController.login);
 router.route('/register').post(authController.register);
+router.route('/getUserById').post(authController.getUserById);
+router.route('/createProfile').post(authController.createUserProfile);
 
 module.exports = router;
