@@ -7,7 +7,7 @@
             </div>
         </div>
         <!-- <img src="./../../../../assets/pictures/Protest.jpg" alt="banner-img" class="banner-img"> -->
-        <h2 class="weclome-text">WELCOME {{username}}</h2>
+        <h2 class="weclome-text">WELCOME {{userName}}</h2>
     </div>
 </section>
 <!-- banner ends-->
@@ -29,23 +29,23 @@
                 <tr class="score-head">
                     <td class="score-des">CARBON SCORE</td>
                     <td class="score-value">
-                      <select name="" id="" class="score-select">
-                          <option value="YEARLY">YEARLY</option>
-                          <option value="LIFETIME">LIFE TIME</option>
+                      <select name="" id="" class="score-select" (change)="onChange($event)">
+                          <option value="yearly">YEARLY</option>
+                          <option value="lifetime">LIFE TIME</option>
                       </select>
                     </td>
                   </tr>
                 <tr class="score-list">
                   <td class="score-des">Yearly Carbon Footprint</td>
-                  <td class="score-value"><b>1.6 Ton</b></td>
+                  <td class="score-value"><b>{{totalCarbonFootprint}} Ton</b></td>
                 </tr>
                 <tr class="score-list">
                     <td class="score-des">Carbon Offset Points</td>
-                    <td class="score-value"><b>0.6 Ton</b></td>
+                    <td class="score-value"><b>{{actionFootprint}} Ton</b></td>
                 </tr>
                 <tr class="score-list">
                     <td class="score-des">Remaining CO2 to offset</td>
-                    <td class="score-value"><b>1 Ton</b></td>
+                    <td class="score-value"><b>{{remainingFootprint}} Ton</b></td>
                 </tr>
             </table>
         </div>
@@ -63,7 +63,7 @@
         </div> -->
         <div class="row carbon-offset-link-space">
             <div class="col-lg-12 col-md-12 col-sm-12">
-                <a  [routerLink]="[ '/pages/caculate-co2' ]" class="carbon-offset-link">Checkout the Carbon Offset Idea</a>
+                <a  [routerLink]="[ '/pages/calculate-co2' ]" class="carbon-offset-link">Checkout the Carbon Offset Idea</a>
             </div>
         </div>
     </div>

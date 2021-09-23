@@ -3,7 +3,9 @@
     <div class="questionaire-body mb-4">
       <div class="head">CALCULATE YOUR CARBON FOOTPRINT</div>
       <div class="questions mt-4" *ngFor="let question of questionaireData; let i = index">
-        <h3>{{question.question}} {{question.options[question.optionSelected?question.optionSelected:0].point}}</h3>
+        <h3>{{question.question}} 
+          <!-- {{question.options[question.optionSelected?question.optionSelected:0].point}} -->
+        </h3>
         <div class="option-group">
           <div class="mb-1" *ngFor="let option of question.options; let j = index">
             <div class="custom-control custom-radio custom-control-inline">
@@ -27,7 +29,7 @@
         <div class="calculation text-center">{{ totalFootPrint }} tons per year</div>
       </div>
       <div class="bottom-sec">
-        <span><a href="">Skip</a> <a href="" class="float-right">Go To Status Page</a></span>
+        <span><a href="javascript:void(0)" (click)="resetForm()">Skip</a> <a href="javascript:void(0)" routerLink="/pages/landing-page" class="float-right">Go To Status Page</a></span>
       </div>
     </div>
   </form>

@@ -86,6 +86,6 @@ export class TakeActionComponent implements OnInit {
   .subscribe((res: any) => {
     Swal.fire('Successful!!', res.message, 'success');
   });
-    console.log(this.saveObjArray);
+    // console.log(this.saveObjArray);
   }
 }

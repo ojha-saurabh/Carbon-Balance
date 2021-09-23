@@ -199,20 +199,33 @@ async function saveOrUpdateCarbonSummary(objArray){
 }
 
 
-async function fetchSummary(params, userData){
+async function fetchSummary(params){
+    console.log(params); 
+    // return
     let deferred = Q.defer();
     const date = new Date();
     const year = date.getFullYear();
-    const tableData = await getTableData('tbl_users_actions', {userId: ObjectId(userData.id), forYear: year});
+    if(params.type==='lifetime'){
+        db.get().collection('tbl_carbon_summary').aggregate([{ $match: {userId: ObjectId(params.userData.id) }},
+            { $group: { _id : null, remaining : { $sum: "$remainingFootprint" }, totalFootprint : { $sum: "$totalCarbonFootprint" }, actionFootprint : { $sum: "$totalTakeActionPoint" } } }]).toArray((err, data) =>{
+            if(err) deferred.reject(err.name+': '+err.message);
+            if(data){
+                deferred.resolve({status:true, data:data[0] });
+            }else{
+                deferred.resolve({status:false, message:'Something went wrong'});            
+            }
+        })
 
-    db.get().collection('tbl_actions').findOne({}, (err, data) =>{
-        if(err) deferred.reject(err.name+': '+err.message);
-        if(data){
-            deferred.resolve({status:true, data:data, objArray:tableData});
+    }else{
+
+        const tableData = await getTableData('tbl_carbon_summary', {userId: ObjectId(params.userData.id), forYear: year});
+        if(tableData){
+            deferred.resolve({status:true, data:tableData});
         }else{
-            deferred.resolve({status:false, message:'Something went wrong'});            
-        }
-    })
+            deferred.resolve({status:false, message:'No data available'});   
+        }     
+
+    }
     
     return deferred.promise;
 }

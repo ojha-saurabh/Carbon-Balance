@@ -26,7 +26,10 @@ export class CarbonService {
   }
 
   saveCalculatedActions: any = (params: any) => {
-    console.log(params);
     return this.http.post(environment.apiBaseURL + 'carbon/saveCalculatedActions', params);
+  }
+
+  getCarbonSummary: any = (params: any) => {
+    return this.http.post(environment.apiBaseURL + 'carbon/fetchSummary', params);
   }
 }
