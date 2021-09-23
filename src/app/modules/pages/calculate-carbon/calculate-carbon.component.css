@@ -40,9 +40,9 @@
     z-index: 1;
 }
 
-.input-group {
+/* .input-group {
     width: 50% !important;
-}
+} */
 
 h5 {
     color: #C1F7D5;
@@ -67,6 +67,9 @@ h5 {
     color: #C1F7D5;
 }
 @media only screen  and (min-width : 768px) {
+    .input-group {
+        width: 50% !important;
+    }
     .text-span1 {
         background:#C1F7D5;
         border-radius:50px;
