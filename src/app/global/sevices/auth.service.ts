@@ -35,17 +35,17 @@ export class AuthService {
   createProfile: any = (params: any) => {
     console.log('================params', params);
     const formData = new FormData();
-    formData.append("displayName", params.displayName);
-    formData.append("about", params.about);
-    formData.append("firstName", params.firstName);
-    formData.append("lastName", params.lastName);
-    formData.append("email", params.email);
-    formData.append("streetAddress", params.streetAddress);
-    formData.append("zipCode", params.zipCode);
-    formData.append("state", params.state);
-    formData.append("age", params.age);
-    formData.append("occupation", params.occupation);
-    formData.append("termsAccepted", params.termsAccepted);
+    formData.append('displayName', params.displayName);
+    formData.append('about', params.about);
+    formData.append('firstName', params.firstName);
+    formData.append('lastName', params.lastName);
+    formData.append('email', params.email);
+    formData.append('streetAddress', params.streetAddress);
+    formData.append('zipCode', params.zipCode);
+    formData.append('state', params.state);
+    formData.append('age', params.age);
+    formData.append('occupation', params.occupation);
+    formData.append('termsAccepted', params.termsAccepted);
     return this.http.post(environment.apiBaseURL + 'auth/createProfile', params);
   }
 
@@ -63,10 +63,15 @@ export class AuthService {
     }
   }
 
-  logout: any = () =>  {
-      localStorage.removeItem('authToken');
+  logout: any = (params: any = '') =>  {
+    localStorage.clear();
+    if (params === 'tokenError'){
+      Swal.fire('Token error!!!', 'Auth token might be expired. Please login again.', 'success');
+      this.router.navigate(['/auth/login']);
+    }else{
       Swal.fire('Successful!!!', 'You have been logged out successfully.', 'success');
-      this.router.navigate(['/']);
+      this.router.navigate(['/auth/login']);
+    }
   }
 
   tokenExpired: any = () => {

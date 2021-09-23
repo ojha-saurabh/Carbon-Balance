@@ -30,6 +30,7 @@ export class HeaderInterceptor implements HttpInterceptor {
         if (event instanceof HttpErrorResponse){
             console.log(event);
             if (event.status === 401){
+                this.auth.getUserData();
                 this.auth.logout();
             }
         }
