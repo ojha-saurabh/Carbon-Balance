@@ -47,7 +47,7 @@ export class CreateProfileComponent implements OnInit {
     let userdetails = this.authService.getDecodedUserdata();
     let data = {
       email: userdetails.email,
-
+      id: userdetails.id
     }
     this.authService.getUserByEmail(data).subscribe((res: any) => {
       console.log('===uuser data', res);
@@ -104,8 +104,11 @@ export class CreateProfileComponent implements OnInit {
       console.log('Your order has been submitted', this.profileForm.value, this.profileForm);
       this.authService.createProfile(data).subscribe((res: any) => {
         console.log('==============create profle res', res);
+        if(res.status) {
+          this.toastr.success('Profile Updated Successfully!', 'Success!');
+          this.router.navigateByUrl('/pages/calculate-co2');
+        }
       })
-      this.toastr.success('Profile Updated Successfully!', 'Success!');
     } else {
       this.toastr.error('Please Fill the Required Fields to Update Profile!', 'Error!');
     }
