@@ -138,7 +138,7 @@
                 <div class="row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="EmailId">EMAIL ID</label>
-                        <input type="email" class="form-control" id="EmailId" formControlName="EmailId" 
+                        <input type="email" class="form-control email-control" id="EmailId" formControlName="EmailId" 
                         [ngClass]="{ 'is-invalid': submitted && f?.EmailId?.errors }" required>
                     </div>
                     <div *ngIf="submitted && f.EmailId.errors" class="invalid-feedback">

@@ -50,8 +50,9 @@ ngOnInit(): void {
   this.auth.userData.subscribe(response => {
     this.isLoggedIn = this.auth.isLoggedIn();
     if (this.isLoggedIn){
-      if (response.name){
-        this.userName = response.name;
+      console.log('===========res', response);
+      if (response.displayName){
+        this.userName = response.displayName;
       }else{
         const str: any = response.email.split('@')[0];
         this.userName = str;

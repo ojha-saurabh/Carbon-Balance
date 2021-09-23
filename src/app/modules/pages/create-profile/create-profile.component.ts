@@ -3,6 +3,7 @@ import { FormBuilder, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 import { AuthService } from 'src/app/global/sevices/auth.service';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-create-profile',
@@ -18,6 +19,8 @@ export class CreateProfileComponent implements OnInit {
   submitted = false;
   profile: any = "Choose Profile";
   banner: any = "Choose Banner";
+  userEmail: any = 'ramyapenjerla@gmail.com';
+  userData: any;
 
   constructor(
     private router: Router,
@@ -41,7 +44,33 @@ export class CreateProfileComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    let userdetails = this.authService.getDecodedUserdata();
+    let data = {
+      email: userdetails.email,
+
+    }
+    this.authService.getUserByEmail(data).subscribe((res: any) => {
+      console.log('===uuser data', res);
+      if(res.status) {
+        this.userData = res.data;
+        this.profileForm.patchValue({
+          DisplayName: this.userData.displayName,
+          About: this.userData.about,
+          FirstName: this.userData.firstName,
+          LastName: this.userData.lastName,
+          StreetAddress: this.userData.streetAddress,
+          ZipCode: this.userData.zipCode,
+          EmailId: this.userData.email,
+          Occupation: this.userData.occupation,
+          State: this.userData.state,
+          AgeGroup: this.userData.age,
+          isChecked: this.userData.termsAccepted
+        })
+      }
+    })
+    this.profileForm.controls['EmailId'].disable();
   }
+  
 
   onCheckChange: any = (event: any) => {
     if(this.profileForm.value.isChecked === true) {
@@ -62,7 +91,7 @@ export class CreateProfileComponent implements OnInit {
       about: this.profileForm.value.About,
       firstName: this.profileForm.value.FirstName,
       lastName: this.profileForm.value.LastName,
-      email: this.profileForm.value.EmailId,
+      email: this.userData.email,
       streetAddress: this.profileForm.value.StreetAddress,
       zipCode: this.profileForm.value.ZipCode,
       state: this.profileForm.value.State,
