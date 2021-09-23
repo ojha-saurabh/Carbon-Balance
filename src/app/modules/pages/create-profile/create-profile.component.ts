@@ -41,6 +41,9 @@ export class CreateProfileComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.profileForm.patchValue({
+      EmailId: 'ramyapenjerla@gmail.com'
+    })
   }
 
   onCheckChange: any = (event: any) => {

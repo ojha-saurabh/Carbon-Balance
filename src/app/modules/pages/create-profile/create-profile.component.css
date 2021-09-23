@@ -41,12 +41,14 @@ input {
     background-color: transparent;
     border-bottom: 2px solid #C1F7D5;
     border-radius: 0px;
+    color: #FFFFFF;
 }
 input:focus {
     border: 0;
     background-color: transparent;
     border-bottom: 2px solid #C1F7D5;
     border-radius: 0px;
+    color: #FFFFFF;
   }
 
   /* checkbox */
