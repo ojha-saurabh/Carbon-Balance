@@ -156,8 +156,6 @@ a:hover {
 } */
 .options {
     float: right;
-    padding: 6px;
-    width: 100%;
 }
 .ques-div {
     border-bottom: 1px solid #05355A;
@@ -182,6 +180,12 @@ a:hover {
     margin-right: 2%;
     text-align: end;
     background: transparent;
+}
+
+.ques {
+    width: 100%;
+    padding: 6px;
+    margin-top: 6px;
 }
 
 /* action part ends */
