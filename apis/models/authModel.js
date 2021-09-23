@@ -22,7 +22,7 @@ async function login(params){
         if(user && bcrypt.compareSync(params.password, user.password)){
             let jwtObj = {id:user._id, email: user.email};
             if(user.displayName!=''){
-                jwtObj.displayName = displayName;
+                jwtObj.displayName = user.displayName;
             }
             jwt.sign(jwtObj, process.env.JWT_SECRET,{
                 expiresIn:process.env.JWT_EXPIRES_IN
