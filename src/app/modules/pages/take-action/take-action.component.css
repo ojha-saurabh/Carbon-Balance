@@ -153,6 +153,8 @@ a:hover {
 } */
 .options {
     float: right;
+    padding: 6px;
+    width: 100%;
 }
 .ques-div {
     border-bottom: 1px solid #05355A;

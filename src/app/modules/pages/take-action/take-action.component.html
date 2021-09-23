@@ -14,9 +14,8 @@
                             <option *ngFor="let action of actionData; let j = index" [selected]="action.action==data.action" [value]="j">{{ action.action }}</option>
                         </select>
                     </div>                    
-                    <div class="col-md-3 col-sm-12"> 
+                    <div class="col-md-3 col-sm-12 ques" > 
                         <select name="actionOption{{i}}" #actionOption{{i}} class="action-question options" (change)="changeOption(i, $event)">
-                            <!-- <option value="" selected>Select</option> -->
                             <option *ngFor="let option of data.options; let j = index" [value]="j" [selected]="j == data.selectedOption"> {{option.optionText}}</option>
                         </select>
                     </div> 
