@@ -13,7 +13,13 @@
                         <select name="action{{i}}" #action{{i}} (change)="changeAction(i, $event)">
                             <option *ngFor="let action of actionData; let j = index" [selected]="action.action==data.action" [value]="j">{{ action.action }}</option>
                         </select>
-                    </div>
+                    </div>                    
+                    <div class="col-md-3 col-sm-12"> 
+                        <select name="actionOption{{i}}" #actionOption{{i}} class="action-question options" (change)="changeOption(i, $event)">
+                            <!-- <option value="" selected>Select</option> -->
+                            <option *ngFor="let option of data.options; let j = index" [value]="j" [selected]="j == data.selectedOption"> {{option.optionText}}</option>
+                        </select>
+                    </div> 
                     <div class="col-md-3 col-sm-12 " > 
                         <div class="input-group" *ngIf="data.options[data.selectedOption].optionText == 'Other' ">
                             <div class="input-group-prepend">
@@ -21,13 +27,7 @@
                               </div>
                             <input type="number" class="form-control" [value]="data.otherInput" placeholder="Custom value" (keyup)="otherInputFunc(i, $event)">
                         </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12"> 
-                        <select name="actionOption{{i}}" #actionOption{{i}} class="action-question options" (change)="changeOption(i, $event)">
-                            <!-- <option value="" selected>Select</option> -->
-                            <option *ngFor="let option of data.options; let j = index" [value]="j" [selected]="j == data.selectedOption"> {{option.optionText}}</option>
-                        </select>
-                    </div>                    
+                    </div>                   
                 </div>
                 
                 <div class="add-question" *ngIf="saveObjArray?.length < actionData?.length">
