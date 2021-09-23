@@ -103,8 +103,17 @@ export class CreateProfileComponent implements OnInit {
     if (this.profileForm.status === 'VALID') {
       // console.log('Your order has been submitted', this.profileForm.value, this.profileForm);
       this.authService.createProfile(data).subscribe((res: any) => {
+<<<<<<< HEAD
       });
       this.toastr.success('Profile Updated Successfully!', 'Success!');
+=======
+        console.log('==============create profle res', res);
+        if(res.status) {
+          this.toastr.success('Profile Updated Successfully!', 'Success!');
+          this.router.navigateByUrl('/pages/calculate-co2');
+        }
+      })
+>>>>>>> f8178832e5affdab9ec89e5bbd0dc1dba5f8271a
     } else {
       this.toastr.error('Please Fill the Required Fields to Update Profile!', 'Error!');
     }

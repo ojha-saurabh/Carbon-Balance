@@ -8,7 +8,9 @@
             </span>
         </div>
         <div class="col-sm-12 col-md-12 mt-4">
-                <button class="btn btn-primary btn-sign-in border-0 rounded-0 text-center"><strong>SIGN UP</strong></button>
+                <div class="signup-wrapper">
+                    <button class="btn btn-primary btn-sign-in border-0 rounded-0 text-center"><strong>SIGN UP</strong></button>
+                </div>
                 <div class="white-bg row border border-0 rounded-0">
                     <div class="col p-4 d-flex flex-column position-static">
                     <h3 class="mb-0 text-center box-text">Welcome!<br>
@@ -105,7 +107,7 @@
                         <div [hidden]="confirmPassword.valid || confirmPassword.pristine" class="alert alert-danger">Confirm password is required.</div>
                     </div>
                 </div>
-                <span class=" example-margin"><input type="checkbox">Creating an account means you agree to the terms and conditions of this site/application.</span>                    
+                <span class=" example-margin"><input type="checkbox"> &nbsp;Creating an account means you agree to the terms and conditions of this site/application.</span>                    
                 <button type="submit" class="btn btn-info float-left border-0 text-span mt-4" [disabled]="!signUpForm.form.valid">Create Account</button>  
               </form>
               <!-- <a routerLink="/auth/register" class="float-right instruction"><i>Forget Password / Reset</i></a>  -->
