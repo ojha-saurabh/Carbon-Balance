@@ -9,17 +9,17 @@
             <div class="action-question-part">
             
                 <div class="row ques-div" *ngFor="let data of saveObjArray; let i = index">               
-                    <div class="col-md-6 col-sm-12 ques">
-                        <select name="action{{i}}" #action{{i}} (change)="changeAction(i, $event)">
+                    <div class="col-md-6 col-sm-12">
+                        <select class="ques" name="action{{i}}" #action{{i}} (change)="changeAction(i, $event)">
                             <option *ngFor="let action of actionData; let j = index" [selected]="action.action==data.action" [value]="j">{{ action.action }}</option>
                         </select>
                     </div>                    
-                    <div class="col-md-3 col-sm-12 ques" > 
-                        <select name="actionOption{{i}}" #actionOption{{i}} class="action-question options" (change)="changeOption(i, $event)">
+                    <div class="col-md-3 col-sm-12" > 
+                        <select name="actionOption{{i}}" #actionOption{{i}} class="action-question ques options" (change)="changeOption(i, $event)">
                             <option *ngFor="let option of data.options; let j = index" [value]="j" [selected]="j == data.selectedOption"> {{option.optionText}}</option>
                         </select>
                     </div> 
-                    <div class="col-md-3 col-sm-12 " > 
+                    <div class="col-md-3 col-sm-12 mt-2 mb-2" > 
                         <div class="input-group" *ngIf="data.options[data.selectedOption].optionText == 'Other' ">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon3" >Custom value</span>
