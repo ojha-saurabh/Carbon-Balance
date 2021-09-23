@@ -24,6 +24,7 @@ export class CreateProfileComponent implements OnInit {
   banner: any = 'Choose Banner';
   userEmail: any = 'ramyapenjerla@gmail.com';
   userData: any;
+  userdetails:any
 
   constructor(
     private router: Router,
@@ -45,13 +46,14 @@ export class CreateProfileComponent implements OnInit {
       AgeGroup: ['', Validators.required],
       isChecked: ['', Validators.required]
     });
+    this.userdetails = this.authService.getDecodedUserdata();
   }
 
   ngOnInit(): void {
-    const userdetails = this.authService.getDecodedUserdata();
+    
     const data = {
-      email: userdetails.email,
-      id: userdetails.id
+      email: this.userdetails.email,
+      id: this.userdetails.id
     };
     this.authService.getUserByEmail(data).subscribe((res: any) => {
       if (res.status) {
@@ -129,9 +131,8 @@ export class CreateProfileComponent implements OnInit {
         cancelButtonText: 'No, leave it'
       }).then((result) => {
         if (result.isConfirmed) {
-          const userdetails = this.authService.getDecodedUserdata();
           const data = {
-            id: userdetails.id,
+            id: this.userdetails.id,
             fileData: event.target.files[0],
             type: 'profile'
           };
@@ -170,9 +171,8 @@ export class CreateProfileComponent implements OnInit {
         cancelButtonText: 'No, leave it'
       }).then((result) => {
         if (result.isConfirmed) {
-          const userdetails = this.authService.getDecodedUserdata();
           const data = {
-            id: userdetails.id,
+            id: this.userdetails.id,
             fileData: event.target.files[0],
             type: 'banner'
           };
