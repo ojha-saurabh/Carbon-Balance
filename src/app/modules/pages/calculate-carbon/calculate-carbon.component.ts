@@ -16,7 +16,7 @@ export class CalculateCarbonComponent implements OnInit {
   questionaireData: any;
   userDetails: any;
   isLoggedIn: any;
-  totalFootPrint: any = 2.5;
+  totalFootPrint: any = 2.50;
 
   constructor(private carbon: CarbonService, private auth: AuthService) { }
 
@@ -30,7 +30,7 @@ export class CalculateCarbonComponent implements OnInit {
       if (response){
           this.questionaireData = response.data.questionaire;
           const savedPoints = (response.data.totalCalculatedFootPrint)
-          ? response.data.totalCalculatedFootPrint : 2.5;
+          ? response.data.totalCalculatedFootPrint : 2.50;
           this.totalFootPrint = savedPoints;
         }
     });
@@ -43,7 +43,7 @@ export class CalculateCarbonComponent implements OnInit {
   onSubmit: any = async (param: any) => {
     if (this.form.valid){
       // Calculate footprint
-      let footprintCalc = 2.5;
+      let footprintCalc = 2.50;
       for (const data of this.questionaireData){
         // console.log(this.totalFootPrint , (+data.options[data.optionSelected].point));
         footprintCalc = footprintCalc + (+data.options[data.optionSelected].point);
@@ -105,6 +105,11 @@ export class CalculateCarbonComponent implements OnInit {
         point = 0;
     }
     this.questionaireData[i].options[optionSelected].point = point.toFixed(2);
+  }
+
+  resetForm: any = () => {
+    this.getQuestionare();
+    Swal.fire('Successful!!', 'Form reset to its initial position.', 'success');
   }
 
 }
