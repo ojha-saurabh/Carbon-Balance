@@ -2,6 +2,7 @@ const Q = require('q');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcryptjs');
 const db = require('../db/mongoDb')
+const { ObjectId } = require('mongodb');
 
 let model = {};
 
@@ -9,6 +10,7 @@ model.login = login;
 model.register = register;
 model.getUserById = getUserById;
 model.createUserProfile = createUserProfile;
+model.updateProfileOrBannerPicture = updateProfileOrBannerPicture;
 
 module.exports = model;
 
@@ -71,7 +73,6 @@ async function getUserById(params){
 
     db.get().collection('tbl_users').findOne({ email:params.email }, (err, user) =>{
         if(err) deferred.reject(err.name+': '+err.message);
-        console.log('==============',user);
         if(user){
             deferred.resolve({status:true, message:'', data: user});
         }
@@ -85,8 +86,6 @@ async function getUserById(params){
 
 async function createUserProfile(body){
     let deferred = Q.defer();
-    console.log('================body', body);
-    // console.log('================11111111111body', req.body);
     db.get().collection('tbl_users').
     findOneAndUpdate({ email:body.email },{$set : {
         "displayName": body?.displayName,
@@ -102,9 +101,28 @@ async function createUserProfile(body){
         "termsAccepted": body?.termsAccepted,
     }}, (err, user) =>{
         if(err) deferred.reject(err.name+': '+err.message);
-        console.log('==============',user);
         if(user){
             deferred.resolve({status:true, message:'Profile Created Successfully.', data: user});
+        }
+    })
+    
+    return deferred.promise;
+}
+
+function updateProfileOrBannerPicture(params){
+    let deferred = Q.defer();
+    let imageObj = {};
+    if(params.type==='profile'){
+        imageObj = {"profileImage": params.profileImage};
+    }else{
+        imageObj = {"bannerImage": params.bannerImage};
+    }
+    db.get().collection('tbl_users').updateOne({ _id:ObjectId(params.id) },
+    {$set : imageObj}, 
+    (err, user) =>{
+        if(err) deferred.reject(err.name+': '+err.message);
+        if(user){
+            deferred.resolve({status:true});
         }
     })
     

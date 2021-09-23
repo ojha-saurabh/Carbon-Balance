@@ -32,4 +32,12 @@ export class CarbonService {
   getCarbonSummary: any = (params: any) => {
     return this.http.post(environment.apiBaseURL + 'carbon/fetchSummary', params);
   }
+
+  updateProfileOrBannerPicture: any = (params: any) => {
+    const formData = new FormData();
+    formData.append('fileData', params.fileData);
+    formData.append('type', params.type);
+    formData.append('id', params.id);
+    return this.http.post(environment.apiBaseURL + 'auth/updateProfileOrBannerPicture', formData);
+  }
 }

@@ -50,7 +50,6 @@ ngOnInit(): void {
   this.auth.userData.subscribe(response => {
     this.isLoggedIn = this.auth.isLoggedIn();
     if (this.isLoggedIn){
-      console.log('===========res', response);
       if (response.displayName){
         this.userName = response.displayName;
       }else{
