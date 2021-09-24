@@ -74,10 +74,8 @@ header {
     margin-top: 1%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .site-name{
-    position: absolute;
-    top: 1%;
     margin-right: 1em;
     font-size: 1.5rem;
     color: #05355A;
