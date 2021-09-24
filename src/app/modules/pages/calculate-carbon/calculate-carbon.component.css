@@ -117,3 +117,7 @@ h5 {
         margin: 5%;
     }
 }
+a:hover {
+    color: #e7b649 !important;
+    text-decoration: underline;
+}
