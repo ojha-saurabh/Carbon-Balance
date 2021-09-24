@@ -7,6 +7,7 @@ import { NgStyle } from '@angular/common';
 
 import Swal from 'sweetalert2';
 import { CarbonService } from 'src/app/global/sevices/carbon.service';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-create-profile',
@@ -24,7 +25,10 @@ export class CreateProfileComponent implements OnInit {
   banner: any = 'Choose Banner';
   userEmail: any = 'ramyapenjerla@gmail.com';
   userData: any;
-  userdetails:any
+  userdetails:any;
+  imageBaseUrl: any; 
+  bannerImage: any;
+  profileImage: any;
 
   constructor(
     private router: Router,
@@ -32,7 +36,7 @@ export class CreateProfileComponent implements OnInit {
     private toastr: ToastrService,
     private authService: AuthService,
     private carbon: CarbonService
-  ) {
+  ) {   
     this.profileForm = this.fb.group({
       DisplayName: ['', Validators.required],
       About: ['', Validators.required],
@@ -46,11 +50,19 @@ export class CreateProfileComponent implements OnInit {
       AgeGroup: ['', Validators.required],
       isChecked: ['', Validators.required]
     });
-    this.userdetails = this.authService.getDecodedUserdata();
+    this.userdetails = this.authService.getDecodedUserdata();    
   }
 
-  ngOnInit(): void {
+  ngOnInit(): void {       
+    this.imageBaseUrl = environment.imageBaseUrl;
+    this.profileImage = environment.imageBaseUrl+'noImage.png';
+    this.bannerImage = environment.imageBaseUrl+'noImage.png'; 
     
+    this.getUser();
+    this.profileForm.controls.EmailId.disable();
+  }
+
+  getUser: any = () => {
     const data = {
       email: this.userdetails.email,
       id: this.userdetails.id
@@ -58,6 +70,8 @@ export class CreateProfileComponent implements OnInit {
     this.authService.getUserByEmail(data).subscribe((res: any) => {
       if (res.status) {
         this.userData = res.data;
+        // this.profile = (res.data.profileImage)?res.data.profileImage:'Choose Profile';
+        // this.banner = (res.data.bannerImage)?res.data.bannerImage:'Choose Banner';
         this.profileForm.patchValue({
           DisplayName: this.userData.displayName,
           About: this.userData.about,
@@ -70,10 +84,15 @@ export class CreateProfileComponent implements OnInit {
           State: this.userData.state,
           AgeGroup: this.userData.age,
           isChecked: this.userData.termsAccepted
-        });
+        });        
+        if(res.data.profileImage && res.data.profileImage!=''){
+          this.profileImage = environment.imageBaseUrl+res.data.profileImage;
+        }
+        if(res.data.bannerImage && res.data.bannerImage!=''){
+          this.bannerImage = environment.imageBaseUrl+res.data.bannerImage;
+        }
       }
     });
-    this.profileForm.controls.EmailId.disable();
   }
 
   onCheckChange: any = (event: any) => {
@@ -139,6 +158,7 @@ export class CreateProfileComponent implements OnInit {
           this.carbon.updateProfileOrBannerPicture(data)
           .subscribe((res: any) => {
               if (res.status){
+                this.getUser();
                 Swal.fire(
                   'Successfull!!!',
                   'Profile pic has been updated successfully.',
@@ -179,6 +199,7 @@ export class CreateProfileComponent implements OnInit {
           this.carbon.updateProfileOrBannerPicture(data)
           .subscribe((res: any) => {
               if (res.status){
+                this.getUser();
                 Swal.fire(
                   'Successfull!!!',
                   'Banner pic has been updated successfully.',

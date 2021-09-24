@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { AuthService } from 'src/app/global/sevices/auth.service';
 import { CarbonService } from 'src/app/global/sevices/carbon.service';
 
+import { environment } from 'src/environments/environment';
 import Swal from 'sweetalert2';
 
 @Component({
@@ -15,6 +16,10 @@ export class LandingPageComponent implements OnInit {
   userData: any;
   isLoggedIn: any = false;
   userName: any;
+  
+  imageBaseUrl: any; 
+  bannerImage: any;
+  profileImage: any;
 
   totalCarbonFootprint = 2.50;
   actionFootprint = 0;
@@ -27,8 +32,8 @@ export class LandingPageComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    // this.username = localStorage.getItem('UserName');
-    this.userData = this.auth.getDecodedUserdata();
+    this.userData = this.auth.getDecodedUserdata();    
+    this.getUser();
     if (this.userData.displayName){
       this.userName = this.userData.displayName;
     }else{
@@ -36,6 +41,27 @@ export class LandingPageComponent implements OnInit {
       this.userName = str;
     }
     this.getCarbonSummary('yearly');
+    this.imageBaseUrl = environment.imageBaseUrl;
+    this.profileImage = environment.imageBaseUrl+'noImage.png';
+    this.bannerImage = environment.imageBaseUrl+'noImage.png';
+  }
+
+  getUser: any = () => {
+    const data = {
+      email: this.userData.email,
+      id: this.userData.id
+    };
+
+    this.auth.getUserByEmail(data).subscribe((res: any) => {
+      if (res.status) {             
+        if(res.data.profileImage && res.data.profileImage!=''){
+          this.profileImage = environment.imageBaseUrl+res.data.profileImage;
+        }
+        if(res.data.bannerImage && res.data.bannerImage!=''){
+          this.bannerImage = environment.imageBaseUrl+res.data.bannerImage;
+        }
+      }
+    });
   }
 
   gotoDonateOptions: any = () => {
@@ -48,12 +74,12 @@ export class LandingPageComponent implements OnInit {
     .subscribe((res: any) => {
         if (res){
           if (param === 'yearly'){
-            this.totalCarbonFootprint = res.data.totalCarbonFootprint;
-            this.actionFootprint = res.data.totalTakeActionPoint;
+            this.totalCarbonFootprint = res.data.totalCarbonFootprint.toFixed(2);
+            this.actionFootprint = res.data.totalTakeActionPoint.toFixed(2);
             this.remainingFootprint = res.data.remainingFootprint.toFixed(2);
           }else{
-            this.totalCarbonFootprint = res.data.totalFootprint;
-            this.actionFootprint = res.data.actionFootprint;
+            this.totalCarbonFootprint = res.data.totalFootprint.toFixed(2);
+            this.actionFootprint = res.data.actionFootprint.toFixed(2);
             this.remainingFootprint = res.data.remaining.toFixed(2);
           }
         }
