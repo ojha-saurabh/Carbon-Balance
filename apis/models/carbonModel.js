@@ -93,7 +93,7 @@ async function saveCalculatedFootprint(params){
     }
     const summaryData = await getTableData('tbl_carbon_summary', {userId: ObjectId(params.userData.id), forYear: year});
     if(summaryData){
-        arrayObj.totalTakeActionPoint = summaryData.remainingFootprint
+        arrayObj.totalTakeActionPoint = summaryData.totalTakeActionPoint
         arrayObj.remainingFootprint = parseFloat(arrayObj.totalCarbonFootprint) - parseFloat(summaryData.totalTakeActionPoint);
     }
     await saveOrUpdateCarbonSummary(arrayObj);

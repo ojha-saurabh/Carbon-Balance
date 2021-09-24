@@ -1,10 +1,9 @@
 <!-- banner starts -->
-<section>
+<section> 
     <div class="banner">
-        <!-- <img src="./../../../../assets/pictures/Protest.jpg" alt="banner-img" class="banner-img"> -->
-        <div class="banner-img">
+        <div class="banner-img" [ngStyle]="{'background-image': 'url(' + bannerImage + ')'}">
             <div class="profile-image-part">
-                <img src="./../../../../assets/pictures/sapling.jpg" alt="banner-img" class="profile-img">
+                <img src="{{profileImage}}" alt="banner-img" class="profile-img">
             </div>
         </div>
         <div class="form">

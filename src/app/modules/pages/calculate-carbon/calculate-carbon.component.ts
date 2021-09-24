@@ -87,7 +87,7 @@ export class CalculateCarbonComponent implements OnInit {
         point = input * 0.25;
         break;
       case 11:
-        point = input * 0.25;
+        point = input * 0.025;
         break;
       case 13:
         point = (input / 1000) * 0.05;
