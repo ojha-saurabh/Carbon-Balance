@@ -61,9 +61,12 @@
                             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                         </div>
                     </div> -->
-                    <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                aria-describedby="inputGroupFileAddon01">
+                    <!-- <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                aria-describedby="inputGroupFileAddon01"> -->
                 </div>
+            </div>
+            <div class="skip-div">
+                <a routerLink="/pages/landing-page" class="skip-btn">Skip</a>
             </div>
             <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
                 <div class="row">
@@ -172,6 +175,9 @@
                             <a href="#" class="read-tc">Read T&C</a>
                         </div>
                     </div>
+                </div>
+                <div class="skip-div">
+                    <a routerLink="/pages/landing-page" class="skip-btn">Skip</a>
                 </div>
                 <div class="row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12 text-center">
