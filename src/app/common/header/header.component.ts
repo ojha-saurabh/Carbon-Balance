@@ -45,6 +45,7 @@ constructor(
       this.userName = str;
     }
   }
+  console.log(this.userData)
 }
 
 logOut: any = () => {

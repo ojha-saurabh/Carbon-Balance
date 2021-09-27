@@ -1,4 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/global/sevices/auth.service';
 import { CarbonService } from 'src/app/global/sevices/carbon.service';
 
@@ -18,7 +19,9 @@ export class CalculateCarbonComponent implements OnInit {
   isLoggedIn: any;
   totalFootPrint: any = 2.50;
 
-  constructor(private carbon: CarbonService, private auth: AuthService) { }
+  constructor(private carbon: CarbonService, private auth: AuthService, private router: Router) { 
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
 
   ngOnInit(): void {
     this.getQuestionare();
@@ -110,6 +113,7 @@ export class CalculateCarbonComponent implements OnInit {
   resetForm: any = () => {
     this.getQuestionare();
     Swal.fire('Successful!!', 'Form reset to its initial position.', 'success');
+    this.router.navigate(['/pages/landing-page']);
   }
 
 }

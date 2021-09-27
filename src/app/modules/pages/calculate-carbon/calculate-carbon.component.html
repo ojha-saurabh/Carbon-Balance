@@ -2,6 +2,9 @@
   <form name="questionaireForm" #questionaireForm="ngForm" (ngSubmit)="onSubmit(questionaireForm)">
     <div class="questionaire-body mb-4">
       <div class="head">CALCULATE YOUR CARBON FOOTPRINT</div>
+      <div class="bottom-sec mt-2 ">
+        <span><a href="javascript:void(0)" (click)="resetForm()" class="float-right">Skip</a></span>
+      </div>
       <div class="questions mt-4" *ngFor="let question of questionaireData; let i = index">
         <h3>{{question.question}} 
           <!-- {{question.options[question.optionSelected?question.optionSelected:0].point}} -->

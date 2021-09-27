@@ -37,6 +37,7 @@ export class CreateProfileComponent implements OnInit {
     private authService: AuthService,
     private carbon: CarbonService
   ) {   
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
     this.profileForm = this.fb.group({
       DisplayName: ['', Validators.required],
       About: ['', Validators.required],
@@ -126,12 +127,14 @@ export class CreateProfileComponent implements OnInit {
       this.authService.createProfile(data).subscribe((res: any) => {
         if(res.status) {
           // this.toastr.success('Profile Updated Successfully!', 'Success!');
+          localStorage.setItem('displayName',this.profileForm.value.DisplayName);
           Swal.fire(
             'Successfull!!!',
             'Profile Updated Successfully.',
             'success'
           );
           this.router.navigateByUrl('/pages/calculate-co2');
+          this.authService.getUserData();
         }
       })
     } else {
@@ -169,6 +172,7 @@ export class CreateProfileComponent implements OnInit {
           .subscribe((res: any) => {
               if (res.status){
                 this.getUser();
+                this.profile ="Choose profile";
                 Swal.fire(
                   'Successfull!!!',
                   'Profile pic has been updated successfully.',
@@ -210,6 +214,7 @@ export class CreateProfileComponent implements OnInit {
           .subscribe((res: any) => {
               if (res.status){
                 this.getUser();
+                this.banner ="Choose banner";
                 Swal.fire(
                   'Successfull!!!',
                   'Banner pic has been updated successfully.',

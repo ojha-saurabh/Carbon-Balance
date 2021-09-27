@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DonateFinalComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+   }
 
   ngOnInit(): void {
   }
