@@ -198,6 +198,21 @@
         margin: 5% 1%;
         text-align: center;
     }
+    .mission-item {
+        padding: 2%;
+    }
+    .mission-icon {
+        color: #C1F7D5;
+        font-size: 2.5rem;
+    }
+    .mission-title {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .mission-description {
+        color: #FFFFFF;
+    }
 }
 @media only screen  and (min-device-width : 768px) and (max-device-width : 1224px)  {
     .missions-values {
@@ -221,6 +236,21 @@
         margin: 5% 1%;
         text-align: center;
     }
+    .mission-item {
+        padding: 2%;
+    }
+    .mission-icon {
+        color: #C1F7D5;
+        font-size: 3.0rem;
+    }
+    .mission-title {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .mission-description {
+        color: #FFFFFF;
+    }
 }
 @media only screen  and (min-width : 1224px) {
     .missions-values {
@@ -243,6 +273,21 @@
         font-size: 2.0rem;
         margin: 5% 1%;
         text-align: center;
+    }
+    .mission-item {
+        padding: 2%;
+    }
+    .mission-icon {
+        color: #C1F7D5;
+        font-size: 3.0rem;
+    }
+    .mission-title {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .mission-description {
+        color: #FFFFFF;
     }
 }
 
@@ -321,7 +366,7 @@
         margin: 0 1%;
     }
     .member-img {
-        height: 250px;
+        height: 200px;
         width: 100%;
     }
     .team-member-name {

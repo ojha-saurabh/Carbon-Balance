@@ -12,6 +12,7 @@ import { DonateOptionsComponent } from './donate-options/donate-options.componen
 import { DonateCartComponent } from './donate-cart/donate-cart.component';
 import { DonateFinalComponent } from './donate-final/donate-final.component';
 import { AboutUsComponent } from './about-us/about-us.component';
+import { ActionableTipsComponent } from './actionable-tips/actionable-tips.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { AboutUsComponent } from './about-us/about-us.component';
     DonateOptionsComponent,
     DonateCartComponent,
     DonateFinalComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    ActionableTipsComponent
   ],
   imports: [
     CommonModule,

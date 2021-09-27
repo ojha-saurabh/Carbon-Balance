@@ -28,19 +28,22 @@
                         </div>
                     </div>                   
                 </div>
-                
+                <div class="goback">
+                    <a href="javascript:void(0)" routerLink="/pages/landing-page" class="float-left">Go To Status Page</a>
+                </div>
                 <div class="add-question" *ngIf="saveObjArray?.length < actionData?.length">
                     <button type="button" class="btn add-question-button" (click)="addAction()">
                         <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;<span class="add-action-text">Add New Action</span>
                     </button>
                 </div>
+                
                 <div class="submit-action-wrapper">
                     <button class="btn submit-action-button">Submit My Action</button>
                 </div>
             </div>
         </form>
         <div class="checkout-action-link-part">
-            <a routerLink="/pages/calculate-co2" class="checkout-action-link">Checkout the Carbon Offset Ideas</a>
+            <a routerLink="/pages/actionable-tips" class="checkout-action-link">Checkout the Carbon Offset Ideas</a>
         </div>
     </div>
 </section>
@@ -88,6 +91,9 @@
                 Foot print. Would you join me?
             </p>
         </div> -->
+        <div class="invite-goback">
+            <a href="javascript:void(0)" routerLink="/pages/landing-page" class="invite-goback-link">Go To Status Page</a>
+        </div>
         <div class="invite-wrapper">
             <button class="invite-button">
                 <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp; Send My Invite
@@ -121,6 +127,9 @@
             <button class="blog-submit-button">Preview</button>
             &nbsp;&nbsp;&nbsp;
             <button class="blog-submit-button">Submit</button>
+        </div>
+        <div class="blog-goback">
+            <a href="javascript:void(0)" routerLink="/pages/landing-page" class="blog-goback-link">Go To Status Page</a>
         </div>
         <div class="upload-img-part">
             <div class="upload-image-head">UPLOAD PICTURES</div>

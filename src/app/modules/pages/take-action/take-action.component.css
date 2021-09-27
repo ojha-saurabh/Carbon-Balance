@@ -134,6 +134,14 @@
         font-size: 1.0rem;
     }
 }
+.goback {
+    margin: 2%;
+    margin-top: 5%;
+}
+.float-left {
+    float: left !important;
+    color: #05355A;
+}
 /* @media only screen  and (min-width : 1224px) {
     .action-part {
         background-color: #05355A;
@@ -261,7 +269,12 @@ a:hover {
     padding: 1% 7%;
     font-size: 1.5rem;
 }
-
+.invite-goback {
+    margin: 1% 5%;
+}
+.invite-goback-link {
+    color: #05355A;
+}
 /* invite part ends */
 
 /* blog part starts */
@@ -296,7 +309,7 @@ a:hover {
     background-color: transparent;
     border-bottom: 2px solid #C1F7D5;
     border-radius: 0px;
-  }
+}
 .form-button-wrapper {
     text-align: center;
 }
@@ -340,6 +353,12 @@ a:hover {
 }
 .upload-text-2 {
     font-size: 1.5em;
+}
+.blog-goback {
+    margin: 1% 5%;
+}
+.blog-goback-link {
+    color: #C1F7D5;
 }
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
     .blog-footer {
