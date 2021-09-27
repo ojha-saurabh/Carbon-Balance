@@ -11,6 +11,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { DonateOptionsComponent } from './donate-options/donate-options.component';
 import { DonateCartComponent } from './donate-cart/donate-cart.component';
 import { DonateFinalComponent } from './donate-final/donate-final.component';
+import { AboutUsComponent } from './about-us/about-us.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { DonateFinalComponent } from './donate-final/donate-final.component';
     CreateProfileComponent,
     DonateOptionsComponent,
     DonateCartComponent,
-    DonateFinalComponent
+    DonateFinalComponent,
+    AboutUsComponent
   ],
   imports: [
     CommonModule,
