@@ -93,8 +93,11 @@ async function saveCalculatedFootprint(params){
     }
     const summaryData = await getTableData('tbl_carbon_summary', {userId: ObjectId(params.userData.id), forYear: year});
     if(summaryData){
-        arrayObj.totalTakeActionPoint = summaryData.totalTakeActionPoint
+        arrayObj.totalTakeActionPoint = summaryData.totalTakeActionPoint;
         arrayObj.remainingFootprint = parseFloat(arrayObj.totalCarbonFootprint) - parseFloat(summaryData.totalTakeActionPoint);
+    }else{
+        arrayObj.totalTakeActionPoint = 0;
+        arrayObj.remainingFootprint = parseFloat(arrayObj.totalCarbonFootprint) - 0;
     }
     await saveOrUpdateCarbonSummary(arrayObj);
     return deferred.promise;
@@ -164,6 +167,9 @@ async function saveCalculatedActions(params){
     if(summaryData){
         arrayObj.totalCarbonFootprint = summaryData.totalCarbonFootprint
         arrayObj.remainingFootprint = parseFloat(summaryData.totalCarbonFootprint) - parseFloat(arrayObj.totalTakeActionPoint);
+    }else{
+        arrayObj.totalCarbonFootprint = 0;
+        arrayObj.remainingFootprint = 0 - parseFloat(arrayObj.totalTakeActionPoint);
     }
     await saveOrUpdateCarbonSummary(arrayObj);
 

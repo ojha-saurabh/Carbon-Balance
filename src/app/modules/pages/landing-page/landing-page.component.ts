@@ -29,7 +29,9 @@ export class LandingPageComponent implements OnInit {
     private router: Router,
     private carbon: CarbonService,
     private auth: AuthService
-  ) { }
+  ) { 
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
 
   ngOnInit(): void {
     this.userData = this.auth.getDecodedUserdata();    

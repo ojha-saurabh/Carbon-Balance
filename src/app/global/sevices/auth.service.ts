@@ -97,6 +97,7 @@ export class AuthService {
     }else{
       decoded = '';
     }
+    decoded.displayName = (localStorage.getItem('displayName'))?localStorage.getItem('displayName'):(decoded.displayName)?decoded.displayName:'';
     this.userData.next(decoded);
   }
 
@@ -108,6 +109,7 @@ export class AuthService {
     }else{
       decoded = '';
     }
+    decoded.displayName = (localStorage.getItem('displayName'))?localStorage.getItem('displayName'):(decoded.displayName)?decoded.displayName:'';
     return decoded;
   }
 

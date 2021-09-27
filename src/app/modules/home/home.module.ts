@@ -12,4 +12,8 @@ import { HomeComponent } from './home.component';
     HomeRoutingModule
   ]
 })
-export class HomeModule { }
+export class HomeModule { 
+  constructor(){
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
+}
