@@ -318,7 +318,7 @@
         text-align: center;
     }
     .team-member {
-        padding: 3%;
+        padding: 3% 15%;
         margin: 3%;
     }
     .team-member-img {
@@ -326,7 +326,7 @@
         margin: 0 0.5%;
     }
     .member-img {
-        height: 250px;
+        height: 200px;
         width: 100%;
     }
     .team-member-name {

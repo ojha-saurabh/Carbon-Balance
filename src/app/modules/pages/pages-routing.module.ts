@@ -13,6 +13,8 @@ import { DonateCartComponent } from './donate-cart/donate-cart.component';
 import { DonateFinalComponent } from './donate-final/donate-final.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ActionableTipsComponent } from './actionable-tips/actionable-tips.component';
+import { TakePledgeComponent } from './take-pledge/take-pledge.component';
+import { NewsAndEventsComponent } from './news-and-events/news-and-events.component';
 
 const routes: Routes = [
   { path: 'calculate-co2', component: CalculateCarbonComponent, canActivate: [AfterLoginGuard] },
@@ -24,6 +26,8 @@ const routes: Routes = [
   { path: 'thanks-to-donate', component: DonateFinalComponent, canActivate: [AfterLoginGuard] },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'actionable-tips', component: ActionableTipsComponent, canActivate: [AfterLoginGuard] },
+  { path: 'take-pledge', component: TakePledgeComponent, canActivate: [AfterLoginGuard] },
+  { path: 'news-and-events', component: NewsAndEventsComponent, canActivate: [AfterLoginGuard] },
 ];
 
 @NgModule({

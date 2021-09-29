@@ -14,9 +14,11 @@ app.use('/public/user/images', express.static(path.join(__dirname, '../public/us
 //Routes
 const authRouter = require('./routes/authRoutes');
 const carbonRouter = require('./routes/carbonRoutes');
+const commonRouter = require('./routes/commonRoutes');
 
 //middleware
 app.use('/api/v1/carbon', carbonRouter);
 app.use('/api/v1/auth', authRouter);
+app.use('/api/v1/common', commonRouter);
 
 module.exports = app;

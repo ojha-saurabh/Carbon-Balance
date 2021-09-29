@@ -1,1 +1,46 @@
-<p>actionable-tips works!</p>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<section>
+    <div class="tips-main">
+        <!-- <button class="accordion">Section 1</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Section 2</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <button class="accordion">Section 3</button>
+        <div class="panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div> -->
+        <div class="tips-head">
+            <i class="fa fa-globe" aria-hidden="true"></i> &nbsp;Carbon Offset Tips
+        </div>
+        <div class="ideas">
+            <span *ngFor="let item of data; let i = index">
+                <button (click)="myFunction(i+1)" class="w3-btn w3-block w3-black w3-left-align">
+                    {{i+1}} &nbsp; {{item.title}}
+                </button>
+                <div id={{i+1}} class="w3-container w3-hide">
+                    <p>{{item.description}}</p>
+                </div>
+            </span>
+            <!-- <button (click)="myFunction('Demo2')" class="w3-btn w3-block w3-black w3-left-align">Open Section 2</button>
+            <div id="Demo2" class="w3-container w3-hide">
+            <h4>Section 2</h4>
+            <p>Some text..vvv</p>
+            </div> -->
+        </div>
+        <div class="back-link">
+            <a routerLink="/pages/take-action" class="back">Back</a>
+        </div>
+        <div class="footer-box">
+            Above listed are just a few tips. There could be many more options to reduce and offset our carbon footprint.
+        </div>
+        <div class="footer"># Offset Carbon Footprint</div>
+    </div>
+</section>
+

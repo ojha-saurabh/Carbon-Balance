@@ -248,7 +248,9 @@
 /* donate section ends */
 
 /* action starts */
-
+.box {
+    text-align: center;
+}
 @media only screen  and (min-width : 1224px) {
     .action-items {
         padding: 2% 5%;
@@ -262,6 +264,7 @@
     }
     .action-wrapper {
         text-align: center;
+        margin-top: -1%;
     }
     .action-badge {
         color: #FFFFFF;
@@ -277,7 +280,7 @@
         color: #05355A;
         font-weight: bold;
         margin-bottom: 2%;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         text-decoration: none;
     }
     .action-description {
@@ -285,6 +288,7 @@
     }
     .action-btn-wrapper {
         text-align: center;
+        margin-bottom: 2%;
     }
     .action-btn {
         background-color: #05355A;
@@ -328,6 +332,7 @@
     }
     .action-wrapper {
         text-align: center;
+        margin-top: -1%;
     }
     .action-badge {
         color: #FFFFFF;
@@ -343,7 +348,7 @@
         color: #05355A;
         font-weight: bold;
         margin-bottom: 2%;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         text-decoration: none;
         text-align: center;
     }
@@ -364,7 +369,7 @@
         border-radius: 25px;
         padding: 1% 10%;
         margin: 1%;
-        font-size: 1.0rem;
+        font-size: 1.2rem;
     }
     .action-btn-link {
         color: #C1F7D5;
@@ -385,6 +390,7 @@
     }
     .action-wrapper {
         text-align: center;
+        margin-top: -1%;
     }
     .action-badge {
         color: #FFFFFF;
@@ -401,7 +407,7 @@
         font-weight: bold;
         margin: 2%;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         text-decoration: none;
     }
     .action-description {

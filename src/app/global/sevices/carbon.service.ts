@@ -13,6 +13,10 @@ export class CarbonService {
   constructor(private http: HttpClient, private router: Router) {
   }
 
+  getActionableTips: any = () => {
+    return this.http.get(environment.apiBaseURL + 'common/getActionableTips');
+  }
+
   questionaire: any = (params: {email: string, password: string}) => {
     return this.http.get(environment.apiBaseURL + 'carbon/questionaire');
   }
