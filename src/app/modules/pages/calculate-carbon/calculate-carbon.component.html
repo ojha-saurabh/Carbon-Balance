@@ -2,6 +2,9 @@
   <form name="questionaireForm" #questionaireForm="ngForm" (ngSubmit)="onSubmit(questionaireForm)">
     <div class="questionaire-body mb-4">
       <div class="head">CALCULATE YOUR CARBON FOOTPRINT</div>
+      <div class="bottom-sec mt-2 ">
+        <span><a href="javascript:void(0)" (click)="resetForm()" class="float-right">Skip</a></span>
+      </div>
       <div class="questions mt-4" *ngFor="let question of questionaireData; let i = index">
         <h3>{{question.question}} 
           <!-- {{question.options[question.optionSelected?question.optionSelected:0].point}} -->
@@ -24,7 +27,7 @@
         <div class="mt-3"><h5>{{question.note}}</h5></div>
       </div>
       <div class="bottom text-center mb-4">
-        <button type="submit" class="btn btn-info border-0 text-span mb-2">Calculate my Footprint
+        <button type="submit" class="btn btn-info border-0 text-span1 mb-2">Calculate my Footprint
         </button>
         <div class="calculation text-center">{{ totalFootPrint }} tons per year</div>
       </div>

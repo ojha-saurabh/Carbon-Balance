@@ -10,7 +10,9 @@ export class DonateOptionsComponent implements OnInit {
 
   constructor(
     private router: Router
-  ) { }
+  ) {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+   }
 
   ngOnInit(): void {
   }

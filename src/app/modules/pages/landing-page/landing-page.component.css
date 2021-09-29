@@ -49,9 +49,10 @@
     .banner-img {
         /* border: 5px solid #C1F7D5; */
         /* border-radius: 20px; */
-        background-image: url("./../../../../assets/pictures/Protest.jpg");
+        /* background-image: url("./../../../../assets/pictures/Protest.jpg"); */
         height: 400px;
         background-size: cover;
+        background-position: center;
         width: 100%;
     }
     .weclome-text {
@@ -247,7 +248,9 @@
 /* donate section ends */
 
 /* action starts */
-
+.box {
+    text-align: center;
+}
 @media only screen  and (min-width : 1224px) {
     .action-items {
         padding: 2% 5%;
@@ -261,6 +264,7 @@
     }
     .action-wrapper {
         text-align: center;
+        margin-top: -1%;
     }
     .action-badge {
         color: #FFFFFF;
@@ -276,15 +280,46 @@
         color: #05355A;
         font-weight: bold;
         margin-bottom: 2%;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         text-decoration: none;
     }
     .action-description {
         color: #05355A;
     }
+    .action-btn-wrapper {
+        text-align: center;
+        margin-bottom: 2%;
+    }
+    .action-btn {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #C1F7D5;
+        border-radius: 25px;
+        padding: 1% 5%;
+        margin: 1%;
+    }
+    .action-btn-link {
+        color: #C1F7D5;
+        text-decoration: none;
+    }
 }
 
 @media only screen  and (min-width : 768px) {
+    .action-btn-wrapper {
+        text-align: center;
+    }
+    .action-btn {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #C1F7D5;
+        border-radius: 25px;
+        padding: 1% 10%;
+        margin: 2%;
+    }
+    .action-btn-link {
+        color: #C1F7D5;
+        text-decoration: none;
+    }
     .action-items {
         padding: 2% 5%;
     }
@@ -297,6 +332,7 @@
     }
     .action-wrapper {
         text-align: center;
+        margin-top: -1%;
     }
     .action-badge {
         color: #FFFFFF;
@@ -312,15 +348,34 @@
         color: #05355A;
         font-weight: bold;
         margin-bottom: 2%;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         text-decoration: none;
+        text-align: center;
     }
     .action-description {
         color: #05355A;
+        text-align: center;
     }
 }
 
 @media only screen  and (min-device-width : 320px) and (max-device-width : 480px){
+    .action-btn-wrapper {
+        text-align: center;
+    }
+    .action-btn {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #C1F7D5;
+        border-radius: 25px;
+        padding: 1% 10%;
+        margin: 1%;
+        font-size: 1.2rem;
+    }
+    .action-btn-link {
+        color: #C1F7D5;
+        text-decoration: none;
+        font-size: 1.0rem;
+    }
     .action-items {
         padding: 5%;
         display: grid;
@@ -335,6 +390,7 @@
     }
     .action-wrapper {
         text-align: center;
+        margin-top: -1%;
     }
     .action-badge {
         color: #FFFFFF;
@@ -351,7 +407,7 @@
         font-weight: bold;
         margin: 2%;
         text-align: center;
-        font-size: 1.2rem;
+        font-size: 1.0rem;
         text-decoration: none;
     }
     .action-description {

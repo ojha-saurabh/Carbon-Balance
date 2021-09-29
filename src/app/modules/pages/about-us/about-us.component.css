@@ -1,0 +1,626 @@
+/* banner starts */
+
+.banner {
+    background-image: url("./../../../../assets/pictures/victor-0NJ9urGXrIg-unsplash.jpg");
+    background-size: cover;
+    padding: 5%;
+    background-position: center;
+    padding-bottom: 3em;
+}
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px){
+    .banner {
+        background-image: url("./../../../../assets/pictures/victor-0NJ9urGXrIg-unsplash.jpg");
+        padding: 5%;
+        padding-bottom: 10%;
+    }
+    .left-banner-part {
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 100%);
+        padding: 7%;
+        margin-top: 10%;
+    }
+    .issue-wrapper {
+        text-align: center;
+        margin-top: 5%;
+    }
+    .issue-badge {
+        position: absolute;
+        color: #FFFFFF;
+        background-color: #05355A;
+        padding: 0.4em 3em;
+        top: 3%;
+        font-size: 1.1em;
+    }
+    .left-text-part {
+        color: #05355A;
+        padding: 8% 5% 0%;
+    }
+    .banner-link {
+        color: #05355A;
+        margin-top: 5rem;
+        text-decoration: underline;
+    }
+    .right-head-text{
+        top: 10%;
+        color: #FFFFFF;
+        text-align: right;
+        font-family: kalam;
+        position: relative;
+        font-weight: 700;
+        right: 3%;
+        text-transform: uppercase;
+    }
+    .banner-footer {
+        font-weight: bold;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        font-size: 1.5rem; 
+    }
+    .main-baneer-head {
+        font-size: 1.8rem;
+    }
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .banner {
+        background-image: url("./../../../../assets/pictures/victor-0NJ9urGXrIg-unsplash.jpg");
+        padding: 5%;
+    }
+    .left-banner-part {
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 100%);
+    }
+    .issue-wrapper {
+        text-align: center;
+    }
+    .issue-badge {
+        position: absolute;
+        color: #FFFFFF;
+        background-color: #05355A;
+        padding: 1.5% 8%;
+        top: -5%;
+        left: 10%;
+        font-size: 1.5rem;
+    }
+    .left-text-part {
+        color: #05355A;
+        padding: 8% 5% 5%;
+    }
+    .main-baneer-head {
+        font-size: 2.0rem;
+        margin-bottom: 5%;
+    }
+    .banner-link {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-decoration: underline;
+        color: #05355A;
+    }
+    .right-head-text{
+        color: #FFFFFF;
+        text-align: right;
+        font-family: kalam;
+        position: relative;
+        right: 3%;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .right-text {
+        font-size: 3.5rem !important;
+        text-transform: uppercase;
+    }
+    .banner-footer {
+        margin-top: 15%;
+    }
+}
+@media only screen  and (min-width : 1224px) {
+    .banner {
+        background-image: url("./../../../../assets/pictures/victor-0NJ9urGXrIg-unsplash.jpg");
+        padding: 5%;
+    }
+    .left-banner-part {
+        background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.8) 100%);
+        padding: 5%;
+    }
+    .issue-wrapper {
+        text-align: center;
+    }
+    .issue-badge {
+        position: absolute;
+        color: #FFFFFF;
+        background-color: #05355A;
+        padding: 1.5% 8%;
+        top: -5%;
+        font-size: 1.5rem;
+    }
+    .left-text-part {
+        color: #05355A;
+        padding: 5% 5% 0%;
+    }
+    .main-baneer-head {
+        font-size: 2.5rem;
+        margin-bottom: 5%;
+    }
+    .banner-link {
+        color: #05355A;
+        margin-top: 5rem;
+        text-decoration: underline;
+    }
+    .banner-link :hover {
+        color: #e7b649 !important;
+    }
+    .right-head-text{
+        color: #FFFFFF;
+        text-align: right;
+        font-family: kalam;
+        position: relative;
+        right: 3%;
+        font-weight: bold;
+        text-transform: uppercase;
+        /* font-size: 2.9rem; */
+    }
+    .right-head-text-main {
+        margin: 1% 2%;
+        font-size: 3.5rem !important;
+        text-transform: uppercase;
+    }
+    .right-text {
+        font-size: 4.0rem !important;
+        text-transform: uppercase;
+    }
+    .banner-footer {
+        margin-top: 15%;
+        margin-bottom: 0%;
+        font-weight: bold;
+    }
+}
+/* banner ends */
+
+/* mission value starts */
+
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .missions-values {
+        background-color: #05355A;
+        padding: 10%;
+    }
+    .mission-wrapper {
+        text-align: center;
+    }
+    .mission-badge {
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        color: #05355A;
+        padding: 1% 7%;
+        font-size: 1.3rem;
+    }
+    .mission-text {
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        margin: 5% 1%;
+        text-align: center;
+    }
+    .mission-item {
+        padding: 2%;
+    }
+    .mission-icon {
+        color: #C1F7D5;
+        font-size: 2.5rem;
+    }
+    .mission-title {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 1.3rem;
+    }
+    .mission-description {
+        color: #FFFFFF;
+    }
+}
+@media only screen  and (min-device-width : 768px) and (max-device-width : 1224px)  {
+    .missions-values {
+        background-color: #05355A;
+        padding: 5% 10%;
+    }
+    .mission-wrapper {
+        text-align: center;
+    }
+    .mission-badge {
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        color: #05355A;
+        padding: 0.8% 5%;
+        font-size: 2.0rem;
+    }
+    .mission-text {
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 2.0rem;
+        margin: 5% 1%;
+        text-align: center;
+    }
+    .mission-item {
+        padding: 2%;
+    }
+    .mission-icon {
+        color: #C1F7D5;
+        font-size: 3.0rem;
+    }
+    .mission-title {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .mission-description {
+        color: #FFFFFF;
+    }
+}
+@media only screen  and (min-width : 1224px) {
+    .missions-values {
+        background-color: #05355A;
+        padding: 5% 10%;
+    }
+    .mission-wrapper {
+        text-align: center;
+    }
+    .mission-badge {
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        color: #05355A;
+        padding: 1% 5%;
+        font-size: 2.0rem;
+    }
+    .mission-text {
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 2.0rem;
+        margin: 5% 1%;
+        text-align: center;
+    }
+    .mission-item {
+        padding: 2%;
+    }
+    .mission-icon {
+        color: #C1F7D5;
+        font-size: 3.0rem;
+    }
+    .mission-title {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .mission-description {
+        color: #FFFFFF;
+    }
+}
+
+/* mission value ends */
+
+/* our team starts */
+
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .our-team {
+        background-color: #FFFFFF;
+        padding: 10%;
+    }
+    .our-team-wrapper {
+        text-align: center;
+    }
+    .our-team-badge {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #FFFFFF;
+        padding: 1% 7%;
+        font-size: 1.3rem;
+    }
+    .our-team-text {
+        font-weight: bold;
+        color: #05355A;
+        font-size: 1.5rem;
+        margin: 5% 1%;
+        text-align: center;
+    }
+    .team-member {
+        padding: 3% 15%;
+        margin: 3%;
+    }
+    .team-member-img {
+        border: 1px solid #CCCCCC;
+        margin: 0 0.5%;
+    }
+    .member-img {
+        height: 200px;
+        width: 100%;
+    }
+    .team-member-name {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #FFFFFF;
+        font-weight: bold;
+        margin: 0 1%;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+@media only screen  and (min-device-width : 768px) and (max-device-width : 1224px)  {
+    .our-team {
+        background-color: #FFFFFF;
+        padding: 5% 10%;
+    }
+    .our-team-wrapper {
+        text-align: center;
+    }
+    .our-team-badge {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #FFFFFF;
+        padding: 0.8% 5%;
+        font-size: 2.0rem;
+    }
+    .our-team-text {
+        font-weight: bold;
+        color: #05355A;
+        font-size: 2.0rem;
+        margin: 5% 1%;
+        text-align: center;
+    }
+    .team-member-img {
+        border: 1px solid #CCCCCC;
+        margin: 0 1%;
+    }
+    .member-img {
+        height: 200px;
+        width: 100%;
+    }
+    .team-member-name {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #FFFFFF;
+        font-weight: bold;
+        margin: 1%;
+        font-size: 2.0rem;
+        text-align: center;
+    }
+}
+@media only screen  and (min-width : 1224px) {
+    .our-team {
+        background-color: #FFFFFF;
+        padding: 5% 10%;
+    }
+    .our-team-wrapper {
+        text-align: center;
+    }
+    .our-team-badge {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #FFFFFF;
+        padding: 1% 5%;
+        font-size: 2.0rem;
+    }
+    .our-team-text {
+        font-weight: bold;
+        color: #05355A;
+        font-size: 2.0rem;
+        margin: 5% 1%;
+        text-align: center;
+    }
+    .team-member-img {
+        border: 1px solid #CCCCCC;
+        margin: 0 1%;
+    }
+    .member-img {
+        height: 250px;
+        width: 100%;
+    }
+    .team-member-name {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        color: #FFFFFF;
+        font-weight: bold;
+        margin: 1%;
+        font-size: 2.0rem;
+        text-align: center;
+    }
+}
+
+/* our team ends */
+
+/* our impact starts */
+
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .our-impact {
+        background: url("../../../../assets/pictures/penguin-5391719_640.jpg") no-repeat center center;
+        background-size: cover; 
+        padding: 10%;
+    }
+    .impact-wrapper {
+        text-align: center;
+    }
+    .impact-badge {
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        color: #05355A;
+        padding: 1% 7%;
+        font-size: 1.3rem;
+    }
+    .impact-text {
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        margin: 5% 1%;
+        text-align: center;
+    }
+    .impact-item-count {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: kalam;
+        font-size: 3.0rem;
+        text-align: center;
+    }
+    .impact-item-text {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+@media only screen  and (min-device-width : 768px) and (max-device-width : 1224px)  { 
+    .our-impact {
+        background: url("../../../../assets/pictures/penguin-5391719_640.jpg") no-repeat center center;
+        background-size: cover; 
+        padding: 5% 10%;
+    }
+    .impact-wrapper {
+        text-align: center;
+    }
+    .impact-badge {
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        color: #05355A;
+        padding: 0.8% 5%;
+        font-size: 2.0rem;
+    }
+    .impact-text {
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 2.0rem;
+        margin: 5% 1%;
+        text-align: center;
+    }
+    .impact-item-count {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: kalam;
+        font-size: 3.0rem;
+        text-align: center;
+    }
+    .impact-item-text {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+@media only screen  and (min-width : 1224px) {
+    .our-impact {
+        background: url("../../../../assets/pictures/penguin-5391719_640.jpg") no-repeat center center;
+        background-size: cover; 
+        padding: 5% 10%;
+    }
+    .impact-wrapper {
+        text-align: center;
+    }
+    .impact-badge {
+        background-color: #FFFFFF;
+        border: 1px solid #FFFFFF;
+        color: #05355A;
+        padding: 1% 5%;
+        font-size: 2.0rem;
+    }
+    .impact-text {
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 2.0rem;
+        margin: 5% 1%;
+        text-align: center;
+    }
+    .impact-item-count {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-family: kalam;
+        font-size: 3.0rem;
+        text-align: center;
+    }
+    .impact-item-text {
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+/* our impact ends */
+
+/* action starts */
+
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .take-action {
+        background-color: #05355A;
+        padding: 10%;
+    }
+    .take-action-text {
+        color: #FFFFFF;
+        font-family: kalam;
+        font-size: 2.0rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+@media only screen  and (min-width : 768px) {
+    .take-action {
+        background-color: #05355A;
+        padding: 10%;
+    }
+    .take-action-text {
+        text-align: center;
+        color: #FFFFFF;
+        font-family: kalam;
+        font-size: 3.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+}
+
+/* action ends */
+
+/* donate starts */
+@media only screen  and (min-device-width : 320px) and (max-device-width : 480px) {
+    .donate {
+        background-color: #C1F7D5;
+        padding: 10%;
+    }
+    .donate-text {
+        color: #05355A;
+        font-family: kalam;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .donate-wrapper {
+        text-align: center;
+    }
+    .donate-btn {
+        margin-top: 5%;
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        padding: 1.5% 15%;
+        color: #FFFFFF;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
+@media only screen  and (min-width : 768px) {
+    .donate {
+        background-color: #C1F7D5;
+        padding: 5% 10%;
+    }
+    .donate-text {
+        color: #05355A;
+        font-family: kalam;
+        font-size: 2.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    .donate-wrapper {
+        text-align: center;
+    }
+    .donate-btn {
+        margin-top: 3%;
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        padding: 0.8% 10%;
+        color: #FFFFFF;
+        border-radius: 25px;
+        font-weight: bold;
+        font-size: 2.0rem;
+    }
+}
+/* donate ends */

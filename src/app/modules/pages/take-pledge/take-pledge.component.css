@@ -1,0 +1,126 @@
+/* take pledge starts */
+
+@media only screen  and (max-width : 600px) {
+    .take-pledge {
+        background-color: #C1F7D5;
+        padding: 10%;
+    }
+    .pledge-text {
+        font-family: kalam;
+        font-weight: bold;
+        font-size: 1.8rem;
+        color: #05355A;
+        text-transform: uppercase;
+    }
+    .btn-wrapper {
+        text-align: center;
+        margin: 2%;
+    }
+    .email-input {
+        background-color: #FFFFFF;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 1% 2%;
+        margin-top: 3%;
+        font-size: 1.0rem;
+    }
+    .pledge-button {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        font-weight: 600;
+        color: #FFFFFF;
+        border-radius: 20px;
+        padding: 2% 10%;
+        margin-top: 5%;
+        width: 75%;
+    }
+}
+
+@media only screen  and (min-width : 601px) {
+    .take-pledge {
+        background-color: #C1F7D5; 
+        padding: 5% 10%;
+    }
+    .pledge-text {
+        font-family: kalam;
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: #05355A;
+        text-transform: uppercase;
+    }
+    .btn-wrapper {
+        text-align: center;
+        margin: 2%;
+    }
+    .email-input {
+        background-color: #FFFFFF;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 1% 2%;
+        margin-top: 3%;
+        font-size: 1.3rem;
+    }
+    .pledge-button {
+        background-color: #05355A;
+        border: 1px solid #05355A;
+        font-weight: 600;
+        color: #FFFFFF;
+        border-radius: 20px;
+        padding: 1% 5%;
+        margin-top: 2%;
+        width: 30%;
+    }
+    
+}
+
+/* take pledge ends */
+
+/* pledge-footer starts */
+
+@media only screen  and (max-width : 600px) {
+    .pledge-footer {
+        background-color: #05355A;
+        padding: 10%;
+    }
+    .pledge-footer-head {
+        color: #FFFFFF;
+        font-family: kalam;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2.5rem;
+        text-align: right;
+    }
+    .plesge-footer-last {
+        color: #FFFFFF;
+        font-family: kalam;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-top: 10%;
+    }
+}
+
+@media only screen  and (min-width : 601px) {
+    .pledge-footer {
+        background-color: #05355A;
+        padding: 5% 10%;
+    }
+    .pledge-footer-head {
+        color: #FFFFFF;
+        font-family: kalam;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 3.5rem;
+        text-align: right;
+    }
+    .plesge-footer-last {
+        color: #FFFFFF;
+        font-family: kalam;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2.5rem;
+        margin-top: 2%;
+    }
+}
+
+/* pledge-footer ends */

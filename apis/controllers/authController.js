@@ -5,6 +5,7 @@ controller.register = register;
 controller.login = login;
 controller.getUserById = getUserById;
 controller.createUserProfile = createUserProfile;
+controller.updateProfileOrBannerPicture = updateProfileOrBannerPicture;
 
 module.exports = controller;
 
@@ -57,6 +58,29 @@ function createUserProfile(req, res){
             res.status(201).send(response);
         }   
     })
+}
+
+//Upload profile or banner picture
+
+function updateProfileOrBannerPicture(req, res){
+
+    if(req.files){
+        if(req.body.type==='profile'){
+            req.body.profileImage = req.files.fileData[0].filename;
+        }else{
+            req.body.bannerImage = req.files.fileData[0].filename;
+        }
+        authModel.updateProfileOrBannerPicture(req.body).then((response)=>{    
+            if(response.status){
+                return res.status(200).send(response);
+            }else{
+                res.status(201).send(response);
+            }   
+        })
+    }else{
+        res.status(201).send({status:false});
+    }
+    
 }
 
 

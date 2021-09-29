@@ -1,17 +1,21 @@
 <!-- banner starts -->
-<section>
+<section> 
     <div class="banner">
-        <img src="./../../../../assets/pictures/Protest.jpg" alt="banner-img" class="banner-img">
+        <div class="banner-img" [ngStyle]="{'background-image': 'url(' + bannerImage + ')'}">
+            <div class="profile-image-part">
+                <img src="{{profileImage}}" alt="banner-img" class="profile-img">
+            </div>
+        </div>
         <div class="form">
             <div class="row mt-4">
                 <div class="form-group col-xs-6 col-md-6 col-sm-6">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupFileAddon01" (click)="upload()">Upload</span>
+                            <span class="input-group-text" id="inputGroupFileAddon01" >Profile</span>
                         </div>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="inputGroupFile01"
-                             aria-describedby="inputGroupFileAddon01" (change)="selectFile($event)" >
+                             aria-describedby="inputGroupFileAddon01" #fileData name="fileData" (change)="selectFile($event)" >
                             <label class="custom-file-label" for="inputGroupFile01">{{profile}}</label>
                         </div>
                     </div>
@@ -34,11 +38,11 @@
                 <div class="form-group col-xs-6 col-md-6 col-sm-6">
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text" id="inputGroupFileAddon01" (click)="upload1()">Upload</span>
+                            <span class="input-group-text" id="inputGroupFileAddon01" >Banner</span>
                         </div>
                         <div class="custom-file">
                             <input type="file" class="custom-file-input" id="inputGroupFile01"
-                             aria-describedby="inputGroupFileAddon01" (change)="selectFile1($event)" >
+                             aria-describedby="inputGroupFileAddon01" #fileData1 name="fileData1" (change)="selectFile1($event)" >
                             <label class="custom-file-label" for="inputGroupFile01">{{banner}}</label>
                         </div>
                     </div>
@@ -56,9 +60,12 @@
                             <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
                         </div>
                     </div> -->
-                    <input type="file" class="custom-file-input" id="inputGroupFile01"
-                                aria-describedby="inputGroupFileAddon01">
+                    <!-- <input type="file" class="custom-file-input" id="inputGroupFile01"
+                                aria-describedby="inputGroupFileAddon01"> -->
                 </div>
+            </div>
+            <div class="skip-div">
+                <a routerLink="/pages/landing-page" class="skip-btn">Skip</a>
             </div>
             <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
                 <div class="row">
@@ -138,7 +145,7 @@
                 <div class="row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="EmailId">EMAIL ID</label>
-                        <input type="email" class="form-control" id="EmailId" formControlName="EmailId" 
+                        <input type="email" class="form-control email-control" id="EmailId" formControlName="EmailId" 
                         [ngClass]="{ 'is-invalid': submitted && f?.EmailId?.errors }" required>
                     </div>
                     <div *ngIf="submitted && f.EmailId.errors" class="invalid-feedback">
@@ -158,7 +165,7 @@
                 <div class="row">
                     <div class="form-group col-xs-10 col-md-10 col-sm-10">
                         <span class="checkbox">
-                            <input type="checkbox" formControlName="isChecked" (change)="onCheckChange($event)">&nbsp;
+                            <input type="checkbox" formControlName="isChecked" (change)="onCheckChange($event)"> &nbsp;
                             I agree to the terms and conditions of this site. 
                         </span> 
                     </div>
@@ -167,6 +174,9 @@
                             <a href="#" class="read-tc">Read T&C</a>
                         </div>
                     </div>
+                </div>
+                <div class="skip-div">
+                    <a routerLink="/pages/landing-page" class="skip-btn">Skip</a>
                 </div>
                 <div class="row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12 text-center">

@@ -7,20 +7,20 @@
     <div class="right-nav-items">
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
-          <li class="nav-item active">
-              <a class="nav-link" href="#">About us</a>
-          </li>
           <li class="nav-item">
+              <a class="nav-link" routerLink="/pages/about-us">About us</a>
+          </li>
+          <li class="nav-item" *ngIf="!isLoggedIn">
               <a class="nav-link" routerLink="/auth/login">Sign in / Sign Up</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">News and events</a>
+              <a class="nav-link" routerLink="/pages/news-and-events">News and events</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" target="_blank" href="https://climateclock.world/">Climate Clock</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="#">Take the Pledge</a>
+              <a class="nav-link" routerLink="/pages/take-pledge">Take the Pledge</a>
           </li>
           <li class="nav-item nav-item-button" *ngIf="!isLoggedIn">
               <a class="nav-link promo-action" routerLink="/auth/register" ><span class="text-span"><strong>Join Today</strong></span></a>
@@ -39,6 +39,7 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
               <a class="dropdown-item" routerLink="/pages/create-profile" ><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Profile</a>              
+              <a class="dropdown-item" routerLink="/pages/landing-page" ><i class="fa fa-bar-chart" aria-hidden="true"></i>&nbsp;Landing Page</a>              
               <a class="dropdown-item" href="javascript:void(0);" (click)="logOut()"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp;Logout</a>
             </div>
           </div>

@@ -18,7 +18,9 @@ export class TakeActionComponent implements OnInit {
   saveObjArray: any = [];
 
   @ViewChild('actionForm') form: any;
-  constructor(private carbon: CarbonService, private auth: AuthService) { }
+  constructor(private carbon: CarbonService, private auth: AuthService) { 
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
 
   ngOnInit(): void {
     this.getActions();

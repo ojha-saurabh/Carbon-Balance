@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from 'src/app/global/sevices/auth.service';
 import Swal from 'sweetalert2';
 
@@ -17,7 +18,9 @@ export class SignUpComponent implements OnInit {
 
   @ViewChild('signUpForm') form: any;
 
-  constructor(private auth: AuthService) { }
+  constructor(private auth: AuthService, private router: Router) { 
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
 
   ngOnInit(): void {
   }
@@ -31,6 +34,7 @@ export class SignUpComponent implements OnInit {
         this.auth.register(this.payLoad).subscribe((response: any) => {
           if (response.status){
             this.form.reset();
+            this.router.navigate(['/auth/login']);
             Swal.fire('Successful!!', response.message, 'success');
           }else{
             Swal.fire('Oops...', response.message, 'error');

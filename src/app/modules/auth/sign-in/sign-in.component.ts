@@ -23,7 +23,9 @@ export class SignInComponent implements OnInit {
     private auth: AuthService,
     private toastr: ToastrService,
     private router: Router
-    ) { }
+    ) { 
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
+    }
 
   ngOnInit(): void {
     this.auth.getUserData();

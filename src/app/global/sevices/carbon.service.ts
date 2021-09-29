@@ -13,6 +13,10 @@ export class CarbonService {
   constructor(private http: HttpClient, private router: Router) {
   }
 
+  getActionableTips: any = () => {
+    return this.http.get(environment.apiBaseURL + 'common/getActionableTips');
+  }
+
   questionaire: any = (params: {email: string, password: string}) => {
     return this.http.get(environment.apiBaseURL + 'carbon/questionaire');
   }
@@ -31,5 +35,13 @@ export class CarbonService {
 
   getCarbonSummary: any = (params: any) => {
     return this.http.post(environment.apiBaseURL + 'carbon/fetchSummary', params);
+  }
+
+  updateProfileOrBannerPicture: any = (params: any) => {
+    const formData = new FormData();
+    formData.append('fileData', params.fileData);
+    formData.append('type', params.type);
+    formData.append('id', params.id);
+    return this.http.post(environment.apiBaseURL + 'auth/updateProfileOrBannerPicture', formData);
   }
 }

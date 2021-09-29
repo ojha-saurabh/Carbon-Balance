@@ -21,37 +21,12 @@ constructor(
   private toastr: ToastrService
   ) { }
 
-// ngOnInit(): void {
-//   this.isLoggedIn = localStorage.getItem('isLoggedIn');
-//   this.userName = localStorage.getItem('UserName');
-//   this.auth.userData.subscribe(response => {
-//     this.isLoggedIn = this.auth.isLoggedIn();
-//     if (this.isLoggedIn){
-//       if (response.name){
-//         this.userName = response.name;
-//       }else{
-//         const str: any = response.email.split('@')[0];
-//         this.userName = str;
-//       }
-//     }
-//     this.userData = response;
-//   });
-//   this.auth.getUserByEmail({email: "ramyapenjerla@gmail.com"}).subscribe((res: any) => {
-//     console.log('================get by email response', res);
-//     if(res.status) {
-//       this.userName = res;
-//     } else {
-//       this.toastr.error('Something Went Wrong!', 'Oops!');
-//     }
-//   })
-// }
-
-ngOnInit(): void {
+  ngOnInit(): void {
   this.auth.userData.subscribe(response => {
     this.isLoggedIn = this.auth.isLoggedIn();
     if (this.isLoggedIn){
-      if (response.name){
-        this.userName = response.name;
+      if (response.displayName){
+        this.userName = response.displayName;
       }else{
         const str: any = response.email.split('@')[0];
         this.userName = str;
@@ -59,10 +34,22 @@ ngOnInit(): void {
     }
     this.userData = response;
   });
+
+  this.isLoggedIn = this.auth.isLoggedIn();
+  if (this.isLoggedIn){
+    this.userData = this.auth.getDecodedUserdata();
+    if (this.userData.displayName){
+      this.userName = this.userData.displayName;
+    }else{
+      const str: any = this.userData.email.split('@')[0];
+      this.userName = str;
+    }
+  }
+  console.log(this.userData)
 }
 
 logOut: any = () => {
-    this.auth.logout();
-  }
+  this.auth.logout();
+}
 
 }

@@ -9,39 +9,41 @@
             <div class="action-question-part">
             
                 <div class="row ques-div" *ngFor="let data of saveObjArray; let i = index">               
-                    <div class="col-md-6 col-sm-12 ques">
-                        <select name="action{{i}}" #action{{i}} (change)="changeAction(i, $event)">
+                    <div class="col-md-6 col-sm-12">
+                        <select class="ques" name="action{{i}}" #action{{i}} (change)="changeAction(i, $event)">
                             <option *ngFor="let action of actionData; let j = index" [selected]="action.action==data.action" [value]="j">{{ action.action }}</option>
                         </select>
-                    </div>
-                    <div class="col-md-3 col-sm-12 " > 
+                    </div>                    
+                    <div class="col-md-3 col-sm-12" > 
+                        <select name="actionOption{{i}}" #actionOption{{i}} class="action-question ques options" (change)="changeOption(i, $event)">
+                            <option *ngFor="let option of data.options; let j = index" [value]="j" [selected]="j == data.selectedOption"> {{option.optionText}}</option>
+                        </select>
+                    </div> 
+                    <div class="col-md-3 col-sm-12 mt-2 mb-2" > 
                         <div class="input-group" *ngIf="data.options[data.selectedOption].optionText == 'Other' ">
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon3" >Custom value</span>
                               </div>
                             <input type="number" class="form-control" [value]="data.otherInput" placeholder="Custom value" (keyup)="otherInputFunc(i, $event)">
                         </div>
-                    </div>
-                    <div class="col-md-3 col-sm-12"> 
-                        <select name="actionOption{{i}}" #actionOption{{i}} class="action-question options" (change)="changeOption(i, $event)">
-                            <!-- <option value="" selected>Select</option> -->
-                            <option *ngFor="let option of data.options; let j = index" [value]="j" [selected]="j == data.selectedOption"> {{option.optionText}}</option>
-                        </select>
-                    </div>                    
+                    </div>                   
                 </div>
-                
+                <div class="goback">
+                    <a href="javascript:void(0)" routerLink="/pages/landing-page" class="float-left">Go To Status Page</a>
+                </div>
                 <div class="add-question" *ngIf="saveObjArray?.length < actionData?.length">
                     <button type="button" class="btn add-question-button" (click)="addAction()">
                         <i class="fa fa-plus" aria-hidden="true"></i>&nbsp;<span class="add-action-text">Add New Action</span>
                     </button>
                 </div>
+                
                 <div class="submit-action-wrapper">
                     <button class="btn submit-action-button">Submit My Action</button>
                 </div>
             </div>
         </form>
         <div class="checkout-action-link-part">
-            <a routerLink="/pages/calculate-co2" class="checkout-action-link">Checkout the Carbon Offset Ideas</a>
+            <a routerLink="/pages/actionable-tips" class="checkout-action-link">Checkout the Carbon Offset Ideas</a>
         </div>
     </div>
 </section>
@@ -89,6 +91,9 @@
                 Foot print. Would you join me?
             </p>
         </div> -->
+        <div class="invite-goback">
+            <a href="javascript:void(0)" routerLink="/pages/landing-page" class="invite-goback-link">Go To Status Page</a>
+        </div>
         <div class="invite-wrapper">
             <button class="invite-button">
                 <i class="fa fa-envelope" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp; Send My Invite
@@ -122,6 +127,9 @@
             <button class="blog-submit-button">Preview</button>
             &nbsp;&nbsp;&nbsp;
             <button class="blog-submit-button">Submit</button>
+        </div>
+        <div class="blog-goback">
+            <a href="javascript:void(0)" routerLink="/pages/landing-page" class="blog-goback-link">Go To Status Page</a>
         </div>
         <div class="upload-img-part">
             <div class="upload-image-head">UPLOAD PICTURES</div>
