@@ -81,11 +81,7 @@
                 <div class="row">
                     <div class="form-group col-xs-6 col-md-12 col-sm-6">
                         <label for="About">ABOUT</label>
-                        <input type="text" class="form-control" id="About" formControlName="About" 
-                        [ngClass]="{ 'is-invalid': submitted && f?.About?.errors }" required>
-                    </div>
-                    <div *ngIf="submitted && f.About.errors" class="invalid-feedback">
-                        <div *ngIf="f?.About.errors.required">About is required.</div>
+                        <input type="text" class="form-control" id="About" formControlName="About" >
                     </div>
                 </div>
                 <div class="row">
@@ -109,34 +105,32 @@
                 <div class="row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="StreetAddress">STREET ADDRESS</label>
-                        <input type="email" class="form-control" id="StreetAddress" formControlName="StreetAddress" 
-                        [ngClass]="{ 'is-invalid': submitted && f?.StreetAddress?.errors }" required>
-                    </div>
-                    <div *ngIf="submitted && f.StreetAddress.errors" class="invalid-feedback">
-                        <div *ngIf="f?.StreetAddress.errors.required">StreetAddress is required.</div>
+                        <input type="email" class="form-control" id="StreetAddress" formControlName="StreetAddress" >
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-xs-4 col-md-4 col-sm-4">
                         <label for="ZipCode">ZIP CODE</label>
-                        <input type="email" class="form-control" id="ZipCode" formControlName="ZipCode" 
-                        [ngClass]="{ 'is-invalid': submitted && f?.ZipCode?.errors }" required>
+                        <input type="email" class="form-control" id="ZipCode" formControlName="ZipCode">
                     </div>
-                    <div *ngIf="submitted && f.ZipCode.errors" class="invalid-feedback">
-                        <div *ngIf="f?.ZipCode.errors.required">ZipCode is required.</div>
-                    </div>
+                    
                     <div class="form-group col-xs-4 col-md-4 col-sm-4">
                         <label for="State">STATE</label>
-                        <input type="text" class="form-control" id="State" formControlName="State" 
-                        [ngClass]="{ 'is-invalid': submitted && f?.State?.errors }" required>
-                    </div>
-                    <div *ngIf="submitted && f.State.errors" class="invalid-feedback">
-                        <div *ngIf="f?.State.errors.required">State is required.</div>
+                        <input type="text" class="form-control" id="State" formControlName="State" >
                     </div>
                     <div class="form-group col-xs-4 col-md-4 col-sm-4">
                         <label for="AgeGroup">AGE GROUP</label>
-                        <input type="text" class="form-control" id="AgeGroup" formControlName="AgeGroup" 
+                        <select name="" id=""class="form-control" id="AgeGroup" formControlName="AgeGroup"
                         [ngClass]="{ 'is-invalid': submitted && f?.AgeGroup?.errors }" required>
+                            <option value="10-20">10-20</option>
+                            <option value="20-30">20-30</option>
+                            <option value="30-40">30-40</option>
+                            <option value="40-50">40-50</option>
+                            <option value="50-60">50-60</option>
+                            <option value="60+">60+</option>
+                        </select>
+                        <!-- <input type="text" class="form-control" id="AgeGroup" formControlName="AgeGroup" 
+                        [ngClass]="{ 'is-invalid': submitted && f?.AgeGroup?.errors }" required> -->
                     </div>
                     <div *ngIf="submitted && f.AgeGroup.errors" class="invalid-feedback">
                         <div *ngIf="f?.AgeGroup.errors.required">Age is required.</div>
@@ -145,21 +139,13 @@
                 <div class="row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="EmailId">EMAIL ID</label>
-                        <input type="email" class="form-control email-control" id="EmailId" formControlName="EmailId" 
-                        [ngClass]="{ 'is-invalid': submitted && f?.EmailId?.errors }" required>
-                    </div>
-                    <div *ngIf="submitted && f.EmailId.errors" class="invalid-feedback">
-                        <div *ngIf="f?.EmailId.errors.required">EmailId is required.</div>
+                        <input type="email" class="form-control email-control" id="EmailId" formControlName="EmailId" >
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-group col-xs-12 col-md-12 col-sm-12">
                         <label for="Occupation">OCCUPATION</label>
-                        <input type="email" class="form-control" id="Occupation" formControlName="Occupation" 
-                        [ngClass]="{ 'is-invalid': submitted && f?.Occupation?.errors }" required>
-                    </div>
-                    <div *ngIf="submitted && f.Occupation.errors" class="invalid-feedback">
-                        <div *ngIf="f?.Occupation.errors.required">Occupation is required.</div>
+                        <input type="email" class="form-control" id="Occupation" formControlName="Occupation" >
                     </div>
                 </div>
                 <div class="row">

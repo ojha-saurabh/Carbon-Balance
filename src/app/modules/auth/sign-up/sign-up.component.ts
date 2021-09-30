@@ -31,6 +31,7 @@ export class SignUpComponent implements OnInit {
       if (this.form.value.password !== this.form.value.confirmPassword){
         Swal.fire('Oops...', 'Password and confirm password should be the same.', 'error');
       }else{
+        this.payLoad.email = this.payLoad.email.toLocaleLowerCase();
         this.auth.register(this.payLoad).subscribe((response: any) => {
           if (response.status){
             this.form.reset();

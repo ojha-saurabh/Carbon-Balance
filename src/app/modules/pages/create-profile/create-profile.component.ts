@@ -40,14 +40,14 @@ export class CreateProfileComponent implements OnInit {
     document.body.scrollTop = document.documentElement.scrollTop = 0;
     this.profileForm = this.fb.group({
       DisplayName: ['', Validators.required],
-      About: ['', Validators.required],
+      About: [''],
       FirstName: ['', Validators.required],
       LastName: ['', Validators.required],
-      StreetAddress: ['', Validators.required],
-      ZipCode: ['', Validators.required],
-      EmailId: ['', Validators.required],
-      Occupation: ['', Validators.required],
-      State: ['', Validators.required],
+      StreetAddress: [''],
+      ZipCode: [''],
+      EmailId: [''],
+      Occupation: [''],
+      State: [''],
       AgeGroup: ['', Validators.required],
       isChecked: ['', Validators.required]
     });

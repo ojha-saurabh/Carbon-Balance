@@ -68,6 +68,21 @@ input:focus {
     border-radius: 0px;
     color: #FFFFFF;
 }
+select {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #C1F7D5;
+    color: #C1F7D5;
+}
+select:focus { 
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #C1F7D5;
+    color: #C1F7D5;
+}
+option {
+    background: #05355A;
+}
 .email-control {
     /* color: #000000; */
     background: transparent;
