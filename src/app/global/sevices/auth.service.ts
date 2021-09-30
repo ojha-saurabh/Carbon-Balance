@@ -72,6 +72,7 @@ export class AuthService {
       Swal.fire('Successful!!!', 'You have been logged out successfully.', 'success');
       this.router.navigate(['/auth/login']);
     }
+    this.userData.next(false);
   }
 
   tokenExpired: any = () => {
