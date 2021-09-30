@@ -107,8 +107,8 @@
                         <div [hidden]="confirmPassword.valid || confirmPassword.pristine" class="alert alert-danger">Confirm password is required.</div>
                     </div>
                 </div>
-                <span class=" example-margin"><input type="checkbox"> &nbsp;Creating an account means you agree to the terms and conditions of this site/application.</span>                    
-                <button type="submit" class="btn btn-info float-left border-0 text-span mt-4" [disabled]="!signUpForm.form.valid">Create Account</button>  
+                <span class=" example-margin"><input type="checkbox" id="accept" (change)="onCheckChange($event)"> &nbsp;Creating an account means you agree to the terms and conditions of this site/application.</span>                    
+                <button type="submit" class="btn btn-info float-left border-0 text-span mt-4" [disabled]="!signUpForm.form.valid || !isChecked">Create Account</button>  
               </form>
               <!-- <a routerLink="/auth/register" class="float-right instruction"><i>Forget Password / Reset</i></a>  -->
         </form>

@@ -15,6 +15,8 @@ export class SignUpComponent implements OnInit {
     password: '',
     confirmPassword: ''
   };
+  cb: any;
+  isChecked = false;
 
   @ViewChild('signUpForm') form: any;
 
@@ -23,6 +25,7 @@ export class SignUpComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
   }
 
   onSubmit: any = () => {
@@ -47,6 +50,13 @@ export class SignUpComponent implements OnInit {
     }else{
       Swal.fire('Oops...', 'Please check the madatory fields.', 'error');
     }
+  }
+
+  onCheckChange: any = () => {
+    this.cb = document.getElementById('accept');
+    console.log('==========',this.cb.checked);
+    this.isChecked = this.cb.checked;
+    // console.log('====tdsf======',this.isChecked);
   }
 
 }
