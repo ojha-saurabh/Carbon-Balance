@@ -15,6 +15,8 @@ export class SignUpComponent implements OnInit {
     password: '',
     confirmPassword: ''
   };
+  cb: any;
+  isChecked = false;
 
   @ViewChild('signUpForm') form: any;
 
@@ -23,6 +25,7 @@ export class SignUpComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    
   }
 
   onSubmit: any = () => {
@@ -31,6 +34,7 @@ export class SignUpComponent implements OnInit {
       if (this.form.value.password !== this.form.value.confirmPassword){
         Swal.fire('Oops...', 'Password and confirm password should be the same.', 'error');
       }else{
+        this.payLoad.email = this.payLoad.email.toLocaleLowerCase();
         this.auth.register(this.payLoad).subscribe((response: any) => {
           if (response.status){
             this.form.reset();
@@ -46,6 +50,13 @@ export class SignUpComponent implements OnInit {
     }else{
       Swal.fire('Oops...', 'Please check the madatory fields.', 'error');
     }
+  }
+
+  onCheckChange: any = () => {
+    this.cb = document.getElementById('accept');
+    console.log('==========',this.cb.checked);
+    this.isChecked = this.cb.checked;
+    // console.log('====tdsf======',this.isChecked);
   }
 
 }

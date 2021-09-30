@@ -26,7 +26,7 @@ const routes: Routes = [
   { path: 'thanks-to-donate', component: DonateFinalComponent, canActivate: [AfterLoginGuard] },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'actionable-tips', component: ActionableTipsComponent, canActivate: [AfterLoginGuard] },
-  { path: 'take-pledge', component: TakePledgeComponent, canActivate: [AfterLoginGuard] },
+  { path: 'take-pledge', component: TakePledgeComponent },
   { path: 'news-and-events', component: NewsAndEventsComponent, canActivate: [AfterLoginGuard] },
 ];
 

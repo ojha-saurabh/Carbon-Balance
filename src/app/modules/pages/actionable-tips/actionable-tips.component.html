@@ -19,6 +19,9 @@
         <div class="tips-head">
             <i class="fa fa-globe" aria-hidden="true"></i> &nbsp;Carbon Offset Tips
         </div>
+        <div class="back-link-top">
+            <a routerLink="/pages/take-action" class="back">Back</a>
+        </div>
         <div class="ideas">
             <span *ngFor="let item of data; let i = index">
                 <button (click)="myFunction(i+1)" class="w3-btn w3-block w3-black w3-left-align">
@@ -28,11 +31,6 @@
                     <p>{{item.description}}</p>
                 </div>
             </span>
-            <!-- <button (click)="myFunction('Demo2')" class="w3-btn w3-block w3-black w3-left-align">Open Section 2</button>
-            <div id="Demo2" class="w3-container w3-hide">
-            <h4>Section 2</h4>
-            <p>Some text..vvv</p>
-            </div> -->
         </div>
         <div class="back-link">
             <a routerLink="/pages/take-action" class="back">Back</a>
