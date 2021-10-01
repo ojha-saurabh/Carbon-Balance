@@ -88,17 +88,17 @@ async function createUserProfile(body){
     let deferred = Q.defer();
     db.get().collection('tbl_users').
     findOneAndUpdate({ email:body.email },{$set : {
-        "displayName": body?.displayName,
-        "about": body?.about,
-        "firstName": body?.firstName,
-        "lastName": body?.lastName,
-        "email": body?.email,
-        "streetAddress": body?.streetAddress,
-        "zipCode": body?.zipCode,
-        "state": body?.state,
-        "age": body?.age,
-        "occupation": body?.occupation,
-        "termsAccepted": body?.termsAccepted,
+        "displayName": body.displayName ? body.displayName : "",
+        "about": body.about ? body.about : "",
+        "firstName": body.firstName ? body.firstName : "",
+        "lastName": body.lastName ? body.lastName : "",
+        "email": body.email ? body.email : "",
+        "streetAddress": body.streetAddress ? body.streetAddress : "",
+        "zipCode": body.zipCode ? body.zipCode : "",
+        "state": body.state ? body.state : "",
+        "age": body.age ? body.age : "",
+        "occupation": body.occupation ? body.occupation : "",
+        "termsAccepted": body.termsAccepted ? body.termsAccepted : "",
     }}, (err, user) =>{
         if(err) deferred.reject(err.name+': '+err.message);
         if(user){
