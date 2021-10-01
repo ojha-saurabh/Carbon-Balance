@@ -16,7 +16,9 @@ export class ActionableTipsComponent implements OnInit {
   ]
   constructor(
     private carbonService: CarbonService
-  ) { }
+  ) {
+    document.body.scrollTop = document.documentElement.scrollTop = 0;
+  }
 
   ngOnInit(): void {
     this.carbonService.getActionableTips().subscribe((res: any) => {

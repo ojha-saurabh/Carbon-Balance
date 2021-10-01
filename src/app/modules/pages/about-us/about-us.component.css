@@ -76,7 +76,7 @@
         color: #FFFFFF;
         background-color: #05355A;
         padding: 1.5% 8%;
-        top: -5%;
+        top: -9%;
         left: 10%;
         font-size: 1.5rem;
     }
@@ -108,7 +108,15 @@
         text-transform: uppercase;
     }
     .banner-footer {
-        margin-top: 15%;
+        margin-top: 10%;
+        font-size: 1.5rem;
+        padding-right: 10%;
+    }
+    .right-head-text-main {
+        /* margin: 1% 2%;
+        font-size: 3.5rem !important;
+        text-transform: uppercase; */
+        padding-right: 10%;
     }
 }
 @media only screen  and (min-width : 1224px) {
@@ -136,7 +144,7 @@
         padding: 5% 5% 0%;
     }
     .main-baneer-head {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         margin-bottom: 5%;
     }
     .banner-link {
@@ -161,6 +169,7 @@
         margin: 1% 2%;
         font-size: 3.5rem !important;
         text-transform: uppercase;
+        padding-right: 10%;
     }
     .right-text {
         font-size: 4.0rem !important;
@@ -170,6 +179,7 @@
         margin-top: 15%;
         margin-bottom: 0%;
         font-weight: bold;
+        padding-right: 10%;
     }
 }
 /* banner ends */

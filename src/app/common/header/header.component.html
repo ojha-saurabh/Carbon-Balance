@@ -4,7 +4,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="right-nav-items">
+    <div class="right-nav-items navbar-text form-inline">
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
           <li class="nav-item">
@@ -34,7 +34,7 @@
               <button ngbDropdownItem (click)="logOut()">LogOut</button>
             </div>
           </div> -->
-          <div class="dropdown d-inline-block float-right" *ngIf="isLoggedIn">
+          <!-- <div class="dropdown d-inline-block float-right" *ngIf="isLoggedIn">
             <button class="btn btn-outline-default mr-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fa fa-cog" aria-hidden="true"></i> {{this.userName}}
             </button>
@@ -43,9 +43,20 @@
               <a class="dropdown-item" routerLink="/pages/landing-page" ><i class="fa fa-bar-chart" aria-hidden="true"></i>&nbsp;Landing Page</a>              
               <a class="dropdown-item" href="javascript:void(0);" (click)="logOut()"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp;Logout</a>
             </div>
-          </div>
+          </div> -->
         </ul>
       </div>
     </div>
+    <div class="dropdown d-inline-block float-right" *ngIf="isLoggedIn">
+      <button class="btn btn-outline-default mr-2 dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-cog" aria-hidden="true"></i> {{this.userName}}
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" routerLink="/pages/create-profile" ><i class="fa fa-user" aria-hidden="true"></i>&nbsp;Profile</a>              
+        <a class="dropdown-item" routerLink="/pages/landing-page" ><i class="fa fa-bar-chart" aria-hidden="true"></i>&nbsp;Landing Page</a>              
+        <a class="dropdown-item" href="javascript:void(0);" (click)="logOut()"><i class="fa fa-power-off" aria-hidden="true"></i>&nbsp;Logout</a>
+      </div>
+    </div>
   </nav>
+  
 </header>
